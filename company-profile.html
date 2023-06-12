@@ -23,6 +23,9 @@
       <link rel="stylesheet" href="assets/css/demo.css" />
       <!-- Vendors CSS -->
       <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+      <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+      <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+        <!-- Helpers -->
       <!-- Page CSS -->
       <!-- Helpers -->
       <script src="assets/vendor/js/helpers.js"></script>
@@ -214,6 +217,12 @@
                                              </div>
                                            </div>
                                            <div class="row mb-3">
+                                             <label class="col-sm-4" for="basic-default-name"><strong>Phone Number</strong></label>
+                                             <div class="col-sm-8">
+                                              <p>9807654321</p> 
+                                             </div>
+                                           </div>
+                                           <div class="row mb-3">
                                              <label class="col-sm-4" for="basic-default-name"><strong>Mobile Number</strong></label>
                                              <div class="col-sm-8">
                                               <p>9807654321</p> 
@@ -248,62 +257,37 @@
                                     <div class="col-lg-12">
                                        <div class="" style="background-color: white;">
                                           <div id="" style="display: block;">
-                                            <div class="table-responsive text-nowrap">
-                                               <table class="table table-bordered">
-                                                  <thead>
-                                                     <tr>
+                                             <div class="table-responsive  table0border">
+                                                <table class="table table-bordered">
+                                                   <thead>
+                                                   <tr>
                                                       <th>Branch Name</th>
                                                       <th>Branch Code</th>
-                                                        <th>Address</th>
-                                                        <th>Description</th>
-                                                        <th>Phone Number</th>
-                                                        <th>Salary cycle</th>
-                                                     </tr>
-                                                  </thead>
-                                                  <tbody>
-                                                     <tr>
-                                                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Angular Project</strong></td>
-                                                        <td>Albert Cook</td>
-                                                        <td>
-                                                           
-                                                        </td>
-                                                        <td><span class="badge bg-label-primary me-1">Active</span></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>React Project</strong></td>
-                                                        <td>Barry Hunter</td>
-                                                        <td>
-                                                           
-                                                        </td>
-                                                        <td><span class="badge bg-label-success me-1">Completed</span></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td><i class="fab fa-vuejs fa-lg text-success me-3"></i> <strong>VueJs Project</strong></td>
-                                                        <td>Trevor Baker</td>
-                                                        <td>
-                                                          
-                                                        </td>
-                                                        <td><span class="badge bg-label-info me-1">Scheduled</span></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Bootstrap Project</strong></td>
-                                                        <td>Jerry Milton</td>
-                                                        <td>
-                                                           
-                                                        </td>
-                                                        <td><span class="badge bg-label-warning me-1">Pending</span></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                     </tr>
-                                                  </tbody>
-                                               </table>
-                                            </div>
+                                                      <th>Address</th>
+                                                      <th style="width: 200px;">Description</th>
+                                                      <th>Phone Number</th>
+                                                      <th>Salary Cycle</th>
+                                                   </tr>
+                                                   </thead>
+                                                   <tbody>
+                                                   <tr>
+                                                      <td>Foxiom Kinfra</td>
+                                                      <td>Fox45674</td>
+                                                      <td>
+                                                         Suite No. 73A, 4th Floor, Neospace, Kinfra Techno Industrial Park
+                                                      </td>
+                                                      <td></td>
+                                                      <td>
+                                                         +91 9895 111 400
+                                                      </td>
+                                                      <td></td>
+                                                   </tr>
+                                                   
+                                                  
+                                                  
+                                                   </tbody>
+                                                </table>
+                                             </div>
                                        </div>
                                        
                                         </div> 
@@ -351,6 +335,7 @@
                                                          <div class="mb-3">
                                                             <label class="form-label" for="phoneNumber">Phone Number</label>
                                                             <div class="input-group input-group-merge">
+                                                               <!-- <input class="form-control"   id="phone" name="phone" type="text" value="+91 1234567890" autofocus /> -->
                                                                <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" />
                                                             </div>
                                                          </div>
@@ -493,6 +478,15 @@
            // Redirect to the desired URL
            window.location.href = "profile-complete-2.html";
          }
+
+
+         var input = document.querySelector("#phoneNumber");
+            window.intlTelInput(input, {
+                separateDialCode: true,
+                // excludeCountries: ["in", "il"],
+                preferredCountries: ["ru", "jp", "pk", "no","in"]
+            });
+            
       </script>
       <!-- Core JS -->
       <!-- build:js assets/vendor/js/core.js -->

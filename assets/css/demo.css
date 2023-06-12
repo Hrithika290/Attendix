@@ -388,6 +388,7 @@ input[type="radio"] {
 
 .iti{
   display: block !important;
+  width: 100%;
 }
 
 

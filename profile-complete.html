@@ -23,6 +23,9 @@
       <link rel="stylesheet" href="assets/css/demo.css" />
       <!-- Vendors CSS -->
       <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+      <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+      <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+        <!-- Helpers -->
       <!-- Page CSS -->
       <!-- Helpers -->
       <script src="assets/vendor/js/helpers.js"></script>
@@ -426,7 +429,7 @@
                         </div>
                         <div class="mb-3 col-md-6">
                            <label for="lastName" class="form-label">Phone number</label>
-                           <input class="form-control" type="text" name="address" id="address" />
+                           <input class="form-control" id="phoneNumber" name="phoneNumber" type="text" />
                         </div>
                         <div class="mb-3 col-md-6">
                            <label for="license" class="form-label">Salary cycle</label>
@@ -544,6 +547,14 @@
            // Redirect to the desired URL
            window.location.href = "profile-complete-2.html";
          }
+
+         var input = document.querySelector("#phoneNumber");
+            window.intlTelInput(input, {
+                separateDialCode: true,
+                // excludeCountries: ["in", "il"],
+                preferredCountries: ["ru", "jp", "pk", "no","in"]
+            });
+            
       </script>
       <!-- Core JS -->
       <!-- build:js assets/vendor/js/core.js -->

@@ -24,6 +24,9 @@
       <!-- Vendors CSS -->
       <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+              <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+                <!-- Helpers -->
       <!-- Page CSS -->
       <!-- Helpers -->
       <script src="assets/vendor/js/helpers.js"></script>
@@ -708,11 +711,11 @@
                           </div>
                             <div class="mb-3 col-md-4">
                             <label for="m-num" class="form-label">Mobile Number</label>
-                            <input class="form-control" type="text" id="m-num" name="m-num" value="+91 1234567890" autofocus />
+                            <input class="form-control"   id="phone" name="phone" type="text" value="+91 1234567890" autofocus />
                             </div>
                             <div class="mb-3 col-md-4">
                             <label for="w-num" class="form-label">Whatsapp Number</label>
-                            <input class="form-control" type="text" name="w-num" id="w-num" value="+91 1234567890" />
+                            <input class="form-control" id="phone2" name="phone2" type="text" value="+91 1234567890" />
                             </div>
                             <div class="mb-3 col-md-4">
                               <label for="e-mail" class="form-label">Email Address</label>
@@ -1230,7 +1233,18 @@
   }
 
 
-
+  var input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+                separateDialCode: true,
+                // excludeCountries: ["in", "il"],
+                preferredCountries: ["ru", "jp", "pk", "no","in"]
+            });
+            var input = document.querySelector("#phone2");
+            window.intlTelInput(input, {
+                separateDialCode: true,
+                // excludeCountries: ["in", "il"],
+                preferredCountries: ["ru", "jp", "pk", "no","in"]
+            });
 </script>
 
 
