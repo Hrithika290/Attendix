@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<!-- beautify ignore:start -->
+<html lang="en" class="light-style layout-menu-fixed " dir="ltr" data-theme="theme-default" data-assets-path="assets/" data-template="vertical-menu-template-free">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+      <title>Staff Profile</title>
+      <meta name="description" content="Create your shift - Payroll" />
+      <meta name="keywords" content="Payroll">
+      <!-- Canonical SEO -->
+      <link rel="canonical" href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/">
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="assets/img/favicon.jpg" />
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com/">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+      <!-- Icons. Uncomment required icon fonts -->
+      <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
+      <!-- Core CSS -->
+      <link rel="stylesheet" href="assets/vendor/css/core.css" class="template-customizer-core-css" />
+      <link rel="stylesheet" href="assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+      <link rel="stylesheet" href="assets/css/demo.css" />
+      <!-- Vendors CSS -->
+      <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+      <!-- Page CSS -->
+      <!-- Helpers -->
+      <script src="assets/vendor/js/helpers.js"></script>
+      <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+      <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+      <script src="assets/js/config.js"></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async="async" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         
+         function gtag() {
+           dataLayer.push(arguments);
+         }
+         gtag('js', new Date());
+         gtag('config', 'GA_MEASUREMENT_ID');
+      </script>
+
+     
+      <!-- Custom notification for demo -->
+      <!-- beautify ignore:end -->
+   </head>
+   <body>
+      <!-- Layout wrapper -->
+      <div class="layout-wrapper layout-content-navbar  ">
+         <div class="layout-container">
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <div class="app-brand demo ">
+                    <a href="index-2.html" class="app-brand-link">
+                        <span class="app-brand-logo demo">
+                            
+                        </span>
+                        <span class="app-brand-text demo menu-text fw-bolder">Foxiom Leads</span>
+                    </a>
+                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                        <i class="bx bx-chevron-left bx-sm align-middle"></i>
+                    </a>
+                </div>
+                <div class="menu-inner-shadow"></div>
+                <ul class="menu-inner py-1">
+                  <li class="menu-item">
+                    <a href="index.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                      <div data-i18n="Analytics">Dashboard</div>
+                    </a>
+                  </li>
+                  <li class="menu-item active">
+                    <a href="staff-list.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-layout"></i>
+                      <div data-i18n="Layouts">Staff</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="attendance.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                      <div data-i18n="Account Settings">Attendance</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="settings.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+                      <div data-i18n="Authentications">Settings</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="shifts.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+                      <div data-i18n="Authentications">Shifts</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" target="_blank" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-support"></i>
+                      <div data-i18n="Support">Support</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" target="_blank" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-file"></i>
+                      <div data-i18n="Documentation">Documentation</div>
+                    </a>
+                  </li>
+                </ul>
+
+                <div>
+                  <p style="margin: 0rem 1rem; padding: 0.625rem 1rem; color: white;">Version 0.0.1</p>
+                </div>
+            </aside>
+         <div class="layout-page">
+           <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar"> 
+                <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0   d-xl-none ">
+                    <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                        <i class="bx bx-menu bx-sm"></i>
+                      </a>
+                    </div>
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                      <!-- Search -->
+                      <div class="navbar-nav align-items-center">
+                        <div class="nav-item d-flex align-items-center">
+                          <i class="bx bx-search fs-4 lh-0"></i>
+                          <input type="text" class="form-control border-0 shadow-none" placeholder="Search..." aria-label="Search...">
+                        </div>
+                      </div>
+                      <!-- /Search -->
+                      <ul class="navbar-nav flex-row align-items-center ms-auto"> 
+                        <!-- Place this tag where you want the button to render. -->
+                        <li class="nav-item lh-1 me-3">
+                          <a class="github-button" href="index.html" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
+                        </li>
+                        <!-- User -->
+                        <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                          <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                            <div class="avatar avatar-online">
+                              <img src="assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle">
+                            </div>
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <div class="d-flex">
+                                  <div class="flex-shrink-0 me-3">
+                                    <div class="avatar avatar-online">
+                                      <img src="assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle">
+                                    </div>
+                                  </div>
+                                  <div class="flex-grow-1">
+                                    <span class="fw-semibold d-block">John Doe</span>
+                                    <small class="text-muted">Admin</small>
+                                  </div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <div class="dropdown-divider"></div>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="company-profile.html">
+                                <i class="bx bx-user me-2"></i>
+                                <span class="align-middle">My Profile</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <i class="bx bx-cog me-2"></i>
+                                <span class="align-middle">Settings</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span class="d-flex align-items-center align-middle">
+                                  <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                                  <span class="flex-grow-1 align-middle">Billing</span>
+                                  <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <div class="dropdown-divider"></div>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="auth-login-basic.html">
+                                <i class="bx bx-power-off me-2"></i>
+                                <span class="align-middle">Log Out</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <!--/ User -->
+                        
+              
+                      </ul>
+                    </div>  
+                </nav>
+                
+              
+                
+              <!-- / Navbar -->
+              
+                    
+              
+<!-- Content wrapper -->
+    <div class="content-wrapper">             
+<!-- Content -->
+                      
+        <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="row">
+                <div class="col-lg-6">
+                     <h4 class="fw-bold py-3 mb-4">
+                        <span class="text-muted fw-light">Back /</span> Staff Profile
+                     </h4>
+                </div>
+                <div class="col-lg-6">
+                  <div class="mb-3" style="float: right;">
+                    <button class="btn btn-primary d-grid " onclick="submitForm(event)"  style="margin-top: 11px;"> Add staff </button>
+                  </div>
+                </div> 
+              </div>
+          <!-- <h5 class="mb-5">Create Leave Template</h5> <small class="text-muted float-end">Default label</small> -->
+          <!-- <div class="row">
+            <div class="col-xxl">
+                <div class="card mb-2">
+                    <div class="card">
+                        
+                         <div class="pro_bottom p-4">
+                            <h5><i class="bx bx-user box-shape"></i>Personal Info</h5>   
+
+                            
+                         </div>
+                         <div class="pro_bottom p-4">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="text-dark">Staff Name</h6>
+                                 </div>
+                                <div class="col-sm-3">
+                                    Hrithika
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="dropdown float-end">
+                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                                        <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                                          <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="pro_bottom p-4">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                   <h6 class="text-dark">Phone Number</h6>
+                                </div>
+                                <div class="col-sm-3">
+                                    +91 9876543210
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="dropdown float-end">
+                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                                        <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                                          <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="pro_bottom p-4">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                   <h6 class="text-dark">Other Details</h6>
+                                </div>
+                                <div class="col-sm-3">
+                                    Edit Staff Details
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="dropdown float-end">
+                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                                        <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                                          <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                         </div>
+                      </div>
+                </div>
+            </div>     
+          </div> -->
+         
+          <div class="card mb-4">
+          <div class="row">
+              <div class="nav-align-top">
+                <ul class="nav nav-pills card-header" role="tablist">
+                  <li class="nav-item">
+                    <button type="button" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-personal-info" aria-controls="navs-pills-personal-info" aria-selected="true">Personal Info</button>
+                  </li>
+                  <li class="nav-item">
+                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-contact-info" aria-controls="navs-pills-contact-info" aria-selected="false">Contact Info</button>
+                  </li>
+                  <li class="nav-item">
+                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-office-details" aria-controls="navs-pills-office-details" aria-selected="false">Official Details</button>
+                  </li>
+                  <li class="nav-item">
+                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-bank-details" aria-controls="navs-pills-bank-details" aria-selected="false">Bank Details</button>
+                  </li>
+                  <li class="nav-item">
+                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-bank-payroll" aria-controls="navs-pills-bank-payroll" aria-selected="false">Payroll</button>
+                  </li>
+                  <li class="nav-item">
+                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-bank-leave" aria-controls="navs-pills-bank-leave" aria-selected="false">Leave</button>
+                  </li>
+                  <li class="nav-item">
+                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-bank-settings" aria-controls="navs-pills-bank-settings" aria-selected="false">Settings</button>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="navs-pills-personal-info" role="tabpanel">
+                    <div class="card-body">
+                        <div class="d-flex align-items-start align-items-sm-center gap-4">
+                          <img src="assets/img/avatars/1.png" alt="user-avatar" class="d-block rounded" height="100" width="100" id="uploadedAvatar" />
+                         <div class="button-wrapper">
+                            <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
+                              <span class="d-none d-sm-block">Upload new photo</span>
+                              <i class="bx bx-upload d-block d-sm-none"></i>
+                              <input type="file" id="upload" class="account-file-input" hidden accept="image/png, image/jpeg" />
+                            </label>
+                            <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                              <i class="bx bx-reset d-block d-sm-none"></i>
+                              <span class="d-none d-sm-block">Reset</span>
+                            </button>
+                
+                            <p class="text-muted mb-0">Allowed JPG, GIF or PNG. Max size of 800K</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                          <div class="row">
+                              <div class="col-xl card-bg">
+                                <div class="card mb-4">
+                                  <div class="card-body">
+                                      <form>
+                                          <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Employee ID</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span>0987</span>
+                                              </div>
+                                          </div>
+                                          <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Employee Code</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span>214we#21</span>
+                                              </div>
+                                          </div>
+                                          <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Name</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>Hrithika P</span>
+                                            </div>
+                                          </div>
+                                          <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Gender</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span>Female</span>
+                                              </div>
+                                          </div>
+                                          <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>DOB</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span>02/05/2023</span>
+                                              </div>
+                                          </div>
+                                          <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Age</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span>23</span>
+                                              </div>
+                                          </div>
+                                          <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Blood Group</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span>B +ve</span>
+                                              </div>
+                                          </div>
+                                        </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xl card-bg">
+                                <div class="card mb-4">
+                                  <div class="card-body">
+                                      <form>
+                                          <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Father Name</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span>Raju P</span>
+                                              </div>
+                                          </div>
+                                          <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Mother Name</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span>Sarada</span>
+                                              </div>
+                                          </div>
+                                          <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Marital Status</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span>Single</span>
+                                              </div>
+                                          </div>
+                                          <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Nationality</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>Indian</span>
+                                            </div>
+                                          </div>
+                                          <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Religion</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span>Hindu</span>
+                                              </div>
+                                          </div>
+                                          <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Caste</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span>Thiyya</span>
+                                              </div>
+                                          </div>
+                                          <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Disabled</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span>No</span>
+                                              </div>
+                                          </div>
+                                        </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="mb-3">
+                                  <button class="btn btn-primary d-grid float-end" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#largeModal" style="margin-top: 11px;"> Edit Personal Info </button>
+                                </div>
+                                <div class="modal fade" id="largeModal" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel3">Update Personal Info</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-body">
+                                                <form id="formAccountSettings" method="POST" onsubmit="return false">
+                                                  <div class="row">
+                                                      <div class="mb-3 col-md-6">
+                                                          <label for="firstName" class="form-label">Employee Id</label>
+                                                          <input class="form-control" type="text" id="firstName" name="firstName" value="01" disabled />
+                                                      </div>
+                                                      <div class="mb-3 col-md-6">
+                                                          <label for="lastName" class="form-label">Employee Code</label>
+                                                          <input class="form-control" type="text" name="lastName" id="lastName" value="235416" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-6">
+                                                      <label for="firstName" class="form-label">First Name</label>
+                                                      <input class="form-control" type="text" id="firstName" name="firstName" value="John" autofocus />
+                                                      </div>
+                                                      <div class="mb-3 col-md-6">
+                                                      <label for="lastName" class="form-label">Last Name</label>
+                                                      <input class="form-control" type="text" name="lastName" id="lastName" value="Doe" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="photo" class="form-label">Upload photo</label>
+                                                      <input class="form-control" type="file" name="photo" id="photo" value="" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="dob" class="form-label">DOB</label>
+                                                      <input class="form-control" type="date" name="dob" id="dob" value="" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="age" class="form-label">Age</label>
+                                                      <input class="form-control" type="text" name="age" id="age" value="age" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="b-group" class="form-label">Blood Group</label>
+                                                      <input class="form-control" type="text" name="b-group" id="b-group" value="Blood group" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="father-name" class="form-label">Father Name</label>
+                                                      <input class="form-control" type="text" name="father-name" id="father-name" value="Father Name" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="mother-name" class="form-label">Mother Name</label>
+                                                      <input class="form-control" type="text" name="mother-name" id="mother-name" value="Mother Name" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <div class="col-md">
+                                                         
+                                                      </div>
+                                                      <label for="mother-name" class="form-label">Marital Status</label><br>
+                                                      <div class="form-check form-check-inline radio_form mt-2">
+                                                          <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1"  checked/>
+                                                          <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline radio_form">
+                                                          <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2" />
+                                                          <label class="form-check-label" for="inlineRadio2">No</label>
+                                                        </div>
+                                                      <!-- <input class="form-control" type="text" name="mother-name" id="mother-name" value="Mother Name" /> -->
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="spouse-name" class="form-label">Spouse Name</label>
+                                                      <input class="form-control" type="text" id="spouse-name" name="spouse-name" value="Spouse name" placeholder="Spouse Name" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="nationality" class="form-label">Nationality</label>
+                                                      <input class="form-control" type="text" id="nationality" name="nationality" value="Nationality" placeholder="john.doe@example.com" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="religion" class="form-label">Religion</label>
+                                                      <input type="text" class="form-control" id="religion" name="religion" value="Religion" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="caste" class="form-label">Caste</label>
+                                                      <input type="text" class="form-control" id="caste" name="caste" value="Caste" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="caste" class="form-label">Disabled</label>
+                                                      <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                                                          <option value="1">Yes</option>
+                                                          <option value="2">No</option>
+                                                        </select>
+                                                      </div>
+                                                  </div>
+                                                </form>
+                                              </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                          <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                              </div> 
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="navs-pills-contact-info" role="tabpanel">
+                    <div class="card-body">
+                            <div class="row">
+                                <div class="col-xl card-bg">
+                                  <div class="card mb-4 ">
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Permenant Address</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Communication Address</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Mobile Number</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span>4563215897</span>
+                                              </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Whatsapp Number</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>9632587412</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Email</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>demo@gmail.com</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>City</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>Chelari</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>District</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>Malappuram</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>State</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>Kerala</span>
+                                                </div>
+                                            </div>
+                                          </form>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-xl card-bg">
+                                  <div class="card mb-4 ">
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>PIN</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>676319</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Country</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>India</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <h5 class="payroll-title">Emergency Contact</h5>
+                                                <hr>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Name</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>Rithika</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Address</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span></span>
+                                              </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Phone Number</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>254368741</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Email</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>demo@gmail.com</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Relation</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>Sister</span>
+                                                </div>
+                                            </div>
+                                          </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="mb-3">
+                                  <button class="btn btn-primary d-grid float-end" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-contact" style="margin-top: 11px;"> Edit Contact Info </button>
+                                </div>
+                                <div class="modal fade" id="edit-contact" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel3">Update Contact Info</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-body">
+                                                <form id="formAccountSettings" method="POST" onsubmit="return false">
+                                                  <div class="row">
+                                                      <div class="mb-3 col-md-6">
+                                                          <label for="firstName" class="form-label">Permenant Address</label>
+                                                          <textarea name="p-address" id="p-address" class="form-control"></textarea>
+                                                      </div>
+                                                      <div class="mb-3 col-md-6">
+                                                        <label for="firstName" class="form-label">Communication Address</label>
+                                                        <textarea name="p-address" id="p-address" class="form-control"></textarea>
+                                                    </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="m-num" class="form-label">Mobile Number</label>
+                                                      <input class="form-control" type="text" id="m-num" name="m-num" value="+91 1234567890" autofocus />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="w-num" class="form-label">Whatsapp Number</label>
+                                                      <input class="form-control" type="text" name="w-num" id="w-num" value="+91 1234567890" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                        <label for="e-mail" class="form-label">Email Address</label>
+                                                        <input class="form-control" type="email" name="e-mail" id="e-mail" value="demo@gmail.com" />
+                                                        </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="city" class="form-label">City</label>
+                                                      <input class="form-control" type="text" name="city" id="city" value="city" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="district" class="form-label">District</label>
+                                                      <input class="form-control" type="text" name="district" id="district" value="district" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="state" class="form-label">State</label>
+                                                      <input class="form-control" type="text" name="state" id="state" value="state" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="post" class="form-label">Post</label>
+                                                      <input class="form-control" type="text" name="post" id="post" value="post" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="pin" class="form-label">PIN Code</label>
+                                                      <input class="form-control" type="text" name="pin" id="pin" value="676319" />
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                      <label for="country" class="form-label">Country</label>
+                                                      <input class="form-control" type="text" name="country" id="country" value="country" />
+                                                      </div>
+                                                      <span><input type="checkbox" id="myCheck" onclick="sevenhost()"> Emergency Contact</span>
+                                                      <div id="emergency-contact"  style="display:none">
+                                                        <div class="row">
+                                                        <div class="mb-3 col-md-6">
+                                                          <label for="name" class="form-label">Name</label>
+                                                          <input class="form-control" type="text" name="name" id="name" value="name" />
+                                                        </div>
+                                                        <div class="mb-3 col-md-6">
+                                                          <label for="address" class="form-label">Address</label>
+                                                          <input class="form-control" type="text" name="address" id="address" value="Address" />
+                                                        </div>
+                                                        <div class="mb-3 col-md-4">
+                                                          <label for="phone" class="form-label">Phone</label>
+                                                          <input class="form-control" type="text" name="phone" id="phone" value="phone" />
+                                                        </div>
+                                                        <div class="mb-3 col-md-4">
+                                                          <label for="email" class="form-label">Email</label>
+                                                          <input class="form-control" type="text" name="email" id="email" value="Email" />
+                                                        </div>
+                                                        <div class="mb-3 col-md-4">
+                                                          <label for="relation" class="form-label">Relation</label>
+                                                          <input class="form-control" type="text" name="relation" id="relation" value="relation" />
+                                                        </div>
+                                                      </div>
+                                                      </div>
+                                                  </div>
+                                                </form>
+                                              </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                          <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                              </div> 
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="navs-pills-office-details" role="tabpanel">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-xl card-bg">
+                                  <div class="card mb-4 ">
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Department</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>IT</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Designation</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>Web Designer</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Branch / Location</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>Calicut</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Emp Group</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span>Group 1</span>
+                                              </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Qualification</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>Diploma</span>
+                                                </div>
+                                            </div>
+                                          </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="mb-3">
+                                  <button class="btn btn-primary d-grid float-end" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-office" style="margin-top: 11px;"> Edit Office Details </button>
+                                </div>
+                                <div class="modal fade" id="edit-office" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel3">Update Office Details</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-body">
+                                                <form id="formAccountSettings" method="POST" onsubmit="return false">
+                                                  <div class="row">
+                                                      <div class="mb-3 col-md-6">
+                                                          <label for="department" class="form-label">Department</label>
+                                                          <select name="department" id=""class="form-control form-select">
+                                                            <option value="1">IT</option>
+                                                            <option value="2">Design</option>
+                                                            <option value="3">Robofoxy</option>
+                                                          </select>
+                                                      </div>
+                                                      <div class="mb-3 col-md-6">
+                                                        <label for="designation" class="form-label">Designation</label>
+                                                        <select name="designation" id=""class="form-control form-select">
+                                                          <option value="1">Developer</option>
+                                                          <option value="2">Web Designer</option>
+                                                          <option value="3">Graphic Designer</option>
+                                                        </select>
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                        <label for="designation" class="form-label">Branch/Location</label>
+                                                        <select name="designation" id=""class="form-control form-select">
+                                                          <option value="1">Calicut</option>
+                                                          <option value="2">Qatar</option>
+                                                          <option value="3">Saudhi</option>
+                                                        </select>
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                        <label for="designation" class="form-label">Emp Group</label>
+                                                        <select name="designation" id=""class="form-control form-select">
+                                                          <option value="1">G1</option>
+                                                          <option value="2">G2</option>
+                                                          <option value="3">G3</option>
+                                                        </select>
+                                                      </div>
+                                                      <div class="mb-3 col-md-4">
+                                                        <label for="designation" class="form-label">Joining Date</label>
+                                                        <input class="form-control" type="date" id="m-num" name="m-num" value="+91 1234567890" autofocus />
+                                                      </div>
+                                                  </div>
+                                                </form>
+                                              </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                          <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                              </div> 
+                        </div>
+                  </div>
+                  <div class="tab-pane fade" id="navs-pills-bank-details" role="tabpanel">
+                    
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-xl card-bg">
+                                  <div class="card mb-4 ">
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Bank Name</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>SBI</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Account No</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>25200 45873 45551</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Branch Name</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>Chettippadi</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>IFSC Code</span></label>
+                                              <div class="col-sm-1 col-form-label">:</div>
+                                              <div class="col-sm-7 mt-2">
+                                                <span>SBI55658</span>
+                                              </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Statutory Details</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Pan Card No</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>45467678678</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>PF No</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>45467678678</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>ESI No</span></label>
+                                                <div class="col-sm-1 col-form-label">:</div>
+                                                <div class="col-sm-7 mt-2">
+                                                  <span>45467678678</span>
+                                                </div>
+                                            </div>
+                                          </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="mb-3">
+                                  <button class="btn btn-primary d-grid float-end" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-bank" style="margin-top: 11px;"> Edit Bank Details </button>
+                                </div>
+                                <div class="modal fade" id="edit-bank" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel3">Update Office Details</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-body">
+                                                <form id="formAccountSettings" method="POST" onsubmit="return false">
+                                                  <div class="row">
+                                                    <div class="mb-3 col-md-6">
+                                                      <label for="bank" class="form-label">Bank Name</label>
+                                                      <input class="form-control" type="text" id="bank" name="bank" value="" autofocus />
+                                                    </div>
+                                                    <div class="mb-3 col-md-6">
+                                                      <label for="acc-no" class="form-label">Account Number</label>
+                                                      <input class="form-control" type="text" id="acc-no" name="acc-no" value="" autofocus />
+                                                    </div>
+                                                    <div class="mb-3 col-md-6">
+                                                      <label for="branch-name" class="form-label">Branch Name</label>
+                                                      <input class="form-control" type="text" id="branch-name" name="branch-name" value="" autofocus />
+                                                    </div>
+                                                    <div class="mb-3 col-md-6">
+                                                      <label for="ifsc" class="form-label">IFSC Code</label>
+                                                      <input class="form-control" type="text" id="ifsc" name="ifsc" value="" autofocus />
+                                                    </div>
+                                                    <div class="mb-3 col-md-6">
+                                                      <label for="statutory" class="form-label">Statutory Details</label>
+                                                      <input class="form-control" type="text" id="statutory" name="statutory" value="" autofocus />
+                                                    </div>
+                                                    <div class="mb-3 col-md-6">
+                                                      <label for="card" class="form-label">Pan Card No</label>
+                                                      <input class="form-control" type="text" id="card" name="card" value="" autofocus />
+                                                    </div>
+                                                    <div class="mb-3 col-md-6">
+                                                      <label for="pf" class="form-label">PF No</label>
+                                                      <input class="form-control" type="text" id="pf" name="pf" value="" autofocus />
+                                                    </div>
+                                                    <div class="mb-3 col-md-6">
+                                                      <label for="esi" class="form-label">ESI No</label>
+                                                      <input class="form-control" type="text" id="esi" name="esi" value="" autofocus />
+                                                    </div>
+                                                  
+                                                  </div>
+                                                </form>
+                                              </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                          <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                              </div> 
+                        </div>
+                      
+            
+                  </div>
+                  <div class="tab-pane fade" id="navs-pills-bank-payroll" role="tabpanel">
+                    
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl card-bg">
+                              <div class="card mb-4 ">
+                                <div class="card-body">
+                                    <form>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Shift Mode</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>Default shift</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Shift Type</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>Fixed Shift</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Shift Name</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>Shift 1</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                          <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Payroll Profile</span></label>
+                                          <div class="col-sm-1 col-form-label">:</div>
+                                          <div class="col-sm-7 mt-2">
+                                            <span> </span>
+                                          </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <h5 class="text-primary">Salary Structure</h5>
+                                            <hr>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Salary Type</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>Monthly</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <h5 class="text-primary">Earnings</h5>
+                                            <hr>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Basic</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>5000</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>DA</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>HRA</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Medicall Allowance</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <h5 class="text-primary">Deductions</h5>
+                                            <hr>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Provident Fund</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>ESI</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <h5 class="text-primary">Contributions</h5>
+                                            <hr>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>PF</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>ESI</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <h5 class="text-primary">Overtime/Partial Day</h5>
+                                            <hr>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Over time (working Day)</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-4 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                            <div class="col-sm-3 mt-2">
+                                                <span>3500</span>
+                                              </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Over time (Off Day)</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-4 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                            <div class="col-sm-3 mt-2">
+                                                <span>3500</span>
+                                              </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Over time (HoliDay)</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-4 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                            <div class="col-sm-3 mt-2">
+                                                <span>3500</span>
+                                              </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Partial Day work</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Partial Day deduction</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <h5 class="text-primary">Overtime/Partial Day</h5>
+                                            <hr>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Additional Allowance Profile</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Additional Deduction Profile</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div>
+                                      </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="mb-3">
+                              <button class="btn btn-primary d-grid float-end" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-payroll" style="margin-top: 11px;"> Edit Payroll </button>
+                            </div>
+                            <div class="modal fade" id="edit-payroll" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel3">Update Payroll</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card-body">
+                                            <form id="formAccountSettings" method="POST" onsubmit="return false">
+                                              <div class="row">
+                                                <div class="mb-3 col-md-6">
+                                                  <label for="mode" class="form-label">Shift Mode</label>
+                                                  <select name="mode" id=""class="form-control form-select">
+                                                    <option value="1">Default Shift </option>
+                                                    <option value="2">Assigned Shift</option>
+                                                  </select>
+                                              </div>
+                                              <div class="mb-3 col-md-6">
+                                                <label for="mode" class="form-label">Shift Type</label>
+                                                <select name="mode" id=""class="form-control form-select">
+                                                  <option value="1">Fixed shift </option>
+                                                  <option value="2">Rotational shift</option>
+                                                  <option value="2">Open shifts</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-md-6">
+                                              <label for="mode" class="form-label">Shift</label>
+                                              <select name="mode" id=""class="form-control form-select">
+                                                <option value="1">Shift 1</option>
+                                                <option value="2">Shift 2</option>
+                                                <option value="2">Shift 3</option>
+                                              </select>
+                                          </div>
+                                          <div class="mb-3 col-md-6">
+                                            <label for="mode" class="form-label">Select a payroll policy profile</label>
+                                            <select name="mode" id=""class="form-control form-select">
+                                              <option value="1">profile 1</option>
+                                              <option value="2">profile 2</option>
+                                              <option value="2">profile 3</option>
+                                            </select>
+                                          </div>
+                                          <div class="row mb-3 mt-3">
+                                            <h5 class="text-primary">Salary Structure</h5>
+                                            <hr>
+                                          </div>
+                      
+                                        <div class="mb-3 col-md-12">
+                                          <label for="mode" class="form-label">Salary Type</label>
+                                          <select name="mode" id=""class="form-control form-select">
+                                            <option value="1">Daily</option>
+                                            <option value="2">Weekly</option>
+                                            <option value="2">Hourly</option>
+                                            <option value="2">Monthly</option>
+                                          </select>
+                                        </div>
+                                        <div class="row mb-3 mt-3">
+                                          <h5 class="text-primary">Earnings</h5>
+                                          <hr>
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                          <label for="basic" class="form-label">Basic</label>
+                                          <input class="form-control" type="text" id="basic" name="basic" value="" autofocus />
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                          <label for="da" class="form-label">DA</label>
+                                          <input class="form-control" type="text" id="da" name="da" value="" autofocus />
+                                        </div>
+                                        <div class="mb-3 col-md-4">
+                                          <label for="hra" class="form-label">HRA</label>
+                                          <input class="form-control" type="text" id="hra" name="hra" value="" autofocus />
+                                        </div>
+                                        <div class="mb-3 col-md-4">
+                                          <label for="medi-allo" class="form-label">Medical Allowance</label>
+                                          <input class="form-control" type="text" id="medi-allo" name="medi-allo" value="" autofocus />
+                                        </div>
+                                        <div class="mb-3 col-md-4">
+                                          <label for="spe-allo" class="form-label">Special Allowance</label>
+                                          <input class="form-control" type="text" id="spe-allo" name="spe-allo" value="" autofocus />
+                                        </div>
+                                        <div class="row mb-3 mt-3">
+                                          <h5 class="text-primary">Deductions</h5>
+                                          <hr>
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                            <label for="pro-fund" class="form-label">Provident Fund</label>
+                                            <input class="form-control" type="text" id="pro-fund" name="pro-fund" value="" autofocus />
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                          <label for="esi" class="form-label">ESI</label>
+                                          <input class="form-control" type="text" id="esi" name="esi" value="" autofocus />
+                                        </div>
+                                        <div class="row mb-3 mt-3">
+                                          <h5 class="text-primary">Contributions</h5>
+                                          <hr>
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                          <label for="pf" class="form-label">PF</label>
+                                          <input class="form-control" type="text" id="pf" name="pf" value="" autofocus />
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                          <label for="esi" class="form-label">ESI</label>
+                                          <input class="form-control" type="text" id="esi" name="esi" value="" autofocus />
+                                        </div>
+                                        <div class="row mb-3 mt-3">
+                                          <h5 class="text-primary">Overtime/Partial Day</h5>
+                                          <hr>
+                                        </div>
+                                        <div class="mb-3 col-md-4">
+                                          <label for="ot" class="form-label">Over time (working Day)</label>
+                                          <select name="mode" id=""class="form-control form-select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="2">3</option>
+                                            <option value="2">4</option>
+                                          </select>
+                                        </div>
+                                        <div class="mb-3 col-md-4">
+                                          <label for="hm" class="form-label">Hours/Minutes</label>
+                                          <input class="form-control" type="time" id="hm" name="hm" value="" autofocus />
+                                        </div>
+                                        <div class="mb-3 col-md-4">
+                                          <label for="amount" class="form-label">Amount</label>
+                                          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
+                                        </div>
+                                        <div class="mb-3 col-md-4">
+                                          <label for="ot" class="form-label">Over time (Off Day)</label>
+                                          <select name="mode" id=""class="form-control form-select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="2">3</option>
+                                            <option value="2">4</option>
+                                          </select>
+                                        </div>
+                                        <div class="mb-3 col-md-4">
+                                          <label for="hm" class="form-label">Hours/Minutes</label>
+                                          <input class="form-control" type="time" id="hm" name="hm" value="" autofocus />
+                                        </div>
+                                        <div class="mb-3 col-md-4">
+                                          <label for="amount" class="form-label">Amount</label>
+                                          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
+                                        </div>
+                                        <div class="mb-3 col-md-4">
+                                          <label for="ot" class="form-label">Over time (HoliDay)</label>
+                                          <select name="mode" id=""class="form-control form-select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="2">3</option>
+                                            <option value="2">4</option>
+                                          </select>
+                                        </div>
+                                        <div class="mb-3 col-md-4">
+                                          <label for="hm" class="form-label">Hours/Minutes</label>
+                                          <input class="form-control" type="time" id="hm" name="hm" value="" autofocus />
+                                        </div>
+                                        <div class="mb-3 col-md-4">
+                                          <label for="amount" class="form-label">Amount</label>
+                                          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                          <label for="ot" class="form-label">Partial Day work</label>
+                                          <select name="mode" id=""class="form-control form-select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="2">3</option>
+                                            <option value="2">4</option>
+                                          </select>
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                          <label for="ot" class="form-label">Partial Day deduction</label>
+                                          <select name="mode" id=""class="form-control form-select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="2">3</option>
+                                            <option value="2">4</option>
+                                          </select>
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                          <label for="ot" class="form-label">Additional Allowance Profile</label>
+                                          <select name="mode" id=""class="form-control form-select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="2">3</option>
+                                            <option value="2">4</option>
+                                          </select>
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                          <label for="ot" class="form-label">Additional Deduction Profile</label>
+                                          <select name="mode" id=""class="form-control form-select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="2">3</option>
+                                            <option value="2">4</option>
+                                          </select>
+                                        </div>
+                                          
+                                              </div>
+                                            </form>
+                                          </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                          </div> 
+                    </div>
+                  
+        
+                  </div>
+                  <div class="tab-pane fade" id="navs-pills-bank-leave" role="tabpanel">      
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-xl card-bg">
+                          <div class="card mb-4 ">
+                            <div class="card-body">
+                                <form>
+                                    <div class="row mb-3">
+                                        <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Leave Policy</span></label>
+                                        <div class="col-sm-1 col-form-label">:</div>
+                                        <div class="col-sm-7 mt-2">
+                                          <span></span>
+                                        </div>
+                                    </div>
+                                   
+                                  </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="mb-3">
+                          <button class="btn btn-primary d-grid float-end" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-leave" style="margin-top: 11px;"> Edit Leave Details </button>
+                        </div>
+                        <div class="modal fade" id="edit-leave" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel3">Update Leave Details</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="row mb-3">
+                                              <div class="col-md-12">
+                                                <label for="amount" class="form-label">Select Leave Policy</label>
+                                                <select name="mode" id=""class="form-control form-select">
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                                  <option value="2">3</option>
+                                                  <option value="2">4</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                          </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+              
+    
+                  </div>
+                  <div class="tab-pane fade" id="navs-pills-bank-settings" role="tabpanel">      
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl card-bg">
+                              <div class="card mb-4 ">
+                                <div class="card-body">
+                                    <form>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Attendace Settings</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Attendance Holidays</span></label>
+                                            <div class="col-sm-1 col-form-label">:</div>
+                                            <div class="col-sm-7 mt-2">
+                                              <span></span>
+                                            </div>
+                                        </div>
+                                       
+                                      </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="mb-3">
+                              <button class="btn btn-primary d-grid float-end" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-settings" style="margin-top: 11px;"> Edit Settings </button>
+                            </div>
+                            <div class="modal fade" id="edit-settings" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel3">Update Settings</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="row mb-3">
+                                                  <div class="col-md-6">
+                                                    <label for="amount" class="form-label">Attendace Settings</label>
+                                                    <select name="mode" id=""class="form-control form-select">
+                                                      <option value="1">1</option>
+                                                      <option value="2">2</option>
+                                                      <option value="2">3</option>
+                                                      <option value="2">4</option>
+                                                    </select>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <label for="amount" class="form-label">Attendance Holidays</label>
+                                                    <select name="mode" id=""class="form-control form-select">
+                                                      <option value="1">1</option>
+                                                      <option value="2">2</option>
+                                                      <option value="2">3</option>
+                                                      <option value="2">4</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                              </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                          </div> 
+                    </div>
+                  
+        
+                      </div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        </div>
+
+              
+            
+              
+              <!-- Footer -->
+              <footer class="content-footer footer bg-footer-theme">
+                <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                  <div class="mb-2 mb-md-0">
+                    © <script>
+                    document.write(new Date().getFullYear())
+                    </script>
+                    All rights reserved by <a href="#" target="_blank" class="footer-link fw-bolder">Foxiom Leads </a>
+                  </div>
+                  <div>
+                    
+                    <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                    <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
+                    
+                    <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/" target="_blank" class="footer-link me-4">Documentation</a>
+                    
+                    <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank" class="footer-link me-4">Support</a>
+                    
+                    
+                  </div>
+                </div>
+              </footer>
+              <!-- / Footer -->
+              
+                        
+                        <div class="content-backdrop fade"></div>
+                      </div>
+                      <!-- Content wrapper -->
+                    </div>
+            <!-- / Layout page -->
+         </div>
+         <!-- Overlay -->
+         <div class="layout-overlay layout-menu-toggle"></div>
+      </div>
+      <!-- / Layout wrapper -->
+          <!-- / Layout wrapper -->
+  <script>
+  function submitForm(event) {
+    event.preventDefault(); // Prevent the default form submission
+    
+    // Perform any form validation or processing if needed
+    
+    // Redirect to the desired URL
+    window.location.href = "add-staff.html";
+  }
+</script>
+      <!-- Core JS -->
+      <!-- build:js assets/vendor/js/core.js -->
+      <script src="assets/vendor/libs/jquery/jquery.js"></script>
+      <script src="assets/vendor/libs/popper/popper.js"></script>
+      <script src="assets/vendor/js/bootstrap.js"></script>
+      <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+      <script src="assets/vendor/js/menu.js"></script>
+      <!-- endbuild -->
+      <!-- Vendors JS -->
+      <!-- Main JS -->
+      <script src="assets/js/main.js"></script>
+      <!-- Page JS -->
+      <!-- Place this tag in your head or just before your close body tag. -->
+      <script async defer src="../../../buttons.github.io/buttons.js"></script>
+   </body>
+   <!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template-free/html/tables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 May 2023 08:59:46 GMT -->
+</html>

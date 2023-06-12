@@ -1,0 +1,410 @@
+/*
+* demo.css
+* File include item demo only specific css only
+******************************************************************************/
+
+.menu .app-brand.demo {
+  height: 64px;
+  /* margin-top:; */
+ background-color: #670b34;
+}
+
+.app-brand-logo.demo svg {
+  width: 22px;
+  height: 38px;
+}
+
+.app-brand-text.demo {
+  font-size: 1.25rem;
+  letter-spacing: -0.5px;
+  }
+
+/* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
+/* Detached navbar */
+.layout-navbar-fixed .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu) .layout-page {
+  padding-top: 76px !important;
+}
+/* Default navbar */
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+  padding-top: 64px !important;
+}
+
+/* Navbar page z-index issue solution */
+.content-wrapper .navbar {
+  z-index: auto;
+}
+
+/*
+* Content
+******************************************************************************/
+
+.demo-blocks > * {
+  display: block !important;
+}
+
+.demo-inline-spacing > * {
+  margin: 1rem 0.375rem 0 0 !important;
+}
+
+/* ? .demo-vertical-spacing class is used to have vertical margins between elements. To remove margin-top from the first-child, use .demo-only-element class with .demo-vertical-spacing class. For example, we have used this class in forms-input-groups.html file. */
+.demo-vertical-spacing > * {
+  margin-top: 1rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-lg > * {
+  margin-top: 1.875rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-lg.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-xl > * {
+  margin-top: 5rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-xl.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.rtl-only {
+  display: none !important;
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+[dir='rtl'] .rtl-only {
+  display: block !important;
+}
+
+/*
+* Layout demo
+******************************************************************************/
+
+.layout-demo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.layout-demo-placeholder img {
+  width: 900px;
+}
+.layout-demo-info {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+ /* Hide the number input arrows */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+
+.date-range-picker {
+  display: flex;
+  gap: 10px;
+}
+
+.date-range-picker input {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Hide the default radio button */
+input[type="radio"] {
+  padding: 30px;
+  margin-left: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+
+.radio_form input[type="radio"] {
+  padding: 0px;
+}
+
+.radio_form1 input[type="radio"] {
+  padding: 0px;
+ 
+}
+
+
+
+
+
+.ml-2{
+  margin-left: 20px;
+}
+.radio_form1{
+  padding: 10px 50px;
+  /* margin-left: 30px; */
+  border: 1px solid rgb(160, 160, 160);
+  border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.date-cycle-picker {
+  position: relative;
+  display: inline-block;
+}
+
+.date-picker-overlay {
+  position: absolute;
+  z-index: 1;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+.date-picker {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+}
+
+.date-picker .date-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+}
+
+.date-picker .date-grid .date-cell {
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.date-picker .date-grid .date-cell:hover {
+  background-color: #f2f2f2;
+}
+
+
+
+/* leave policy multilevel approval */
+
+#level-2,
+#level-3 {
+	margin-top: 10px;
+	display: none;
+}
+.multi_level1{
+  padding: 25px;
+}
+.multi_level1 span{
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+
+
+#Carry,
+#Encash {
+	display: none;
+}
+#Carry span{
+  font-size: 12px;
+}
+#Encash span{
+  font-size: 12px;
+}
+
+
+
+.table-responsive{
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+/* holiday page */
+.holiday_desc{
+  width: 400px;
+}
+
+/* Settings page */
+.settings_row tr td{
+  padding: 25px 10px;
+}
+.Stting_right{
+  text-align: right;
+}
+.settings_row tr td a{
+  color: black;
+}
+
+
+
+/* staff list */
+/* .box-shaped{
+  background-color: #f3f3f3;
+  border-radius: 50px;
+  color: #000000;
+  padding: 5px;
+  margin-right: 5px;
+} */
+/* .card-title{
+  padding: 1em 1.5em;
+} */
+
+
+
+/* staff profile */
+.pro_bottom{
+  border-bottom: 1px solid rgb(234, 234, 234);
+}
+
+
+
+
+
+/* add-staff details */
+
+
+/* attendance */
+.attendance-staff table thead tr th{
+  text-transform: capitalize;
+  font-size: 13px;
+  color: #5C011D !important;
+}
+.attendance-staff table th {
+  border-right: 1px solid #ddd;
+}
+.attendance-staff table td {
+  border-right: 1px solid #ddd;
+}
+
+/* .attendance-staff-border td a{
+  background-color: #f8efef;
+  padding: 8px 20px;
+  border-radius: 8px;
+} */
+.attendance-bg {
+  background-color: #f8efef;
+  padding: 6px 20px;
+  border-radius: 3px;
+  width: 110px;
+  text-align: center;
+  border: none;
+  color: #000000;
+  font-size: 13px;
+}
+
+.attendance-staff-border {
+  border-collapse: collapse;
+  border: none;
+}
+
+.attendance-staff-border td {
+  border: 1px solid rgb(207, 205, 205);
+}
+
+.attendance-staff-border tr:first-child td {
+  border-top: none;
+}
+
+.attendance-staff-border tr:last-child td {
+  border-bottom: none;
+}
+
+.attendance-staff-border tr td:first-child {
+  border-left: none;
+}
+
+.attendance-staff-border tr td:last-child {
+  border-right: none;
+}
+
+.attendance-list h6{
+  font-size: 20px;
+}
+.attendance-list span{
+  font-size: 14px;
+  border-right: 1px solid #cacaca;
+  padding-right: 10px;
+}
+.attendance-list a{
+  font-size: 14px;
+  padding-left: 5px;
+}
+.staff-attendance{
+  padding: 8px;
+}
+.present:focus{
+  background-color: #10AA70;
+  color: #fff;
+}
+.half-day:focus{
+  background-color: #e08e12;
+  color: #fff;
+}
+.absent:focus{
+  background-color: #ff1403;
+  color: #fff;
+}
+.paid-leave:focus{
+  background-color: #10AA70;
+  color: #fff;
+}
+.bg-tble{
+  background-color: #f4f1f2;
+}
+.card-bg .card{
+  background-color: #f6f6f6;
+  box-shadow: none;
+}
+.payroll-title{
+  color: #5C011D;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
