@@ -371,18 +371,19 @@
                                        </div>
                                        <div class="col-lg-4">
                                           <div class="mb-3">
-                                             <label class="form-label" for="phoneNumber">Phone Number</label>
-                                             <div class="input-group input-group-merge">
-                                                <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" />
-                                             </div>
-                                          </div>
-                                          <div class="mb-3">
                                              <label class="form-label" for="phoneNumber">Mobile Number</label>
                                              <div class="input-group input-group-merge">
                                                 <span class="input-group-text">IN (+91)</span>
                                                 <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" value="98765 43210" readonly />
                                              </div>
                                           </div>
+                                          <div class="mb-3">
+                                             <label class="form-label" for="phoneNum">Alternate Number</label>
+                                             <div class="input-group input-group-merge">
+                                                <input type="text" id="phoneNum" name="phoneNum" class="form-control" />
+                                             </div>
+                                          </div>
+                                         
                                           <div class="mb-3">
                                              <label for="website" class="form-label">Website URL</label>
                                              <input class="form-control" type="text" id="website" name="website" />
@@ -684,7 +685,7 @@
            window.location.href = "profile-complete-2.html";
          }
 
-         var input = document.querySelector("#phoneNumber");
+         var input = document.querySelector("#phoneNum");
             window.intlTelInput(input, {
                 separateDialCode: true,
                 // excludeCountries: ["in", "il"],
