@@ -300,868 +300,1098 @@
             </div>     
           </div> -->
          
-          <div class="card mb-4">
-          <div class="row">
-              <div class="nav-align-top">
-                <ul class="nav nav-pills card-header" role="tablist">
-                  <li class="nav-item">
-                    <button type="button" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-add-personal-info" aria-controls="navs-pills-add-personal-info" aria-selected="true">Personal Info</button>
-                  </li>
-                  <li class="nav-item">
-                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-add-contact-info" aria-controls="navs-pills-add-contact-info" aria-selected="false">Contact Info</button>
-                  </li>
-                  <li class="nav-item">
-                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-add-office-details" aria-controls="navs-pills-office-details" aria-selected="false">Official Details</button>
-                  </li>
-                  <li class="nav-item">
-                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-add-bank-details" aria-controls="navs-pills-bank-details" aria-selected="false">Bank Details</button>
-                  </li>
-                  <li class="nav-item">
-                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-add-bank-payroll" aria-controls="navs-pills-bank-payroll" aria-selected="false">Payroll</button>
-                  </li>
-                  <li class="nav-item">
-                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-add-bank-leave" aria-controls="navs-pills-bank-leave" aria-selected="false">Leave</button>
-                  </li>
-                  <li class="nav-item">
-                    <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-add-bank-settings" aria-controls="navs-pills-bank-settings" aria-selected="false">Settings</button>
-                  </li>
-                </ul>
-                <div class="tab-content">
-                  <div class="tab-pane fade show active" id="navs-pills-add-personal-info" role="tabpanel">
-                    <div class="card-body">
-                      <form id="formAccountSettings" method="POST" onsubmit="return false">
-                        <div class="row">
-                            <div class="mb-3 col-md-6">
-                                <label for="firstName" class="form-label">Employee Id</label>
-                                <input class="form-control" type="text" id="firstName" name="firstName" value="01" disabled />
-                            </div>
-                            <div class="mb-3 col-md-6">
-                                <label for="lastName" class="form-label">Employee Code</label>
-                                <input class="form-control" type="text" name="lastName" id="lastName" value="235416" />
-                            </div>
-                            <div class="mb-3 col-md-6">
-                            <label for="firstName" class="form-label">First Name</label>
-                            <input class="form-control" type="text" id="firstName" name="firstName" value="John" autofocus />
-                            </div>
-                            <div class="mb-3 col-md-6">
-                            <label for="lastName" class="form-label">Last Name</label>
-                            <input class="form-control" type="text" name="lastName" id="lastName" value="Doe" />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="photo" class="form-label">Upload photo</label>
-                            <input class="form-control" type="file" name="photo" id="photo" value="" />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="dob" class="form-label">DOB</label>
-                            <input class="form-control" type="date" name="dob" id="dob" value="" />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="age" class="form-label">Age</label>
-                            <input class="form-control" type="text" name="age" id="age" value="age" readonly />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="blood-group" class="form-label">Blood Group</label>
-                            <select name="blood-group" id="" class="form-select">
-                              <option value="a">A+ve</option>
-                              <option value="a-">A-ve</option>
-                              <option value="b">B+ve</option>
-                              <option value="b-">B-ve</option>
-                              <option value="o">O+ve</option>
-                              <option value="o-">O-ve</option>
-                              <option value="ab">AB+ve</option>
-                              <option value="ab-">AB-ve</option>
+         
+
+        <div class="card mb-4" class="reg-form">
+        <form action="data.php" method="post" class="staff-form">
+          <!-- Progress Bar -->
+          <div class="progress-bar">
+              <div class="progress" id="progress"></div>
+              <div class="progress-step active" data-title="Personal"></div>
+              <div class="progress-step" data-title="Contact"></div>
+              <div class="progress-step" data-title="Official"></div>
+              <div class="progress-step" data-title="Bank Details"></div>
+              <div class="progress-step" data-title="Payroll"></div>
+              <div class="progress-step" data-title="Leave"></div>
+              <div class="progress-step" data-title="Settings"></div>
+          </div>
+  
+          <!-- Steps -->
+          <div class="form-step active ">
+           <div class="card-header">
+            <h4>Personal Info</h4>
+           </div>
+              <div class="card-body">
+                  <div class="row">
+                      <div class="mb-3 col-md-6">
+                          <label for="firstName" class="form-label">Employee Id</label>
+                          <input class="form-control" type="text" id="firstName" name="firstName" value="01" disabled />
+                      </div>
+                      <div class="mb-3 col-md-6">
+                          <label for="lastName" class="form-label">Employee Code</label>
+                          <input class="form-control" type="text" name="lastName" id="lastName" placeholder="Fox023456" />
+                      </div>
+                      <div class="mb-3 col-md-6">
+                      <label for="firstName" class="form-label">First Name</label>
+                      <input class="form-control" type="text" id="firstName" name="firstName" placeholder="John" />
+                      </div>
+                      <div class="mb-3 col-md-6">
+                      <label for="lastName" class="form-label">Last Name</label>
+                      <input class="form-control" type="text" name="lastName" id="lastName" placeholder="Doe" />
+                      </div>
+                      <div class="mb-3 col-md-4">
+                      <label for="photo" class="form-label">Upload Profile Photo</label>
+                      <input class="form-control" type="file" name="photo" id="photo" value="" />
+                      </div>
+                      <div class="mb-3 col-md-4">
+                      <label for="dob" class="form-label">Date of Birth</label>
+                      <input class="form-control" type="date" name="dob" id="dob" value="" />
+                      </div>
+                      <div class="mb-3 col-md-4">
+                      <label for="age" class="form-label">Age</label>
+                      <input class="form-control" type="number" name="age" id="age" placeholder="23" readonly />
+                      </div>
+                      <div class="mb-3 col-md-4">
+                      <label for="blood-group" class="form-label">Blood Group</label>
+                      <select name="blood-group" id="" class="form-select">
+                        <option value="a">A+ve</option>
+                        <option value="a-">A-ve</option>
+                        <option value="b">B+ve</option>
+                        <option value="b-">B-ve</option>
+                        <option value="o">O+ve</option>
+                        <option value="o-">O-ve</option>
+                        <option value="ab">AB+ve</option>
+                        <option value="ab-">AB-ve</option>
+                      </select>
+                      </div>
+                      <div class="mb-3 col-md-4">
+                      <label for="father-name" class="form-label">Father Name</label>
+                      <input class="form-control" type="text" name="father-name" id="father-name" placeholder="Father Name"/>
+                      </div>
+                      <div class="mb-3 col-md-4">
+                      <label for="mother-name" class="form-label">Mother Name</label>
+                      <input class="form-control" type="text" name="mother-name" id="mother-name" placeholder="Mother Name" />
+                      </div>
+                      <div class="mb-3 col-md-4">
+                      <div class="col-md">
+                         
+                      </div>
+                      <label for="mother-name" class="form-label">Marital Status</label><br>
+                      <!-- <ul class="radio-list">
+                        <li>
+                          <label>
+                            <input name="maritalStatus" type="radio" value="married" onclick="marriageField(this)">Yes
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input name="maritalStatus" type="radio" value="unmarried" onclick="marriageField(this)">No
+                          </label>
+                        </li>
+                      </ul>
+                    
+                      <div id="spouseName" style="display: none;" class="g one-whole field_guest_intro hidden">
+                        <input type="text" id="spouseName" name="spouseName" placeholder="Spouse name">
+                      </div> -->
+
+                      <div class="form-check form-check-inline radio_form mt-2">
+                          <input class="form-check-input" name="maritalStatus" type="radio" value="married" onclick="marriageField(this)" />
+                          <label class="form-check-label" for="inlineRadio1">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline radio_form">
+                          <input class="form-check-input" name="maritalStatus" type="radio" value="unmarried" onclick="marriageField(this)" checked/>
+                          <label class="form-check-label" for="inlineRadio2">No</label>
+                        </div>
+                      <!-- <input class="form-control" type="text" name="mother-name" id="mother-name" value="Mother Name" /> -->
+                      </div>
+                      <div class="mb-3 col-md-4" id="spouseName" style="display: none;">
+                      <label for="spouse-name" class="form-label">Spouse Name</label>
+                      <input class="form-control" type="text" id="spouse-name" name="spouse-name" placeholder="Spouse Name" />
+                      </div>
+                     
+                      <div class="mb-3 col-md-4">
+                      <label for="religion" class="form-label">Religion</label>
+                      <input type="text" class="form-control" id="religion" name="religion" placeholder="Religion" />
+                      </div>
+                      <div class="mb-3 col-md-4">
+                      <label for="caste" class="form-label">Caste</label>
+                      <input type="text" class="form-control" id="caste" name="caste" placeholder="Caste" />
+                      </div>
+                      <div class="mb-3 col-md-4">
+                      <label for="caste" class="form-label">Disabled</label>
+                      <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                          <option value="" disabled selected>Select option</option>
+                          <option value="1">No</option>
+                          <option value="2">Yes</option>
+                        </select>
+                      </div>
+                  </div>
+              </div>
+              <div class="">
+                  <a class="btn btn-next btn-primary">Next</a>
+              </div>
+          </div>
+          
+          <div class="form-step" >
+            <div class="card-header">
+              <h4>Contact Info</h4>
+            </div>
+              <div class="card-body">
+                  <div class="row">
+                      <div class="mb-3 col-md-6">
+                          <label for="firstName" class="form-label">Permenant Address</label>
+                          <textarea name="p-address" id="p-address" class="form-control" placeholder="Enter your permenant address"></textarea>
+                      </div>
+                      <div class="mb-3 col-md-6">
+                        <label for="firstName" class="form-label">Communication Address</label>
+                        <textarea name="p-address" id="p-address" class="form-control" placeholder="Enter your communication address"></textarea>
+                    </div>
+                      <div class="mb-3 col-md-4">
+                      <label for="m-num" class="form-label">Mobile Number</label>
+                      <input class="form-control"   id="phone" name="phone" type="number" placeholder="+91 9876543210"  />
+                      </div>
+                      <div class="mb-3 col-md-4">
+                      <label for="w-num" class="form-label">Whatsapp Number</label>
+                      <input class="form-control" id="phone2" name="phone2" type="number" placeholder="+91 9768905436" />
+                      </div>
+                      <div class="mb-3 col-md-4">
+                        <label for="e-mail" class="form-label">Email Address</label>
+                        <input class="form-control" type="email" name="e-mail" id="e-mail" placeholder="demo@gmail.com" />
+                        </div>
+                      <div class="mb-3 col-md-4">
+                      <label for="city" class="form-label">City</label>
+                      <input class="form-control" type="text" name="city" id="city" placeholder="city" />
+                      </div>
+                      <div class="mb-3 col-md-4">
+                      <label for="district" class="form-label">District</label>
+                      <input class="form-control" type="text" name="district" id="district" placeholder="district" />
+                      </div>
+                      <div class="mb-3 col-md-4">
+                      <label for="state" class="form-label">State</label>
+                      <input class="form-control" type="text" name="state" id="state" placeholder="state" />
+                      </div>
+                      <div class="mb-3 col-md-4">
+                      <label for="post" class="form-label">Post</label>
+                      <input class="form-control" type="text" name="post" id="post" placeholder="post" />
+                      </div>
+                      <div class="mb-3 col-md-4">
+                      <label for="pin" class="form-label">PIN Code</label>
+                      <input class="form-control" type="number" name="pin" id="pin" placeholder="789876" />
+                      </div>
+                      <!-- <div class="mb-3 col-md-4">
+                      <label for="country" class="form-label">Country</label>
+                      <input class="form-control" type="text" name="country" id="country" value="country" />
+                      </div> -->
+                      <div class="mb-3 col-md-4">
+                        <label for="country" class="form-label">Country</label>
+                        <!-- <input class="form-control" type="text" id="nationality" name="nationality" value="Nationality" placeholder="john.doe@example.com" /> -->
+                        <select id='country_select' name='country' class="form-select">
+                          <option value="AF">Afghanistan</option>
+                          <option value="AX">Åland Islands</option>
+                          <option value="AL">Albania</option>
+                          <option value="DZ">Algeria</option>
+                          <option value="AS">American Samoa</option>
+                          <option value="AD">Andorra</option>
+                          <option value="AO">Angola</option>
+                          <option value="AI">Anguilla</option>
+                          <option value="AQ">Antarctica</option>
+                          <option value="AG">Antigua and Barbuda</option>
+                          <option value="AR">Argentina</option>
+                          <option value="AM">Armenia</option>
+                          <option value="AW">Aruba</option>
+                          <option value="AU">Australia</option>
+                          <option value="AT">Austria</option>
+                          <option value="AZ">Azerbaijan</option>
+                          <option value="BS">Bahamas</option>
+                          <option value="BH">Bahrain</option>
+                          <option value="BD">Bangladesh</option>
+                          <option value="BB">Barbados</option>
+                          <option value="BY">Belarus</option>
+                          <option value="BE">Belgium</option>
+                          <option value="BZ">Belize</option>
+                          <option value="BJ">Benin</option>
+                          <option value="BM">Bermuda</option>
+                          <option value="BT">Bhutan</option>
+                          <option value="BO">Bolivia, Plurinational State of</option>
+                          <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                          <option value="BA">Bosnia and Herzegovina</option>
+                          <option value="BW">Botswana</option>
+                          <option value="BV">Bouvet Island</option>
+                          <option value="BR">Brazil</option>
+                          <option value="IO">British Indian Ocean Territory</option>
+                          <option value="BN">Brunei Darussalam</option>
+                          <option value="BG">Bulgaria</option>
+                          <option value="BF">Burkina Faso</option>
+                          <option value="BI">Burundi</option>
+                          <option value="KH">Cambodia</option>
+                          <option value="CM">Cameroon</option>
+                          <option value="CA">Canada</option>
+                          <option value="CV">Cape Verde</option>
+                          <option value="KY">Cayman Islands</option>
+                          <option value="CF">Central African Republic</option>
+                          <option value="TD">Chad</option>
+                          <option value="CL">Chile</option>
+                          <option value="CN">China</option>
+                          <option value="CX">Christmas Island</option>
+                          <option value="CC">Cocos (Keeling) Islands</option>
+                          <option value="CO">Colombia</option>
+                          <option value="KM">Comoros</option>
+                          <option value="CG">Congo</option>
+                          <option value="CD">Congo, the Democratic Republic of the</option>
+                          <option value="CK">Cook Islands</option>
+                          <option value="CR">Costa Rica</option>
+                          <option value="CI">Côte d'Ivoire</option>
+                          <option value="HR">Croatia</option>
+                          <option value="CU">Cuba</option>
+                          <option value="CW">Curaçao</option>
+                          <option value="CY">Cyprus</option>
+                          <option value="CZ">Czech Republic</option>
+                          <option value="DK">Denmark</option>
+                          <option value="DJ">Djibouti</option>
+                          <option value="DM">Dominica</option>
+                          <option value="DO">Dominican Republic</option>
+                          <option value="EC">Ecuador</option>
+                          <option value="EG">Egypt</option>
+                          <option value="SV">El Salvador</option>
+                          <option value="GQ">Equatorial Guinea</option>
+                          <option value="ER">Eritrea</option>
+                          <option value="EE">Estonia</option>
+                          <option value="ET">Ethiopia</option>
+                          <option value="FK">Falkland Islands (Malvinas)</option>
+                          <option value="FO">Faroe Islands</option>
+                          <option value="FJ">Fiji</option>
+                          <option value="FI">Finland</option>
+                          <option value="FR">France</option>
+                          <option value="GF">French Guiana</option>
+                          <option value="PF">French Polynesia</option>
+                          <option value="TF">French Southern Territories</option>
+                          <option value="GA">Gabon</option>
+                          <option value="GM">Gambia</option>
+                          <option value="GE">Georgia</option>
+                          <option value="DE">Germany</option>
+                          <option value="GH">Ghana</option>
+                          <option value="GI">Gibraltar</option>
+                          <option value="GR">Greece</option>
+                          <option value="GL">Greenland</option>
+                          <option value="GD">Grenada</option>
+                          <option value="GP">Guadeloupe</option>
+                          <option value="GU">Guam</option>
+                          <option value="GT">Guatemala</option>
+                          <option value="GG">Guernsey</option>
+                          <option value="GN">Guinea</option>
+                          <option value="GW">Guinea-Bissau</option>
+                          <option value="GY">Guyana</option>
+                          <option value="HT">Haiti</option>
+                          <option value="HM">Heard Island and McDonald Islands</option>
+                          <option value="VA">Holy See (Vatican City State)</option>
+                          <option value="HN">Honduras</option>
+                          <option value="HK">Hong Kong</option>
+                          <option value="HU">Hungary</option>
+                          <option value="IS">Iceland</option>
+                          <option value="IN">India</option>
+                          <option value="ID">Indonesia</option>
+                          <option value="IR">Iran, Islamic Republic of</option>
+                          <option value="IQ">Iraq</option>
+                          <option value="IE">Ireland</option>
+                          <option value="IM">Isle of Man</option>
+                          <option value="IL">Israel</option>
+                          <option value="IT">Italy</option>
+                          <option value="JM">Jamaica</option>
+                          <option value="JP">Japan</option>
+                          <option value="JE">Jersey</option>
+                          <option value="JO">Jordan</option>
+                          <option value="KZ">Kazakhstan</option>
+                          <option value="KE">Kenya</option>
+                          <option value="KI">Kiribati</option>
+                          <option value="KP">Korea, Democratic People's Republic of</option>
+                          <option value="KR">Korea, Republic of</option>
+                          <option value="KW">Kuwait</option>
+                          <option value="KG">Kyrgyzstan</option>
+                          <option value="LA">Lao People's Democratic Republic</option>
+                          <option value="LV">Latvia</option>
+                          <option value="LB">Lebanon</option>
+                          <option value="LS">Lesotho</option>
+                          <option value="LR">Liberia</option>
+                          <option value="LY">Libya</option>
+                          <option value="LI">Liechtenstein</option>
+                          <option value="LT">Lithuania</option>
+                          <option value="LU">Luxembourg</option>
+                          <option value="MO">Macao</option>
+                          <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                          <option value="MG">Madagascar</option>
+                          <option value="MW">Malawi</option>
+                          <option value="MY">Malaysia</option>
+                          <option value="MV">Maldives</option>
+                          <option value="ML">Mali</option>
+                          <option value="MT">Malta</option>
+                          <option value="MH">Marshall Islands</option>
+                          <option value="MQ">Martinique</option>
+                          <option value="MR">Mauritania</option>
+                          <option value="MU">Mauritius</option>
+                          <option value="YT">Mayotte</option>
+                          <option value="MX">Mexico</option>
+                          <option value="FM">Micronesia, Federated States of</option>
+                          <option value="MD">Moldova, Republic of</option>
+                          <option value="MC">Monaco</option>
+                          <option value="MN">Mongolia</option>
+                          <option value="ME">Montenegro</option>
+                          <option value="MS">Montserrat</option>
+                          <option value="MA">Morocco</option>
+                          <option value="MZ">Mozambique</option>
+                          <option value="MM">Myanmar</option>
+                          <option value="NA">Namibia</option>
+                          <option value="NR">Nauru</option>
+                          <option value="NP">Nepal</option>
+                          <option value="NL">Netherlands</option>
+                          <option value="NC">New Caledonia</option>
+                          <option value="NZ">New Zealand</option>
+                          <option value="NI">Nicaragua</option>
+                          <option value="NE">Niger</option>
+                          <option value="NG">Nigeria</option>
+                          <option value="NU">Niue</option>
+                          <option value="NF">Norfolk Island</option>
+                          <option value="MP">Northern Mariana Islands</option>
+                          <option value="NO">Norway</option>
+                          <option value="OM">Oman</option>
+                          <option value="PK">Pakistan</option>
+                          <option value="PW">Palau</option>
+                          <option value="PS">Palestinian Territory, Occupied</option>
+                          <option value="PA">Panama</option>
+                          <option value="PG">Papua New Guinea</option>
+                          <option value="PY">Paraguay</option>
+                          <option value="PE">Peru</option>
+                          <option value="PH">Philippines</option>
+                          <option value="PN">Pitcairn</option>
+                          <option value="PL">Poland</option>
+                          <option value="PT">Portugal</option>
+                          <option value="PR">Puerto Rico</option>
+                          <option value="QA">Qatar</option>
+                          <option value="RE">Réunion</option>
+                          <option value="RO">Romania</option>
+                          <option value="RU">Russian Federation</option>
+                          <option value="RW">Rwanda</option>
+                          <option value="BL">Saint Barthélemy</option>
+                          <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                          <option value="KN">Saint Kitts and Nevis</option>
+                          <option value="LC">Saint Lucia</option>
+                          <option value="MF">Saint Martin (French part)</option>
+                          <option value="PM">Saint Pierre and Miquelon</option>
+                          <option value="VC">Saint Vincent and the Grenadines</option>
+                          <option value="WS">Samoa</option>
+                          <option value="SM">San Marino</option>
+                          <option value="ST">Sao Tome and Principe</option>
+                          <option value="SA">Saudi Arabia</option>
+                          <option value="SN">Senegal</option>
+                          <option value="RS">Serbia</option>
+                          <option value="SC">Seychelles</option>
+                          <option value="SL">Sierra Leone</option>
+                          <option value="SG">Singapore</option>
+                          <option value="SX">Sint Maarten (Dutch part)</option>
+                          <option value="SK">Slovakia</option>
+                          <option value="SI">Slovenia</option>
+                          <option value="SB">Solomon Islands</option>
+                          <option value="SO">Somalia</option>
+                          <option value="ZA">South Africa</option>
+                          <option value="GS">South Georgia and the South Sandwich Islands</option>
+                          <option value="SS">South Sudan</option>
+                          <option value="ES">Spain</option>
+                          <option value="LK">Sri Lanka</option>
+                          <option value="SD">Sudan</option>
+                          <option value="SR">Suriname</option>
+                          <option value="SJ">Svalbard and Jan Mayen</option>
+                          <option value="SZ">Swaziland</option>
+                          <option value="SE">Sweden</option>
+                          <option value="CH">Switzerland</option>
+                          <option value="SY">Syrian Arab Republic</option>
+                          <option value="TW">Taiwan, Province of China</option>
+                          <option value="TJ">Tajikistan</option>
+                          <option value="TZ">Tanzania, United Republic of</option>
+                          <option value="TH">Thailand</option>
+                          <option value="TL">Timor-Leste</option>
+                          <option value="TG">Togo</option>
+                          <option value="TK">Tokelau</option>
+                          <option value="TO">Tonga</option>
+                          <option value="TT">Trinidad and Tobago</option>
+                          <option value="TN">Tunisia</option>
+                          <option value="TR">Turkey</option>
+                          <option value="TM">Turkmenistan</option>
+                          <option value="TC">Turks and Caicos Islands</option>
+                          <option value="TV">Tuvalu</option>
+                          <option value="UG">Uganda</option>
+                          <option value="UA">Ukraine</option>
+                          <option value="AE">United Arab Emirates</option>
+                          <option value="GB">United Kingdom</option>
+                          <option value="US">United States</option>
+                          <option value="UM">United States Minor Outlying Islands</option>
+                          <option value="UY">Uruguay</option>
+                          <option value="UZ">Uzbekistan</option>
+                          <option value="VU">Vanuatu</option>
+                          <option value="VE">Venezuela, Bolivarian Republic of</option>
+                          <option value="VN">Viet Nam</option>
+                          <option value="VG">Virgin Islands, British</option>
+                          <option value="VI">Virgin Islands, U.S.</option>
+                          <option value="WF">Wallis and Futuna</option>
+                          <option value="EH">Western Sahara</option>
+                          <option value="YE">Yemen</option>
+                          <option value="ZM">Zambia</option>
+                          <option value="ZW">Zimbabwe</option>
                             </select>
-                            </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="father-name" class="form-label">Father Name</label>
-                            <input class="form-control" type="text" name="father-name" id="father-name" value="Father Name" />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="mother-name" class="form-label">Mother Name</label>
-                            <input class="form-control" type="text" name="mother-name" id="mother-name" value="Mother Name" />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                            <div class="col-md">
-                               
-                            </div>
-                            <label for="mother-name" class="form-label">Marital Status</label><br>
-                            <!-- <ul class="radio-list">
-                              <li>
-                                <label>
-                                  <input name="maritalStatus" type="radio" value="married" onclick="marriageField(this)">Yes
-                                </label>
-                              </li>
-                              <li>
-                                <label>
-                                  <input name="maritalStatus" type="radio" value="unmarried" onclick="marriageField(this)">No
-                                </label>
-                              </li>
-                            </ul>
-                          
-                            <div id="spouseName" style="display: none;" class="g one-whole field_guest_intro hidden">
-                              <input type="text" id="spouseName" name="spouseName" placeholder="Spouse name">
-                            </div> -->
-
-                            <div class="form-check form-check-inline radio_form mt-2">
-                                <input class="form-check-input" name="maritalStatus" type="radio" value="married" onclick="marriageField(this)" />
-                                <label class="form-check-label" for="inlineRadio1">Yes</label>
-                              </div>
-                              <div class="form-check form-check-inline radio_form">
-                                <input class="form-check-input" name="maritalStatus" type="radio" value="unmarried" onclick="marriageField(this)" checked/>
-                                <label class="form-check-label" for="inlineRadio2">No</label>
-                              </div>
-                            <!-- <input class="form-control" type="text" name="mother-name" id="mother-name" value="Mother Name" /> -->
-                            </div>
-                            <div class="mb-3 col-md-4" id="spouseName" style="display: none;">
-                            <label for="spouse-name" class="form-label">Spouse Name</label>
-                            <input class="form-control" type="text" id="spouse-name" name="spouse-name" value="Spouse name" placeholder="Spouse Name" />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                              <label for="nationality" class="form-label">Nationality</label>
-                              <!-- <input class="form-control" type="text" id="nationality" name="nationality" value="Nationality" placeholder="john.doe@example.com" /> -->
-                              <select id='country_select' name='country' class="form-select">
-                                <option value="AF">Afghanistan</option>
-                                <option value="AX">Åland Islands</option>
-                                <option value="AL">Albania</option>
-                                <option value="DZ">Algeria</option>
-                                <option value="AS">American Samoa</option>
-                                <option value="AD">Andorra</option>
-                                <option value="AO">Angola</option>
-                                <option value="AI">Anguilla</option>
-                                <option value="AQ">Antarctica</option>
-                                <option value="AG">Antigua and Barbuda</option>
-                                <option value="AR">Argentina</option>
-                                <option value="AM">Armenia</option>
-                                <option value="AW">Aruba</option>
-                                <option value="AU">Australia</option>
-                                <option value="AT">Austria</option>
-                                <option value="AZ">Azerbaijan</option>
-                                <option value="BS">Bahamas</option>
-                                <option value="BH">Bahrain</option>
-                                <option value="BD">Bangladesh</option>
-                                <option value="BB">Barbados</option>
-                                <option value="BY">Belarus</option>
-                                <option value="BE">Belgium</option>
-                                <option value="BZ">Belize</option>
-                                <option value="BJ">Benin</option>
-                                <option value="BM">Bermuda</option>
-                                <option value="BT">Bhutan</option>
-                                <option value="BO">Bolivia, Plurinational State of</option>
-                                <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
-                                <option value="BA">Bosnia and Herzegovina</option>
-                                <option value="BW">Botswana</option>
-                                <option value="BV">Bouvet Island</option>
-                                <option value="BR">Brazil</option>
-                                <option value="IO">British Indian Ocean Territory</option>
-                                <option value="BN">Brunei Darussalam</option>
-                                <option value="BG">Bulgaria</option>
-                                <option value="BF">Burkina Faso</option>
-                                <option value="BI">Burundi</option>
-                                <option value="KH">Cambodia</option>
-                                <option value="CM">Cameroon</option>
-                                <option value="CA">Canada</option>
-                                <option value="CV">Cape Verde</option>
-                                <option value="KY">Cayman Islands</option>
-                                <option value="CF">Central African Republic</option>
-                                <option value="TD">Chad</option>
-                                <option value="CL">Chile</option>
-                                <option value="CN">China</option>
-                                <option value="CX">Christmas Island</option>
-                                <option value="CC">Cocos (Keeling) Islands</option>
-                                <option value="CO">Colombia</option>
-                                <option value="KM">Comoros</option>
-                                <option value="CG">Congo</option>
-                                <option value="CD">Congo, the Democratic Republic of the</option>
-                                <option value="CK">Cook Islands</option>
-                                <option value="CR">Costa Rica</option>
-                                <option value="CI">Côte d'Ivoire</option>
-                                <option value="HR">Croatia</option>
-                                <option value="CU">Cuba</option>
-                                <option value="CW">Curaçao</option>
-                                <option value="CY">Cyprus</option>
-                                <option value="CZ">Czech Republic</option>
-                                <option value="DK">Denmark</option>
-                                <option value="DJ">Djibouti</option>
-                                <option value="DM">Dominica</option>
-                                <option value="DO">Dominican Republic</option>
-                                <option value="EC">Ecuador</option>
-                                <option value="EG">Egypt</option>
-                                <option value="SV">El Salvador</option>
-                                <option value="GQ">Equatorial Guinea</option>
-                                <option value="ER">Eritrea</option>
-                                <option value="EE">Estonia</option>
-                                <option value="ET">Ethiopia</option>
-                                <option value="FK">Falkland Islands (Malvinas)</option>
-                                <option value="FO">Faroe Islands</option>
-                                <option value="FJ">Fiji</option>
-                                <option value="FI">Finland</option>
-                                <option value="FR">France</option>
-                                <option value="GF">French Guiana</option>
-                                <option value="PF">French Polynesia</option>
-                                <option value="TF">French Southern Territories</option>
-                                <option value="GA">Gabon</option>
-                                <option value="GM">Gambia</option>
-                                <option value="GE">Georgia</option>
-                                <option value="DE">Germany</option>
-                                <option value="GH">Ghana</option>
-                                <option value="GI">Gibraltar</option>
-                                <option value="GR">Greece</option>
-                                <option value="GL">Greenland</option>
-                                <option value="GD">Grenada</option>
-                                <option value="GP">Guadeloupe</option>
-                                <option value="GU">Guam</option>
-                                <option value="GT">Guatemala</option>
-                                <option value="GG">Guernsey</option>
-                                <option value="GN">Guinea</option>
-                                <option value="GW">Guinea-Bissau</option>
-                                <option value="GY">Guyana</option>
-                                <option value="HT">Haiti</option>
-                                <option value="HM">Heard Island and McDonald Islands</option>
-                                <option value="VA">Holy See (Vatican City State)</option>
-                                <option value="HN">Honduras</option>
-                                <option value="HK">Hong Kong</option>
-                                <option value="HU">Hungary</option>
-                                <option value="IS">Iceland</option>
-                                <option value="IN">India</option>
-                                <option value="ID">Indonesia</option>
-                                <option value="IR">Iran, Islamic Republic of</option>
-                                <option value="IQ">Iraq</option>
-                                <option value="IE">Ireland</option>
-                                <option value="IM">Isle of Man</option>
-                                <option value="IL">Israel</option>
-                                <option value="IT">Italy</option>
-                                <option value="JM">Jamaica</option>
-                                <option value="JP">Japan</option>
-                                <option value="JE">Jersey</option>
-                                <option value="JO">Jordan</option>
-                                <option value="KZ">Kazakhstan</option>
-                                <option value="KE">Kenya</option>
-                                <option value="KI">Kiribati</option>
-                                <option value="KP">Korea, Democratic People's Republic of</option>
-                                <option value="KR">Korea, Republic of</option>
-                                <option value="KW">Kuwait</option>
-                                <option value="KG">Kyrgyzstan</option>
-                                <option value="LA">Lao People's Democratic Republic</option>
-                                <option value="LV">Latvia</option>
-                                <option value="LB">Lebanon</option>
-                                <option value="LS">Lesotho</option>
-                                <option value="LR">Liberia</option>
-                                <option value="LY">Libya</option>
-                                <option value="LI">Liechtenstein</option>
-                                <option value="LT">Lithuania</option>
-                                <option value="LU">Luxembourg</option>
-                                <option value="MO">Macao</option>
-                                <option value="MK">Macedonia, the former Yugoslav Republic of</option>
-                                <option value="MG">Madagascar</option>
-                                <option value="MW">Malawi</option>
-                                <option value="MY">Malaysia</option>
-                                <option value="MV">Maldives</option>
-                                <option value="ML">Mali</option>
-                                <option value="MT">Malta</option>
-                                <option value="MH">Marshall Islands</option>
-                                <option value="MQ">Martinique</option>
-                                <option value="MR">Mauritania</option>
-                                <option value="MU">Mauritius</option>
-                                <option value="YT">Mayotte</option>
-                                <option value="MX">Mexico</option>
-                                <option value="FM">Micronesia, Federated States of</option>
-                                <option value="MD">Moldova, Republic of</option>
-                                <option value="MC">Monaco</option>
-                                <option value="MN">Mongolia</option>
-                                <option value="ME">Montenegro</option>
-                                <option value="MS">Montserrat</option>
-                                <option value="MA">Morocco</option>
-                                <option value="MZ">Mozambique</option>
-                                <option value="MM">Myanmar</option>
-                                <option value="NA">Namibia</option>
-                                <option value="NR">Nauru</option>
-                                <option value="NP">Nepal</option>
-                                <option value="NL">Netherlands</option>
-                                <option value="NC">New Caledonia</option>
-                                <option value="NZ">New Zealand</option>
-                                <option value="NI">Nicaragua</option>
-                                <option value="NE">Niger</option>
-                                <option value="NG">Nigeria</option>
-                                <option value="NU">Niue</option>
-                                <option value="NF">Norfolk Island</option>
-                                <option value="MP">Northern Mariana Islands</option>
-                                <option value="NO">Norway</option>
-                                <option value="OM">Oman</option>
-                                <option value="PK">Pakistan</option>
-                                <option value="PW">Palau</option>
-                                <option value="PS">Palestinian Territory, Occupied</option>
-                                <option value="PA">Panama</option>
-                                <option value="PG">Papua New Guinea</option>
-                                <option value="PY">Paraguay</option>
-                                <option value="PE">Peru</option>
-                                <option value="PH">Philippines</option>
-                                <option value="PN">Pitcairn</option>
-                                <option value="PL">Poland</option>
-                                <option value="PT">Portugal</option>
-                                <option value="PR">Puerto Rico</option>
-                                <option value="QA">Qatar</option>
-                                <option value="RE">Réunion</option>
-                                <option value="RO">Romania</option>
-                                <option value="RU">Russian Federation</option>
-                                <option value="RW">Rwanda</option>
-                                <option value="BL">Saint Barthélemy</option>
-                                <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
-                                <option value="KN">Saint Kitts and Nevis</option>
-                                <option value="LC">Saint Lucia</option>
-                                <option value="MF">Saint Martin (French part)</option>
-                                <option value="PM">Saint Pierre and Miquelon</option>
-                                <option value="VC">Saint Vincent and the Grenadines</option>
-                                <option value="WS">Samoa</option>
-                                <option value="SM">San Marino</option>
-                                <option value="ST">Sao Tome and Principe</option>
-                                <option value="SA">Saudi Arabia</option>
-                                <option value="SN">Senegal</option>
-                                <option value="RS">Serbia</option>
-                                <option value="SC">Seychelles</option>
-                                <option value="SL">Sierra Leone</option>
-                                <option value="SG">Singapore</option>
-                                <option value="SX">Sint Maarten (Dutch part)</option>
-                                <option value="SK">Slovakia</option>
-                                <option value="SI">Slovenia</option>
-                                <option value="SB">Solomon Islands</option>
-                                <option value="SO">Somalia</option>
-                                <option value="ZA">South Africa</option>
-                                <option value="GS">South Georgia and the South Sandwich Islands</option>
-                                <option value="SS">South Sudan</option>
-                                <option value="ES">Spain</option>
-                                <option value="LK">Sri Lanka</option>
-                                <option value="SD">Sudan</option>
-                                <option value="SR">Suriname</option>
-                                <option value="SJ">Svalbard and Jan Mayen</option>
-                                <option value="SZ">Swaziland</option>
-                                <option value="SE">Sweden</option>
-                                <option value="CH">Switzerland</option>
-                                <option value="SY">Syrian Arab Republic</option>
-                                <option value="TW">Taiwan, Province of China</option>
-                                <option value="TJ">Tajikistan</option>
-                                <option value="TZ">Tanzania, United Republic of</option>
-                                <option value="TH">Thailand</option>
-                                <option value="TL">Timor-Leste</option>
-                                <option value="TG">Togo</option>
-                                <option value="TK">Tokelau</option>
-                                <option value="TO">Tonga</option>
-                                <option value="TT">Trinidad and Tobago</option>
-                                <option value="TN">Tunisia</option>
-                                <option value="TR">Turkey</option>
-                                <option value="TM">Turkmenistan</option>
-                                <option value="TC">Turks and Caicos Islands</option>
-                                <option value="TV">Tuvalu</option>
-                                <option value="UG">Uganda</option>
-                                <option value="UA">Ukraine</option>
-                                <option value="AE">United Arab Emirates</option>
-                                <option value="GB">United Kingdom</option>
-                                <option value="US">United States</option>
-                                <option value="UM">United States Minor Outlying Islands</option>
-                                <option value="UY">Uruguay</option>
-                                <option value="UZ">Uzbekistan</option>
-                                <option value="VU">Vanuatu</option>
-                                <option value="VE">Venezuela, Bolivarian Republic of</option>
-                                <option value="VN">Viet Nam</option>
-                                <option value="VG">Virgin Islands, British</option>
-                                <option value="VI">Virgin Islands, U.S.</option>
-                                <option value="WF">Wallis and Futuna</option>
-                                <option value="EH">Western Sahara</option>
-                                <option value="YE">Yemen</option>
-                                <option value="ZM">Zambia</option>
-                                <option value="ZW">Zimbabwe</option>
-                                  </select>
-                            </div>
-
-                           
-
-
-
-
-                           
-                            <div class="mb-3 col-md-4">
-                            <label for="religion" class="form-label">Religion</label>
-                            <input type="text" class="form-control" id="religion" name="religion" value="Religion" />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="caste" class="form-label">Caste</label>
-                            <input type="text" class="form-control" id="caste" name="caste" value="Caste" />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="caste" class="form-label">Disabled</label>
-                            <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                                <option value="1">Yes</option>
-                                <option value="2">No</option>
-                              </select>
-                            </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="navs-pills-add-contact-info" role="tabpanel">
-                    <div class="card-body">
-                      <form id="formAccountSettings" method="POST" onsubmit="return false">
+                      </div>
+                      <span><input type="checkbox" id="myCheck" onclick="sevenhost()"> Emergency Contact</span>
+                      <div id="emergency-contact"  style="display:none">
                         <div class="row">
-                            <div class="mb-3 col-md-6">
-                                <label for="firstName" class="form-label">Permenant Address</label>
-                                <textarea name="p-address" id="p-address" class="form-control"></textarea>
-                            </div>
-                            <div class="mb-3 col-md-6">
-                              <label for="firstName" class="form-label">Communication Address</label>
-                              <textarea name="p-address" id="p-address" class="form-control"></textarea>
-                          </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="m-num" class="form-label">Mobile Number</label>
-                            <input class="form-control"   id="phone" name="phone" type="text" value="+91 1234567890" autofocus />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="w-num" class="form-label">Whatsapp Number</label>
-                            <input class="form-control" id="phone2" name="phone2" type="text" value="+91 1234567890" />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                              <label for="e-mail" class="form-label">Email Address</label>
-                              <input class="form-control" type="email" name="e-mail" id="e-mail" value="demo@gmail.com" />
-                              </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="city" class="form-label">City</label>
-                            <input class="form-control" type="text" name="city" id="city" value="city" />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="district" class="form-label">District</label>
-                            <input class="form-control" type="text" name="district" id="district" value="district" />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="state" class="form-label">State</label>
-                            <input class="form-control" type="text" name="state" id="state" value="state" />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="post" class="form-label">Post</label>
-                            <input class="form-control" type="text" name="post" id="post" value="post" />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="pin" class="form-label">PIN Code</label>
-                            <input class="form-control" type="text" name="pin" id="pin" value="676319" />
-                            </div>
-                            <div class="mb-3 col-md-4">
-                            <label for="country" class="form-label">Country</label>
-                            <input class="form-control" type="text" name="country" id="country" value="country" />
-                            </div>
-                            <span><input type="checkbox" id="myCheck" onclick="sevenhost()"> Emergency Contact</span>
-                            <div id="emergency-contact"  style="display:none">
-                              <div class="row">
-                              <div class="mb-3 col-md-6">
-                                <label for="name" class="form-label">Name</label>
-                                <input class="form-control" type="text" name="name" id="name" value="name" />
-                              </div>
-                              <div class="mb-3 col-md-6">
-                                <label for="address" class="form-label">Address</label>
-                                <input class="form-control" type="text" name="address" id="address" value="Address" />
-                              </div>
-                              <div class="mb-3 col-md-4">
-                                <label for="phone" class="form-label">Phone</label>
-                                <input class="form-control" type="text" name="phone" id="phone" value="phone" />
-                              </div>
-                              <div class="mb-3 col-md-4">
-                                <label for="email" class="form-label">Email</label>
-                                <input class="form-control" type="text" name="email" id="email" value="Email" />
-                              </div>
-                              <div class="mb-3 col-md-4">
-                                <label for="relation" class="form-label">Relation</label>
-                                <input class="form-control" type="text" name="relation" id="relation" value="relation" />
-                              </div>
-                            </div>
-                            </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="navs-pills-add-office-details" role="tabpanel">
-                    <div class="card-body">
-                      <form id="formAccountSettings" method="POST" onsubmit="return false">
-                        <div class="row">
-                            <div class="mb-3 col-md-6">
-                                <label for="department" class="form-label">Department</label>
-                                <select name="department" id=""class="form-control form-select">
-                                  <option value="1">IT</option>
-                                  <option value="2">Design</option>
-                                  <option value="3">Robofoxy</option>
-                                </select>
-                            </div>
-                            <div class="mb-3 col-md-6">
-                              <label for="designation" class="form-label">Designation</label>
-                              <select name="designation" id=""class="form-control form-select">
-                                <option value="1">Developer</option>
-                                <option value="2">Web Designer</option>
-                                <option value="3">Graphic Designer</option>
-                              </select>
-                            </div>
-                            <div class="mb-3 col-md-4">
-                              <label for="designation" class="form-label">Branch/Location</label>
-                              <select name="designation" id=""class="form-control form-select">
-                                <option value="1">Calicut</option>
-                                <option value="2">Qatar</option>
-                                <option value="3">Saudhi</option>
-                              </select>
-                            </div>
-                            <div class="mb-3 col-md-4">
-                              <label for="designation" class="form-label">Emp Group</label>
-                              <select name="designation" id=""class="form-control form-select">
-                                <option value="1">G1</option>
-                                <option value="2">G2</option>
-                                <option value="3">G3</option>
-                              </select>
-                            </div>
-                            <div class="mb-3 col-md-4">
-                              <label for="designation" class="form-label">Joining Date</label>
-                              <input class="form-control" type="date" id="m-num" name="m-num" value="+91 1234567890" autofocus />
-                            </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="navs-pills-add-bank-details" role="tabpanel">
-                    <div class="card-body">
-                      <form id="formAccountSettings" method="POST" onsubmit="return false">
-                        <div class="row">
-                          <div class="mb-3 col-md-6">
-                            <label for="bank" class="form-label">Bank Name</label>
-                            <input class="form-control" type="text" id="bank" name="bank" value="" autofocus />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="acc-no" class="form-label">Account Number</label>
-                            <input class="form-control" type="text" id="acc-no" name="acc-no" value="" autofocus />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="branch-name" class="form-label">Branch Name</label>
-                            <input class="form-control" type="text" id="branch-name" name="branch-name" value="" autofocus />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="ifsc" class="form-label">IFSC Code</label>
-                            <input class="form-control" type="text" id="ifsc" name="ifsc" value="" autofocus />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="statutory" class="form-label">Statutory Details</label>
-                            <input class="form-control" type="text" id="statutory" name="statutory" value="" autofocus />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="card" class="form-label">Pan Card No</label>
-                            <input class="form-control" type="text" id="card" name="card" value="" autofocus />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="pf" class="form-label">PF No</label>
-                            <input class="form-control" type="text" id="pf" name="pf" value="" autofocus />
-                          </div>
-                          <div class="mb-3 col-md-6">
-                            <label for="esi" class="form-label">ESI No</label>
-                            <input class="form-control" type="text" id="esi" name="esi" value="" autofocus />
-                          </div>
-                        
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="navs-pills-add-bank-payroll" role="tabpanel">
-                    <div class="card-body">
-                      <form id="formAccountSettings" method="POST" onsubmit="return false">
-                        <div class="row">
-                          <div class="mb-3 col-md-6">
-                            <label for="mode" class="form-label">Shift Mode</label>
-                            <select name="mode" id=""class="form-control form-select">
-                              <option value="1">Default Shift </option>
-                              <option value="2">Assigned Shift</option>
-                            </select>
+                        <div class="mb-3 col-md-6">
+                          <label for="name" class="form-label">Name</label>
+                          <input class="form-control" type="text" name="name" id="name" placeholder="Name" />
                         </div>
                         <div class="mb-3 col-md-6">
-                          <label for="mode" class="form-label">Shift Type</label>
-                          <select name="mode" id=""class="form-control form-select">
-                            <option value="1">Fixed shift </option>
-                            <option value="2">Rotational shift</option>
-                            <option value="2">Open shifts</option>
+                          <label for="address" class="form-label">Address</label>
+                          <input class="form-control" type="text" name="address" id="address" placeholder="Address" />
+                        </div>
+                        <div class="mb-3 col-md-4">
+                          <label for="phone" class="form-label">Phone</label>
+                          <input class="form-control" type="number" name="phone" id="phone" placeholder="+91 9876543234" />
+                        </div>
+                        <div class="mb-3 col-md-4">
+                          <label for="email" class="form-label">Email</label>
+                          <input class="form-control" type="email" name="email" id="email" placeholder="relation@gmail.com" />
+                        </div>
+                        <div class="mb-3 col-md-4">
+                          <label for="relation" class="form-label">Relation</label>
+                          <input class="form-control" type="text" name="relation" id="relation" placeholder="relation" />
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+              <a class="btn btn-next btn-primary ml-2">Next</a>
+              <a class="btn btn-prev btn-dark">Previous</a>
+                
+              
+          </div>
+          <div class="form-step ">
+            <div class="card-header">
+              <h4>Official Details</h4>
+            </div>
+              <div class="card-body">
+                  <div class="row">
+                      <div class="mb-3 col-md-6">
+                          <label for="department" class="form-label">Department</label>
+                          <select name="department" id=""class="form-control form-select">
+                            <option value="it-dp">IT</option>
+                            <option value="design-dp">Design</option>
+                            <option value="robofoxy-dp">Robofoxy</option>
                           </select>
                       </div>
                       <div class="mb-3 col-md-6">
-                        <label for="mode" class="form-label">Shift</label>
-                        <select name="mode" id=""class="form-control form-select">
-                          <option value="1">Shift 1</option>
-                          <option value="2">Shift 2</option>
-                          <option value="2">Shift 3</option>
+                        <label for="designation" class="form-label">Designation</label>
+                        <select name="designation" id=""class="form-control form-select">
+                          <option value="developer">Developer</option>
+                          <option value="web-designer">Web Designer</option>
+                          <option value="graphic-designer">Graphic Designer</option>
                         </select>
-                    </div>
-                    <div class="mb-3 col-md-6">
-                      <label for="mode" class="form-label">Select a payroll policy profile</label>
-                      <select name="mode" id=""class="form-control form-select">
-                        <option value="1">profile 1</option>
-                        <option value="2">profile 2</option>
-                        <option value="2">profile 3</option>
-                      </select>
-                    </div>
-                    <div class="row mb-3 mt-3">
-                      <h5 class="payroll-title">Salary Structure</h5>
-                      <hr>
-                    </div>
-
-                  <div class="mb-3 col-md-12">
-                    <label for="mode" class="form-label">Salary Type</label>
-                    <select name="mode" id=""class="form-control form-select">
-                      <option value="1">Daily</option>
-                      <option value="2">Weekly</option>
-                      <option value="2">Hourly</option>
-                      <option value="2">Monthly</option>
-                    </select>
-                  </div>
-                  <div class="row mb-3 mt-3">
-                    <h5 class="payroll-title">Earnings</h5>
-                    <hr>
-                  </div>
-                  <div class="mb-3 col-md-6">
-                    <label for="basic" class="form-label">Basic</label>
-                    <input class="form-control" type="text" id="basic" name="basic" value="" autofocus />
-                  </div>
-                  <div class="mb-3 col-md-6">
-                    <label for="da" class="form-label">DA</label>
-                    <input class="form-control" type="text" id="da" name="da" value="" autofocus />
-                  </div>
-                  <div class="mb-3 col-md-4">
-                    <label for="hra" class="form-label">HRA</label>
-                    <input class="form-control" type="text" id="hra" name="hra" value="" autofocus />
-                  </div>
-                  <div class="mb-3 col-md-4">
-                    <label for="medi-allo" class="form-label">Medical Allowance</label>
-                    <input class="form-control" type="text" id="medi-allo" name="medi-allo" value="" autofocus />
-                  </div>
-                  <div class="mb-3 col-md-4">
-                    <label for="spe-allo" class="form-label">Special Allowance</label>
-                    <input class="form-control" type="text" id="spe-allo" name="spe-allo" value="" autofocus />
-                  </div>
-                  <div class="row mb-3 mt-3">
-                    <h5 class="payroll-title">Deductions</h5>
-                    <hr>
-                  </div>
-                  <div class="mb-3 col-md-6">
-                      <label for="pro-fund" class="form-label">Provident Fund</label>
-                      <input class="form-control" type="text" id="pro-fund" name="pro-fund" value="" autofocus />
-                  </div>
-                  <div class="mb-3 col-md-6">
-                    <label for="esi" class="form-label">ESI</label>
-                    <input class="form-control" type="text" id="esi" name="esi" value="" autofocus />
-                  </div>
-                  <div class="row mb-3 mt-3">
-                    <h5 class="payroll-title">Contributions</h5>
-                    <hr>
-                  </div>
-                  <div class="mb-3 col-md-6">
-                    <label for="pf" class="form-label">PF</label>
-                    <input class="form-control" type="text" id="pf" name="pf" value="" autofocus />
-                  </div>
-                  <div class="mb-3 col-md-6">
-                    <label for="esi" class="form-label">ESI</label>
-                    <input class="form-control" type="text" id="esi" name="esi" value="" autofocus />
-                  </div>
-                  <div class="row mb-3 mt-3">
-                    <h5 class="payroll-title">Overtime/Partial Day</h5>
-                    <hr>
-                  </div>
-                  <div class="col-md-3 mt-4">
-                  <h6 style="vertical-align: middle;">Over time (working Day)</h6>
-                  </div>
-                  <div class="mb-3 col-md-3">
-                    <label for="hm" class="form-label">Select option</label>
-                    <select name="mode" id=""class="form-control form-select">
-                      <option value="1">Hours</option>
-                      <option value="2">Minutes</option>
-                    </select>
-                  </div>
-                  <div class="mb-3 col-md-3">
-                    <label for="hm" class="form-label">Hours/Minutes</label>
-                    <input class="form-control" type="text" id="hr-mi" name="hr-mi" value="" autofocus />
-                  </div>
-                  <div class="mb-3 col-md-3">
-                    <label for="amount" class="form-label">Amount</label>
-                    <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
-                  </div>
-                  <div class="col-md-3 mt-4">
-                    <h6 style="vertical-align: middle;">Over time (Off Day)</h6>
-                  </div>
-                  <div class="mb-3 col-md-3">
-                    <label for="hm" class="form-label">Select option</label>
-                    <select name="mode" id=""class="form-control form-select">
-                      <option value="1">Hours</option>
-                      <option value="2">Minutes</option>
-                    </select>
-                  </div>
-                  <div class="mb-3 col-md-3">
-                    <label for="hm" class="form-label">Hours/Minutes</label>
-                    <input class="form-control" type="text" id="hr-mi" name="hr-mi" value="" autofocus />
-                  </div>
-                  <div class="mb-3 col-md-3">
-                    <label for="amount" class="form-label">Amount</label>
-                    <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
-                  </div>
-                  <div class="col-md-3 mt-4">
-                    <h6 style="vertical-align: middle;">Over time (HoliDay)</h6>
-                    </div>
-                    <div class="mb-3 col-md-3">
-                      <label for="hm" class="form-label">Select option</label>
-                      <select name="mode" id=""class="form-control form-select">
-                        <option value="1">Hours</option>
-                        <option value="2">Minutes</option>
-                      </select>
-                    </div>
-                  <div class="mb-3 col-md-3">
-                    <label for="hm" class="form-label">Hours/Minutes</label>
-                    <input class="form-control" type="text" id="hm" name="hm" value="" autofocus />
-                  </div>
-                  <div class="mb-3 col-md-3">
-                    <label for="amount" class="form-label">Amount</label>
-                    <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
-                  </div>
-
-                  <div class="col-md-3 mt-4">
-                    <h6 style="vertical-align: middle;">Partial Day work</h6>
-                    </div>
-                    <div class="mb-3 col-md-3">
-                      <label for="hm" class="form-label">Select option</label>
-                      <select name="mode" id=""class="form-control form-select">
-                        <option value="1">Hours</option>
-                        <option value="2">Minutes</option>
-                      </select>
-                    </div>
-                  <div class="mb-3 col-md-3">
-                    <label for="hm" class="form-label">Hours/Minutes</label>
-                    <input class="form-control" type="text" id="hm" name="hm" value="" autofocus />
-                  </div>
-                  <div class="mb-3 col-md-3">
-                    <label for="amount" class="form-label">Amount</label>
-                    <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
-                  </div>
-
-                  <div class="col-md-3 mt-4">
-                    <h6 style="vertical-align: middle;">Partial Day deduction</h6>
-                    </div>
-                    <div class="mb-3 col-md-3">
-                      <label for="hm" class="form-label">Select option</label>
-                      <select name="mode" id=""class="form-control form-select">
-                        <option value="1">Hours</option>
-                        <option value="2">Minutes</option>
-                      </select>
-                    </div>
-                  <div class="mb-3 col-md-3">
-                    <label for="hm" class="form-label">Hours/Minutes</label>
-                    <input class="form-control" type="text" id="hm" name="hm" value="" autofocus />
-                  </div>
-                  <div class="mb-3 col-md-3">
-                    <label for="amount" class="form-label">Amount</label>
-                    <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
-                  </div>
-
-
-
-                 
-                  <div class="mb-3 col-md-6">
-                    <label for="ot" class="form-label">Additional Allowance Profile</label>
-                    <select name="mode" id=""class="form-control form-select">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="2">3</option>
-                      <option value="2">4</option>
-                    </select>
-                  </div>
-                  <div class="mb-3 col-md-6">
-                    <label for="ot" class="form-label">Additional Deduction Profile</label>
-                    <select name="mode" id=""class="form-control form-select">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="2">3</option>
-                      <option value="2">4</option>
-                    </select>
-                  </div>
-                    
-                    
-                        </div>
-                      </form>
-                    </div>
-                  
-                  </div>
-                  <div class="tab-pane fade" id="navs-pills-add-bank-leave" role="tabpanel">      
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-xl">
-                            <div class="card-body">
-                                <form>
-                                    <div class="row mb-3">
-                                      <div class="col-md-12">
-                                        <label for="amount" class="form-label">Select Leave Policy</label>
-                                        <select name="mode" id=""class="form-control form-select">
-                                          <option value="1">1</option>
-                                          <option value="2">2</option>
-                                          <option value="2">3</option>
-                                          <option value="2">4</option>
-                                        </select>
-                                      </div>
-                                      
-                                    </div>
-                                  </form>
-                            </div>
-                        </div>
                       </div>
-                </div>
-              
-    
+                      <div class="mb-3 col-md-4">
+                        <label for="designation" class="form-label">Branch/Location</label>
+                        <select name="designation" id=""class="form-control form-select">
+                          <option value="calicut">Calicut</option>
+                          <option value="qatar">Qatar</option>
+                          <option value="saudhi">Saudhi</option>
+                        </select>
+                      </div>
+                      <div class="mb-3 col-md-4">
+                        <label for="designation" class="form-label">Emp Group</label>
+                        <select name="designation" id=""class="form-control form-select">
+                          <option value="g1">G1</option>
+                          <option value="g2">G2</option>
+                          <option value="g3">G3</option>
+                        </select>
+                      </div>
+                      <div class="mb-3 col-md-4">
+                        <label for="designation" class="form-label">Joining Date</label>
+                        <input class="form-control" type="date" id="m-num" name="m-num" value="+91 1234567890" autofocus />
+                      </div>
                   </div>
-                  <div class="tab-pane fade" id="navs-pills-add-bank-settings" role="tabpanel">      
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-xl">
-                                <div class="card-body">
-                                  <form>
-                                      <div class="row mb-3">
-                                        <div class="col-md-6">
-                                          <label for="amount" class="form-label">Attendace Settings</label>
-                                          <div class="col-md">
-                                            <div class="form-check form-check-inline mt-3">
-                                              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                                              <label class="form-check-label" for="inlineCheckbox1">Any location device</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                                              <label class="form-check-label" for="inlineCheckbox2">Selected Location Device</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" />
-                                              <label class="form-check-label" for="inlineCheckbox3">Mobile App</label>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                          <label for="amount" class="form-label">Attendance Holidays</label>
-                                          <select name="mode" id=""class="form-control form-select">
-                                            <option value="1">Allow Attendance on Paid Holidays</option>
-                                            <option value="2">Comp off Leave</option>
-                                            <option value="2">Do not allow attendance on paid holidays</option>
-                                          </select>
-                                        </div>
-                                      </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="">
-                  <!-- <button type="submit" class="btn btn-outline-secondary  float-end">Next</button> -->
-                  <button type="reset" class="btn btn-primary me-2 float-end" onclick="submitstaffForm(event)">Save Changes</button>
-                </div>
-                </div>
-               
               </div>
-            
+              
+              <a class="btn btn-next btn-primary ml-2">Next</a>
+              <a class="btn btn-prev btn-dark">Previous</a>
+
           </div>
+          <div class="form-step ">
+            <div class="card-header">
+              <h4>Bank Details</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                  <div class="mb-3 col-md-6">
+                    <label for="bank" class="form-label">Bank Name</label>
+                    <input class="form-control" type="text" id="bank" name="bank" value="" autofocus />
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label for="acc-no" class="form-label">Account Number</label>
+                    <input class="form-control" type="number" id="acc-no" name="acc-no" value="" autofocus />
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label for="branch-name" class="form-label">Branch Name</label>
+                    <input class="form-control" type="text" id="branch-name" name="branch-name" value="" autofocus />
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label for="ifsc" class="form-label">IFSC Code</label>
+                    <input class="form-control" type="text" id="ifsc" name="ifsc" value="" autofocus />
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label for="statutory" class="form-label">Statutory Details</label>
+                    <input class="form-control" type="text" id="statutory" name="statutory" value="" autofocus />
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label for="card" class="form-label">Pan Card No</label>
+                    <input class="form-control" type="number" id="card" name="card" value="" autofocus />
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label for="pf" class="form-label">PF No</label>
+                    <input class="form-control" type="number" id="pf" name="pf" value="" autofocus />
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label for="esi" class="form-label">ESI No</label>
+                    <input class="form-control" type="number" id="esi" name="esi" value="" autofocus />
+                  </div>
+                
+                </div>
+            </div>
+            
+            <a class="btn btn-next btn-primary ml-2">Next</a>
+              <a class="btn btn-prev btn-dark">Previous</a>
+        </div>
+        <div class="form-step ">
+          <div class="card-header">
+            <h4>Payroll</h4>
+          </div>
+          <div class="card-body">
+              <div class="row">
+                <div class="mb-3 col-md-6">
+                  <label for="mode" class="form-label">Shift Mode</label>
+                  <select name="mode" id=""class="form-control form-select">
+                    <option value="1">Default Shift </option>
+                    <option value="2">Assigned Shift (Don't choose)</option>
+                  </select>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="mode" class="form-label">Shift Type</label>
+                <select name="mode" id=""class="form-control form-select">
+                  <option value="1">Fixed shift </option>
+                  <option value="2">Rotational shift (Don't choose)</option>
+                  <option value="2">Open shifts (Don't choose)</option>
+                </select>
+            </div>
+            <div class="mb-3 col-md-6">
+              <label for="mode" class="form-label">Shift</label>
+              <select name="mode" id=""class="form-control form-select">
+                <option value="1">Shift 1</option>
+                <option value="2">Shift 2</option>
+                <option value="2">Shift 3</option>
+              </select>
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="mode" class="form-label">Select a payroll policy profile</label>
+            <select name="mode" id=""class="form-control form-select">
+              <option value="1">profile 1</option>
+              <option value="2">profile 2</option>
+              <option value="2">profile 3</option>
+            </select>
+          </div>
+          <div class="row mb-3 mt-3">
+            <h5 class="payroll-title">Salary Structure</h5>
+            <hr>
+          </div>
+
+        <div class="mb-3 col-md-12">
+          <label for="mode" class="form-label">Salary Type</label>
+          <select name="mode" id=""class="form-control form-select">
+            <option value="monthly">Monthly</option>
+            <option value="daily">Daily (Don't choose)</option>
+            <option value="weekly">Weekly (Don't choose)</option>
+            <option value="hourly">Hourly (Don't choose)</option>
+          </select>
+        </div>
+        <div class="row mb-3 mt-3">
+          <h5 class="payroll-title">Earnings</h5>
+          <hr>
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="basic" class="form-label">Basic</label>
+          <input class="form-control" type="text" id="basic" name="basic" value="" autofocus />
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="da" class="form-label">DA</label>
+          <input class="form-control" type="text" id="da" name="da" value="" autofocus />
+        </div>
+        <div class="mb-3 col-md-4">
+          <label for="hra" class="form-label">HRA</label>
+          <input class="form-control" type="text" id="hra" name="hra" value="" autofocus />
+        </div>
+        <div class="mb-3 col-md-4">
+          <label for="medi-allo" class="form-label">Medical Allowance</label>
+          <input class="form-control" type="text" id="medi-allo" name="medi-allo" value="" autofocus />
+        </div>
+        <div class="mb-3 col-md-4">
+          <label for="spe-allo" class="form-label">Special Allowance</label>
+          <input class="form-control" type="text" id="spe-allo" name="spe-allo" value="" autofocus />
+        </div>
+        <div class="row mb-3 mt-3">
+          <h5 class="payroll-title">Deductions</h5>
+          <hr>
+        </div>
+        <div class="mb-3 col-md-6">
+            <label for="pro-fund" class="form-label">Provident Fund</label>
+            <input class="form-control" type="text" id="pro-fund" name="pro-fund" value="" autofocus />
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="esi" class="form-label">ESI</label>
+          <input class="form-control" type="text" id="esi" name="esi" value="" autofocus />
+        </div>
+        <div class="row mb-3 mt-3">
+          <h5 class="payroll-title">Contributions</h5>
+          <hr>
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="pf" class="form-label">PF</label>
+          <input class="form-control" type="text" id="pf" name="pf" value="" autofocus />
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="esi" class="form-label">ESI</label>
+          <input class="form-control" type="text" id="esi" name="esi" value="" autofocus />
+        </div>
+        <div class="row mb-3 mt-3">
+          <h5 class="payroll-title">Overtime</h5>
+          <hr>
+        </div>
+        <div class="col-md-3 mt-4">
+        <h6 style="vertical-align: middle;">Over time (working Day)</h6>
+        </div>
+        <div class="mb-3 col-md-4">
+          <label for="hm" class="form-label">Hours/Minutes</label>
+          <select name="mode" id=""class="form-control form-select">
+            <option value="1">Hours</option>
+            <option value="2">Minutes</option>
+          </select>
+        </div>
+       
+        <div class="mb-3 col-md-4">
+          <label for="amount" class="form-label">Amount</label>
+          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
+        </div>
+        <div class="col-md-3 mt-4">
+          <h6 style="vertical-align: middle;">Over time (Off Day)</h6>
+        </div>
+        <div class="mb-3 col-md-4">
+          <label for="hm" class="form-label">Hours/Minutes</label>
+          <select name="mode" id=""class="form-control form-select">
+            <option value="1">Hours</option>
+            <option value="2">Minutes</option>
+          </select>
+        </div>
+        <div class="mb-3 col-md-4">
+          <label for="amount" class="form-label">Amount</label>
+          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
+        </div>
+        <div class="col-md-3 mt-4">
+          <h6 style="vertical-align: middle;">Over time (HoliDay)</h6>
+          </div>
+          <div class="mb-3 col-md-4">
+            <label for="hm" class="form-label">Hours/Minutes</label>
+            <select name="mode" id=""class="form-control form-select">
+              <option value="1">Hours</option>
+              <option value="2">Minutes</option>
+            </select>
+          </div>
+        <div class="mb-3 col-md-4">
+          <label for="amount" class="form-label">Amount</label>
+          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
+        </div>
+        <div class="row mb-3 mt-3">
+          <h5 class="payroll-title">Partial Day</h5>
+          <hr>
+        </div>
+        <div class="col-md-3 mt-4">
+          <h6 style="vertical-align: middle;">Partial Day work</h6>
+          </div>
+          <div class="mb-3 col-md-4">
+            <label for="hm" class="form-label">Hours/Minutes</label>
+            <select name="mode" id=""class="form-control form-select">
+              <option value="1">Hours</option>
+              <option value="2">Minutes</option>
+            </select>
+          </div>
+        <div class="mb-3 col-md-4">
+          <label for="amount" class="form-label">Amount</label>
+          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
+        </div>
+
+        <div class="col-md-3 mt-4">
+          <h6 style="vertical-align: middle;">Partial Day deduction</h6>
+          </div>
+          <div class="mb-3 col-md-4">
+            <label for="hm" class="form-label">Hours/Minutes</label>
+            <select name="mode" id=""class="form-control form-select">
+              <option value="1">Hours</option>
+              <option value="2">Minutes</option>
+            </select>
+          </div>
+        <div class="mb-3 col-md-4">
+          <label for="amount" class="form-label">Amount</label>
+          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
+        </div>
+
+        <div class="row mb-3 mt-3">
+          <h5 class="payroll-title">Additional Allowance Profile</h5>
+          <hr>
+        </div>
+
+       
+        <div class="mb-3 col-md-4">
+          <label for="ot" class="form-label">Select Additional Allowance Profile</label>
+
+          <select name="mode" id=""class="form-control form-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="2">4</option>
+          </select>
+        </div>
+        <div class="mb-3 col-md-4">
+          <label for="ot" class="form-label">Formula</label>
+
+          <select name="mode" id=""class="form-control form-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="2">4</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-primary btn-add-allownace">Add</button>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md mb-4 mb-md-0">
+            <div class="accordion mt-3" id="accordionExample">
+              <div class="card accordion-item active">
+                <h2 class="accordion-header" id="headingOne">
+                  <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionOne" aria-expanded="true" aria-controls="accordionOne">
+                    Fixed Allowance
+                  </button>
+                </h2>
+        
+                <div id="accordionOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="table-responsive text-nowrap">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Additional Allowance Profile</th>
+                            <th>Formula</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-border-bottom-0">
+                          <tr>
+                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Travel Allowance</strong></td>
+                            <td>Formula 1</td>
+                            <td>
+                              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
+                            </td>
+                          </tr>
+                          
+                          <tr>
+                            <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Rent Allowance</strong></td>
+                            <td>Formula 2</td>
+                            <td>
+                              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><i class="fab fa-vuejs fa-lg text-success me-3"></i> <strong>Medical Allowance</strong></td>
+                            <td>Formula 3</td>
+                            <td>
+                              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Childcare Allowance</strong></td>
+                            <td>Formula 4</td>
+                            <td>
+                              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionTwo" aria-expanded="false" aria-controls="accordionTwo">
+                    Rent Allowance
+                  </button>
+                </h2>
+                <div id="accordionTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="table-responsive text-nowrap">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Additional Allowance Profile</th>
+                            <th>Formula</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-border-bottom-0">
+                          <tr>
+                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Housing Allowance</strong></td>
+                            <td>Formula 1</td>
+                            <td>
+                              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
+                            </td>
+                          </tr>
+                          
+                          <tr>
+                            <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Hostel Rent Allowance</strong></td>
+                            <td>Formula 2</td>
+                            <td>
+                              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
+                            </td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
         </div>
 
 
 
 
+        <div class="row mb-3 mt-3">
+          <h5 class="payroll-title">Additional Deduction Profile</h5>
+          <hr>
+        </div>
+
        
-     
+        <div class="mb-3 col-md-4">
+          <label for="ot" class="form-label">Select Additional Deduction Profile</label>
+
+          <select name="mode" id=""class="form-control form-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="2">4</option>
+          </select>
+        </div>
+        <div class="mb-3 col-md-4">
+          <label for="ot" class="form-label">Formula</label>
+
+          <select name="mode" id=""class="form-control form-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="2">4</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-primary btn-add-allownace">Add</button>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md mb-4 mb-md-0">
+            <div class="accordion mt-3" id="accordionExample">
+              <div class="card accordion-item active">
+                <h2 class="accordion-header" id="headingOne">
+                  <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionDeduction1" aria-expanded="true" aria-controls="accordionOne">
+                    Fixed Deduction
+                  </button>
+                </h2>
+        
+                <div id="accordionDeduction1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="table-responsive text-nowrap">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Additional Deduction Profile</th>
+                            <th>Formula</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-border-bottom-0">
+                          <tr>
+                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>PF</strong></td>
+                            <td>Formula 1</td>
+                            <td>
+                              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
+                            </td>
+                          </tr>
+                          
+                          <tr>
+                            <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>ESI</strong></td>
+                            <td>Formula 2</td>
+                            <td>
+                              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionDeduction2" aria-expanded="false" aria-controls="accordionTwo">
+                    Salary Deduction
+                  </button>
+                </h2>
+                <div id="accordionDeduction2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="table-responsive text-nowrap">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Additional Deduction Profile</th>
+                            <th>Formula</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-border-bottom-0">
+                          <tr>
+                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Repayment of Loans</strong></td>
+                            <td>Formula 1</td>
+                            <td>
+                              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
+                            </td>
+                          </tr>
+                          
+                          <tr>
+                            <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Union Dues</strong></td>
+                            <td>Formula 2</td>
+                            <td>
+                              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
+                            </td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+          
+          
+              </div>
+          </div>
+          
+          <a class="btn btn-next btn-primary ml-2">Next</a>
+          <a class="btn btn-prev btn-dark">Previous</a>
+
+      </div>
+      <div class="form-step ">
+        <div class="card-header">
+          <h4>Leave Policy</h4>
+        </div>
+        <div class="card-body">
+          
+          <div class="row mb-3">
+                            <div class="col-md-12">
+                              <label for="amount" class="form-label">Select Leave Policy</label>
+                              <select name="mode" id=""class="form-control form-select">
+                                <option value="casual-leave">Casual Leave</option>
+                                <option value="sick-leave">Sick Leave</option>
+                                <option value="annual-leave">Annual Leave</option>
+                              </select>
+                            </div>
+                            
+          </div>
+                        
+      </div>
+        
+        <a class="btn btn-next btn-primary ml-2">Next</a>
+        <a class="btn btn-prev btn-dark">Previous</a>
+
+    </div>
+          <div class="form-step ">
+              <div class="card-header">
+                <h4>Settings</h4>
+              </div>
+              <div class="row">
+                <div class="col-xl">
+                    <div class="card-body">
+                          <div class="row mb-3">
+                                <h5 class="payroll-title">Attendace Settings</h5>
+                                <hr>
+                            <label for="amount" class="form-label mb-3">Attendace Settings</label>
+                            <div class="row checkboxes">
+                              
+                                <div class="col-md-6">
+                                  <input class="form-check-input" id="selectAll" type="checkbox"><label for='selectAll' class="ml-2">Select All</label><br>
+                                  <input class="form-check-input" id="mce-group[19]-19-0" type="checkbox" name="group[19][8]" value="8" /><label for="mce-group[19]-19-0" class="ml-2">Branch 1</label><br>
+                                  <input class="form-check-input" id="mce-group[19]-19-1" type="checkbox" name="group[19][16]" value="16" /><label for="mce-group[19]-19-1" class="ml-2">Branch 2</label><br>
+                                  <input class="form-check-input" id="mce-group[19]-19-2" type="checkbox" name="group[19][32]" value="32" /><label for="mce-group[19]-19-2" class="ml-2">Branch 3</label><br>
+                                  <input class="form-check-input" id="mce-group[19]-19-2" type="checkbox" name="group[19][32]" value="32" /><label for="mce-group[19]-19-2" class="ml-2">Mobile App</label><br>
+                                
+                                </div>
+                                <div class="col-md-6">
+                                  <input class="form-check-input" id="mce-group[19]-19-3" type="checkbox" name="group[19][64]" value="64" /><label for="mce-group[19]-19-3" class="ml-2">Branch 4</label><br>
+                                  <input class="form-check-input" id="mce-group[19]-19-4" type="checkbox" name="group[19][128]" value="128" /><label for="mce-group[19]-19-4" class="ml-2">Branch 5</label><br>
+                                  <input class="form-check-input" id="mce-group[19]-19-5" type="checkbox" name="group[19][256]" value="256" /><label for="mce-group[19]-19-5" class="ml-2">Branch 6</label><br>
+                                  <input class="form-check-input" id="mce-group[19]-19-6" type="checkbox" name="group[19][512]" value="512" /><label for="mce-group[19]-19-6" class="ml-2">Branch 7</label><br>
+                                </div>
+                                
+                              </div>
+                              <div class="row mt-5">
+                                <h5 class="payroll-title">Attendance Holidays</h5>
+                                <hr>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <input class="form-check-input" id="off-day" type="checkbox" name="off-day" value="" /><label for="off-day" class="ml-2">Off days</label><br>
+                                  <input class="form-check-input" id="holiday" type="checkbox" name="holiday" value="" /><label for="holiday" class="ml-2">Holidays</label><br>
+                                </div>
+                               </div>  
+                          </div>
+                        
+                    </div>
+                </div>
+            </div>
+             
+              
+                <!-- <a class="btn float-end btn-primary ml-2" onclick="submitstaffForm(event)">Submit</a> -->
+                <input type="submit" value="Submit" name="complete" class="btn btn-next btn-primary ml-2" onclick="submitstaffForm(event)">
+                <a class="btn btn-prev btn-dark">Previous</a>
+                  <!-- <a class="btn btn-prev">Previous</a> -->
+                  <!-- <input type="submit" value="Submit" name="complete" class="btn btn-complete"> -->
+                  
+              
+          </div>
+          <!-- <div class="form-step ">
+            <div class="card-header">
+              <h4></h4>
+            </div>
+            <div class="card-body">
+              <h4>Successfully completed</h4>
+            </div>
+        </div> -->
+      </form>
+    </div>
 
 
         
@@ -1182,22 +1412,13 @@
               <!-- Footer -->
               <footer class="content-footer footer bg-footer-theme">
                 <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                  <div class="mb-2 mb-md-0">
-                    © <script>
-                    document.write(new Date().getFullYear())
-                    </script>
-                    All rights reserved by <a href="#" target="_blank" class="footer-link fw-bolder">Foxiom Leads </a>
+                  <div class="mb-2 mb-md-0"> © <script>
+                      document.write(new Date().getFullYear())
+                    </script>, All rights reserved by <a href="https://foxiom.com/" target="_blank" class="footer-link fw-bolder">Foxiom</a>
                   </div>
                   <div>
-                    
-                    <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
-                    <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
-                    
-                    <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/" target="_blank" class="footer-link me-4">Documentation</a>
-                    
-                    <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank" class="footer-link me-4">Support</a>
-                    
-                    
+                    <a href="javascript:void(0);" class="footer-link me-4">Privacy Policy</a>
+                    <a href="javascript:void(0);" class="footer-link me-4">Support</a>
                   </div>
                 </div>
               </footer>
@@ -1251,12 +1472,12 @@
 
 
 
-
+           
             
 </script>
-
+<script src="assets/js/wizard.js"></script>
   
-     
+     <script src="assets/js/additional.js"></script>
       <!-- Core JS -->
       <!-- build:js assets/vendor/js/core.js -->
       <script src="assets/vendor/libs/jquery/jquery.js"></script>

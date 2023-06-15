@@ -908,8 +908,8 @@ html:not(.layout-menu-collapsed) .bg-menu-theme .menu-inner .menu-item .menu-lin
 }
 
 .bg-menu-theme .menu-inner>.menu-item.active>.menu-link {
-    color: #9a1650;
-    background-color: rgba(105, 108, 255, .16) !important
+    color: #dedcdc;
+    background-color: #9c0d4b !important
 }
 
 .bg-menu-theme .menu-inner>.menu-item.active:before {

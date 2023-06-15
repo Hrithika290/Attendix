@@ -181,46 +181,54 @@
                               <div class="card-body">
                                 <div class="col-lg-7">
                                  <div class="mb-3 row">
-                                    <label for="html5-text-input" class="col-md-2 col-form-label">Shift Type</label>
-                                    <div class="col-md-10">
+                                    <label for="html5-text-input" class="col-md-3 col-form-label">Shift Type</label>
+                                    <div class="col-md-8">
                                        <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
                                        <option selected>Open this select shift</option>
                                        <option value="1">Fixed Shift</option>
-                                       <option value="2">Rotational Shift</option>
-                                       <option value="3">Open Shift</option>
+                                       <option value="2">Rotational Shift <small>(Don't choose)</small></option>
+                                       <option value="3">Open Shift <small>(Don't choose)</small></option>
                                     </select>
                                     </div>
                                  </div>
                                  <div class="mb-3 row">
-                                    <label for="Shift name" class="col-md-2 col-form-label">Shift Name</label>
-                                    <div class="col-md-10">
+                                    <label for="Shift name" class="col-md-3 col-form-label">Shift Name</label>
+                                    <div class="col-md-8">
                                        <input class="form-control" type="text" id="Shift name" />
                                     </div>
                                  </div>
                                   <div class="mb-3 row">
-                                    <label for="Shift Time" class="col-md-2 col-form-label">Shift Time</label>
+                                    <label for="Shift Time" class="col-md-3 col-form-label">Shift Time</label>
                                    
-                                        <div class="col-md-5 d-inline-flex">
+                                        <div class="col-md-4 d-inline-flex">
                                             <input class="form-control" type="time" value="From" id="from" />
                                         </div>
-                                        <div class="col-md-5 d-inline-flex">
+                                        <div class="col-md-4 d-inline-flex">
                                             <input class="form-control" type="time" value="To" id="to" />
                                         </div>
                                   
-                                  </div></div>
+                                  </div>
+                                  <div class="mb-3 row">
+                                      <label for="html5-email-input" class="col-md-3 col-form-label">Upaid Break</label>                                  
+                                        <div class="col-md-5 ">
+                                              <a class="btn btn-primary me-1" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Add</a>
+                                        </div>
+                                  </div>
+                                  
+                                 </div>
                                   <div class="col-md-12">
                                    <div class="mb-3 row">
-                                      <label for="html5-email-input" class="col-md-2 col-form-label">Upaid Break</label>
-                                      <div class="col-md-10">
-                                         <a class="btn btn-primary me-1" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="margin-left: -80px;">Add</a>
+                                      <!-- <label for="html5-email-input" class="col-md-2 col-form-label">Upaid Break</label> -->
+                                      <div class="col-md-12">
+                                         <!-- <a class="btn btn-primary me-1" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="margin-left: -80px;">Add</a> -->
                                          <div class="collapse mt-2" id="collapseExample">
-                                            <div class="mb-3 row" style="margin-left:-92px">
+                                            <div class="mb-3 row">
                                                <div class="col-md-4 d-inline-flex">
                                                   <input class="form-control" type="time" value="From" id="from" />
                                                </div>
                                                <div class="col-md-8" style="text-align: right;">
                                                   <p>Net payable time</p>
-                                                  <span class="fw-bold">1 HR</span>
+                                                  <span class="fw-bold">8 HR</span>
 
                                                </div>
                                             </div>
@@ -318,17 +326,17 @@
                   <!-- / Content -->
                   <!-- Footer -->
                   <footer class="content-footer footer bg-footer-theme">
-                        <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                            <div class="mb-2 mb-md-0"> © <script>
-                                    document.write(new Date().getFullYear())
-                                </script> ,All rights reserved by <a href="#" target="_blank" class="footer-link fw-bolder">Foxiom Leads</a>
-                            </div>
-                            <div>
-                                <a href="#" class="footer-link me-4" target="_blank">Privacy Policy</a>
-                                <a href="#" target="_blank" class="footer-link me-4">Support</a>
-                            </div>
-                        </div>
-                    </footer>
+                     <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                       <div class="mb-2 mb-md-0"> © <script>
+                           document.write(new Date().getFullYear())
+                         </script>, All rights reserved by <a href="https://foxiom.com/" target="_blank" class="footer-link fw-bolder">Foxiom</a>
+                       </div>
+                       <div>
+                         <a href="javascript:void(0);" class="footer-link me-4">Privacy Policy</a>
+                         <a href="javascript:void(0);" class="footer-link me-4">Support</a>
+                       </div>
+                     </div>
+                   </footer>
                   <!-- / Footer -->
                   <div class="content-backdrop fade"></div>
                </div>

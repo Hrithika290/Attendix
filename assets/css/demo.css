@@ -393,6 +393,201 @@ input[type="radio"] {
 
 
 
+.btn-add-allownace{
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --blue-color: #9A1650;
+}
+
+
+
+/* Global stylings */
+
+
+
+
+
+
+/* Form */
+
+.reg-form {
+  background-color: white;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 0.35rem;
+  padding: 50px;
+  z-index: 1;
+}
+
+.staff-form{
+  padding: 20px;
+}
+
+.form-step {
+  display: none;
+
+}
+
+.form-step.active {
+  /* padding: 20px; */
+  display: block;
+  transform-origin: top;
+  animation: animate .5s;
+}
+
+
+/* Button */
+
+
+/* .btn {
+  padding: 0.75rem;
+  display: block;
+  text-decoration: none;
+  width: min-content;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+} */
+
+.btn-next {
+  color: #fff !important;
+  float: right;
+  margin-left:5px;
+  float: right;
+}
+
+.btn-prev {
+  color: #fff !important;
+  float: right;
+  
+}
+
+
+
+
+
+
+/* Progress bar */
+
+.progress-bar {
+  margin: 10px 30px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  counter-reset: step;
+  margin-bottom: 30px;
+  flex-direction: row;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.progress-bar::before,
+.progress {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  background-color: #dcdcdc;
+  /* z-index: -1; */
+}
+
+.progress {
+  background-color: var(--blue-color);
+  width: 0;
+  transition: .5s;
+}
+
+.progress-step {
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-step::before {
+  counter-increment: step;
+  content: counter(step);
+}
+
+.progress-step::after {
+  content: attr(data-title);
+  position: absolute;
+  top: calc(100% + 0.20rem);
+  font-size: 0.85rem;
+  color: black !important;
+}
+
+.progress-step.active {
+  background-color: var(--blue-color);
+  color: white;
+}
+
+
+
+/* End Progress bar */
+
+
+
+
+
+.chart-center{
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
