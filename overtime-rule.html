@@ -223,12 +223,15 @@
                     <h5 class="mb-0">Holidays</h5> 
                 </div> -->
                 <div class="table-responsive p-3">
+                  <div class="row mb-3 mt-3">
+                    <h5 class="payroll-title">Overtime</h5>
+                    <hr>
+                  </div>
                   <table class="table table-borderless">
                     <thead>
                       <tr>
-                        <th>Overtime/Partial Day</th>
-                        <th>Select Hour/Minutes</th>
                         <th></th>
+                        <th>Select Hour/Minutes</th>
                         <th>Amount</th>
                         <!-- <th>Shift</th> -->
                       </tr>
@@ -236,7 +239,8 @@
                     <tbody>
                       <tr>
                         <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" placeholder="Over time (working Day)" aria-describedby="defaultFormControlHelp" disabled />
+                          <h6 style="vertical-align: middle;">Over time (working Day)</h6>
+                          <!-- <input type="text" class="form-control" id="defaultFormControlInput" placeholder="Over time (working Day)" aria-describedby="defaultFormControlHelp" disabled /> -->
                         </td>
                         <td>
                           <select name="time" id="" class="form-select">
@@ -244,16 +248,17 @@
                             <option value="2">Minutes</option>
                           </select>
                         </td>
-                        <td>
+                        <!-- <td>
                           <input type="text" class="form-control" id="defaultFormControlInput" placeholder="" aria-describedby="defaultFormControlHelp" />
-                        </td>
+                        </td> -->
                         <td>
                             <input type="text" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp">
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" placeholder="Over time (Off Day)" aria-describedby="defaultFormControlHelp" disabled/>
+                          <h6 style="vertical-align: middle;">Over time (Off Day)</h6>
+                          <!-- <input type="text" class="form-control" id="defaultFormControlInput" placeholder="Over time (Off Day)" aria-describedby="defaultFormControlHelp" disabled/> -->
                         </td>
                         <td>
                           <select name="time" id="" class="form-select">
@@ -261,16 +266,17 @@
                             <option value="2">Minutes</option>
                           </select>
                         </td>
-                        <td>
+                        <!-- <td>
                           <input type="text" class="form-control" id="defaultFormControlInput" aria-describedby="defaultFormControlHelp" />
-                        </td>
+                        </td> -->
                         <td>
                             <input type="text" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp">
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" placeholder="Over time (HoliDay)" aria-describedby="defaultFormControlHelp" disabled/>
+                          <h6 style="vertical-align: middle;">Over time (HoliDay)</h6>
+                          <!-- <input type="text" class="form-control" id="defaultFormControlInput" placeholder="Over time (HoliDay)" aria-describedby="defaultFormControlHelp" disabled/> -->
                         </td>
                         <td>
                           <select name="time" id="" class="form-select">
@@ -278,16 +284,34 @@
                             <option value="2">Minutes</option>
                           </select>
                         </td>
-                        <td>
+                        <!-- <td>
                           <input type="text" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
-                        </td>
+                        </td> -->
                         <td>
                             <input type="text" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp">
                         </td>
                       </tr>
+                      
+                    </tbody>
+
+                  </table>
+                  <div class="row mb-3 mt-3">
+                    <h5 class="payroll-title">Partial Day</h5>
+                    <hr>
+                  </div>
+                  <table class="table table-borderless">
+                    <thead>
                       <tr>
+                        <th></th>
+                        <th>Select Hour/Minutes</th>
+                        <th>Amount</th>
+                        <!-- <th>Shift</th> -->
+                      </tr>
+                    </thead>
+                    <tbody>
+                     <tr>
                         <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" placeholder="Partial Day work" aria-describedby="defaultFormControlHelp" disabled/>
+                          <h6 style="vertical-align: middle;">Partial Day work</h6>
                         </td>
                         <td>
                           <select name="time" id="" class="form-select">
@@ -296,15 +320,12 @@
                           </select>
                         </td>
                         <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" aria-describedby="defaultFormControlHelp" />
-                        </td>
-                        <td>
                             <input type="text" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp">
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" placeholder="Partial Day deduction" aria-describedby="defaultFormControlHelp" disabled/>
+                          <h6 style="vertical-align: middle;">Partial Day deduction</h6>
                         </td>
                        <td>
                           <select name="time" id="" class="form-select">
@@ -312,9 +333,6 @@
                             <option value="2">Minutes</option>
                           </select>
                        </td>
-                        <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" aria-describedby="defaultFormControlHelp" />
-                        </td>
                         <td>
                             <input type="text" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp">
                         </td>
