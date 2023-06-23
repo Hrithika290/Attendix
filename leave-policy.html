@@ -631,7 +631,7 @@ function deletFun() {
         </div>     
       </div>
 
-      <button type="button" class="btn btn-lg btn-primary float-end" data-bs-toggle="modal" data-bs-target="#modalCenter">
+      <button type="button" class="btn btn-lg btn-primary float-end" onclick="submitForm(event)">
         Save & Apply
       </button>
       
@@ -670,12 +670,8 @@ function deletFun() {
           <!-- / Layout wrapper -->
   <script>
   function submitForm(event) {
-    event.preventDefault(); // Prevent the default form submission
-    
-    // Perform any form validation or processing if needed
-    
-    // Redirect to the desired URL
-    window.location.href = "add-shift.html";
+    event.preventDefault(); 
+    window.location.href = "leave-policy-view.html";
   }
 </script>
       <!-- Core JS -->

@@ -273,7 +273,9 @@ function deletFun() {
                       <!-- Content -->
                       
         <div class="container-xxl flex-grow-1 container-p-y">
-          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span>View Leave Policy</h4>
+          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span>View Leave Policy<button type="button" class="btn btn-md btn-primary float-end" onclick="submitForm(event)">
+            Edit Template
+          </button></h4>
           <div class="row">
                 <!-- Basic Layout -->
                 <div class="col-xxl">
@@ -302,365 +304,66 @@ function deletFun() {
                                       <td><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Accrual Type</strong></td>
                                       <td>All at once</td>
                                     </tr>
+                                    <tr>
+                                        <td><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Sandwich Leaves</strong></td>
+                                        <td>Count</td>
+                                      </tr>
+                                      <tr>
+                                        <td><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Leave Approval</strong></td>
+                                        <td>Level 1</td>
+                                      </tr>
                                   </tbody>
                                 </table>
                         </div>
-                          
-                        
-                      <form>
-                        <div class="row mb-3">
-                          <label class="col-sm-4 col-form-label" for="basic-default-name">Template Name</label>
-                          <div class="col-sm-8">
-                            <input type="text" class="form-control" id="basic-default-name" placeholder="John Doe" />
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <label class="col-sm-4 col-form-label" for="basic-default-company">Leave Policy Cycle</label>
-                          <div class="col-sm-8">
-                            <div class="nav-align-top">
-                              <ul class="nav nav-pills" role="tablist">
-                                <li class="nav-item">
-                                  <button type="button" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-top-home" aria-controls="navs-pills-top-home" aria-selected="true">Monthly</button>
-                                </li>
-                                <li class="nav-item">
-                                  <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-top-profile" aria-controls="navs-pills-top-profile" aria-selected="false">Yearly</button>
-                                </li>
-                              </ul> 
-                            </div>
-                          </div>
-                        </div>
-                    <div class="row">
-                      <div class="tab-content content_tab">
-                        <div class="tab-pane fade show active" id="navs-pills-top-home" role="tabpanel">
-                          <div class="row mb-3">
-                            <label class="col-sm-4 col-form-label" for="basic-default-email">Sandwich Leaves <i class="bx bx-error-alt" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="right" data-bs-html="true" title="<span>Tooltip on right</span>"></i></label>
-                            <div class="col-sm-8 mt-2">
-                                <div class="form-check form-check-inline radio_form">
-                                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1"  checked/>
-                                  <label class="form-check-label" for="inlineRadio1">Count</label>
-                                </div>
-                                <div class="form-check form-check-inline radio_form">
-                                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2" />
-                                  <label class="form-check-label" for="inlineRadio2">Ignore</label>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tab-pane fade" id="navs-pills-top-profile" role="tabpanel">
-                          <div class="row mb-3">
-                            <label class="col-sm-4 col-form-label" for="basic-default-email">Leave Period</label>
-                            <div class="col-sm-5">
-                              <div class="row">
-                                <div class="col-md-5">
-                                  <div class="input-group input-group-merge">
-                                    <input type="month" id="basic-default-email first-month" class="form-control display-inline" placeholder="john.doe" aria-label="john.doe" aria-describedby="basic-default-email2" />
-                                  </div>
-                                  </div>
-                                  <div class="col-md-2 text-center mt-2">
-                                    To
-                                  </div>
-                                <div class="col-md-5">
-                                  <div class="input-group input-group-merge">
-                                    <input type="month" id="basic-default-email second-month" class="form-control display-inline" placeholder="john.doe" aria-label="john.doe" aria-describedby="basic-default-email2" disabled/>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          
-
-                          <div class="row mb-3">
-                            <label class="col-sm-4 col-form-label" for="basic-default-email">Accrual Type</label>
-                            <div class="col-sm-8">
-                              <div class="row">
-                                <div class="mb-3">
-                                  <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                                    <option selected>All at once</option>
-                                    <option value="1">Month Start</option>
-                                    <option value="2">Month End</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="row mb-3">
-                            <label class="col-sm-4 col-form-label" for="basic-default-email">Sandwich Leaves <i class="bx bx-error-alt" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="right" data-bs-html="true" title="<span>Tooltip on right</span>"></i></label>
-                            <div class="col-sm-8 mt-2">
-                                <div class="form-check form-check-inline  radio_form ">
-                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked/>
-                                  <label class="form-check-label" for="inlineRadio1">Count</label>
-                                </div>
-                                <div class="form-check form-check-inline radio_form">
-                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-                                  <label class="form-check-label" for="inlineRadio2">Ignore</label>
-                                </div>
-                            </div>
-                          </div>
-                        </div> 
-                      </div>
-                    </div>            
-                  </form>
                 </div>
               </div>
             </div>     
           </div>
-              
-          <div class="row">
-             <div class="col-xxl">
-              <div class="card">
-                <h5 class="card-header">Leave Categories</h5>
-                <div class="table-responsive text-nowrap p-3">
-                  <table class="table table-borderless">
-                    <thead>
-                      <tr>
-                        <th>Leave Category Name</th>
-                        <th>Leave Count</th>
-                        <th>Unused Leave Rule</th>
-                        <th>Encashment/Carry Forward Limit</th>
-                        <th></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                     <tr>
-                        <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" value="Casual Leave" placeholder="Category Name" aria-describedby="defaultFormControlHelp" />
-                        </td>
-                        <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" placeholder="days per year" aria-describedby="defaultFormControlHelp" />
-                        </td>
-                        <td>
-                          <div>
-                            <select id="search1" name="state" class="form-control form-select">
-                              <option value="Lapse" class="selected">Lapse</option>
-                              <option value="Carry">Carry Forward</option>
-                              <option value="Encash">Encash</option>
-                            </select>
-                          </div>
-                        </td>
-                        <td>
-                          <div id="Lapse">
-                            <input type="text" placeholder="Days" class="form-control" disabled>
-                          </div>
-                          <div id="Carry">
-                            <input type="text" placeholder="Days" class="form-control" >
-                            <span>No Carry Forward</span>
-                          </div>
-                          <div id="Encash">
-                            <input type="text" placeholder="Days" class="form-control" >
-                            <span>No Encash</span>
-                          </div>
-                        </td>
-                        <td><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a></td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" value="Sick Leave" placeholder="Category Name" aria-describedby="defaultFormControlHelp" />
-                        </td>
-                        <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" placeholder="days per year" aria-describedby="defaultFormControlHelp" />
-                        </td>
-                        <td>
-                          <div>
-                            <select id="search1" name="state" class="form-control form-select">
-                              <option value="Lapse" class="selected">Lapse</option>
-                              <option value="Carry">Carry Forward</option>
-                              <option value="Encash">Encash</option>
-                            </select>
-                          </div>
-                        </td>
-                        <td>
-                          <div id="Lapse">
-                            <input type="text" placeholder="Days" class="form-control" disabled>
-                          </div>
-                          <div id="Carry">
-                            <input type="text" placeholder="Days" class="form-control" >
-                            <span>No Carry Forward</span>
-                          </div>
-                          <div id="Encash">
-                            <input type="text" placeholder="Days" class="form-control" >
-                            <span>No Encash</span>
-                          </div>
-                        </td>
-                        <td><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a></td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" value="Annual Leave" placeholder="Category Name" aria-describedby="defaultFormControlHelp" />
-                        </td>
-                        <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" placeholder="days per year" aria-describedby="defaultFormControlHelp" />
-                        </td>
-                        <td>
-                          <div>
-                            <select id="search1" name="state" class="form-control form-select">
-                              <option value="Lapse" class="selected">Lapse</option>
-                              <option value="Carry">Carry Forward</option>
-                              <option value="Encash">Encash</option>
-                            </select>
-                          </div>
-                        </td>
-                        <td>
-                          <div id="Lapse">
-                            <input type="text" placeholder="Days" class="form-control" disabled>
-                          </div>
-                          <div id="Carry">
-                            <input type="text" placeholder="Days" class="form-control" >
-                            <span>No Carry Forward</span>
-                          </div>
-                          <div id="Encash">
-                            <input type="text" placeholder="Days" class="form-control" >
-                            <span>No Encash</span>
-                          </div>
-                        </td>
-                        <td><a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a></td>
-                      </tr> 
-                      
-                      
-                      <tr id="service">
-                        <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" placeholder="Category Name" aria-describedby="defaultFormControlHelp" />
-                        </td>
-                        <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" placeholder="days per year" aria-describedby="defaultFormControlHelp" />
-                        </td>
-                        <td>
-                          <div>
-                            <select id="search1" name="state" class="form-control form-select">
-                              <option value="Lapse" class="selected">Lapse</option>
-                              <option value="Carry">Carry Forward</option>
-                              <option value="Encash">Encash</option>
-                            </select>
-                          </div>
-                        </td>
-                        <td>
-                          <div id="Lapse">
-                            <input type="text" placeholder="Days" class="form-control" disabled>
-                          </div>
-                          <div id="Carry">
-                            <input type="text" placeholder="Days" class="form-control" >
-                            <span>No Carry Forward</span>
-                          </div>
-                          <div id="Encash">
-                            <input type="text" placeholder="Days" class="form-control" >
-                            <span>No Encash</span>
-                          </div>
-                        </td>
-                        <td>
-                          
-                          <a class="dropdown-item" href="javascript:void(0);" ><i class="bx bx-trash me-1" onclick="deletFun()"></i></a></td>
-                      </tr>
-                      
-                      <tr>
-                        <td>
-                            <button id="addmore" class="btn btn-primary" onclick="duplicate()">Add Leave Category</button>
-                        </td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>     
-          </div> 
-          
-          <div class="row">
-            <!-- Basic Layout -->
-            <div class="col-xxl">
-              <div class="card mb-4 mt-4">
-                <div class="card-header d-flex align-items-center justify-content-between">
-                  <h5 class="mb-0">Leave Approval</h5> <small class="text-muted float-end">Default label</small>
-                </div>
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-sm-8 mt-3">
-                      <i class="bx bx-error-alt"></i><span class="ml-2">Multilevel Approval Settings is set to Level 1 by default</span>
-                    </div>
-                    <div class="col-sm-4">
-                          <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalCenter">
-                            Set Multilevel Approval
-                          </button>
-                
-                          <!-- Modal -->
-                          <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="modalCenterTitle">Set Multilevel Approval</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  <div class="search-form">
-                                    <div>
-                                      <select id="search" name="state" class="form-control form-select">
-                                        <option value="level-1" class="selected">Level one</option>
-                                        <option value="level-2">Level two</option>
-                                        <option value="level-3">Level three</option>
-                                      </select>
-                                    </div>
-                                  
-                                    <div id="level-1" class="multi_level1"> <span>First & final approval by</span>
-                                      <select class="form-control mt-2 form-select" disabled>
-                                        <option value="item1">Anyone(Manager, Admin, Employer)</option>
-                                        <option value="item2">Manager</option>
-                                        <option value="item3">Admin</option>
-                                        <option value="item3">Employer</option>
-                                      </select>
-                                    </div>
+          <div class="card mb-4">
+            <h5 class="card-header">Leave Categories</h5>
+            <div class="table-responsive text-nowrap">
+              <table class="table">
+                <thead class="table-light">
+                  <tr>
+                    <th>Category Name</th>
+                    <th>Leave Count</th>
+                    <th>Unused Leave Rule</th>
+                    <th>Encashment/Carryforward Limit</th>
+                  </tr>
+                </thead>
+                <tbody class="table-border-bottom-0">
+                  <tr>
+                    <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Casual Leave</strong></td>
+                    <td>8</td>
+                    <td>
+                      Lapse
+                    </td>
+                    <td>None</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Sick Leave</strong></td>
+                    <td>15</td>
+                    <td>
+                      Carry Forward
+                    </td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Annual Leave</strong></td>
+                    <td>8</td>
+                    <td>
+                      Encash
+                    </td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>  
+        
 
-                                    <div id="level-2" class="multi_level1"> 
-                                      <span>First approval by</span> 
-                                      <select class="form-control mt-2 form-select">
-                                        <option value="item1">Manager</option>
-                                        <option value="item2">Admin</option>
-                                      </select><br>
-                                      <span>Second and final approval by</span> 
-                                      <select class="form-control mt-2 form-select" disabled>
-                                        <option value="item1">Admin</option>
-                                        <option value="item2">Allied Health</option>
-                                      </select>
-                                    </div>
-                                    
-                                  
-                                    <div id="level-3" class="multi_level1"> 
-                                      <span>First approval by</span> 
-                                      <select class="form-control mt-2 form-select" disabled>
-                                        <option value="item1">Manager</option>
-                                        <option value="item2">Admin</option>
-                                      </select><br>
-                                      <span>Second approval by</span> 
-                                      <select class="form-control mt-2 form-select" disabled>
-                                        <option value="item1">Admin</option>
-                                        <option value="item2">Allied Health</option>
-                                      </select><br>
-                                      <span>Third and final approval by</span> 
-                                      <select class="form-control mt-2 form-select" disabled>
-                                        <option value="item1">Employer</option>
-                                        <option value="item2">Allied Health</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                      <!-- <button type="button" class="btn btn-lg btn-primary">Set Multilevel Approval</button> -->
-                    </div>
-                  </div>
-                </div>
-          </div>
-        </div>     
-      </div>
-
-      <button type="button" class="btn btn-lg btn-primary float-end" data-bs-toggle="modal" data-bs-target="#modalCenter">
-        Save & Apply
-      </button>
       
-        </div>
+    </div>
         
               
                         
@@ -700,7 +403,7 @@ function deletFun() {
     // Perform any form validation or processing if needed
     
     // Redirect to the desired URL
-    window.location.href = "add-shift.html";
+    window.location.href = "leave-policy-edit.html";
   }
 </script>
       <!-- Core JS -->
