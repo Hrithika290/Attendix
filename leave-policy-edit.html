@@ -4,7 +4,7 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-      <title>Leave Policy</title>
+      <title>Edit Leave Template</title>
       <meta name="description" content="Create your shift - Payroll" />
       <meta name="keywords" content="Payroll">
       <!-- Canonical SEO -->
@@ -111,7 +111,7 @@ function deletFun() {
             <!-- Menu -->
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo ">
-                    <a href="index-2.html" class="app-brand-link">
+                    <a href="dashboard.html" class="app-brand-link">
                         <span class="app-brand-logo demo">
                             
                         </span>
@@ -273,56 +273,29 @@ function deletFun() {
                       <!-- Content -->
                       
         <div class="container-xxl flex-grow-1 container-p-y">
-          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Leave Policy</h4>
+          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span>Edit Leave Template</h4>
           <div class="row">
                 <!-- Basic Layout -->
                 <div class="col-xxl">
                   <div class="card mb-4">
                     <div class="card-header d-flex align-items-center justify-content-between">
-                      <h5 class="mb-0">Create Leave Template</h5> <small class="text-muted float-end">Default label</small>
+                      <h5 class="mb-0">Edit Leave Template</h5> <small class="text-muted float-end">Default label</small>
                     </div>
                     <div class="card-body">
                       <form>
                         <div class="row mb-3">
                           <label class="col-sm-4 col-form-label" for="basic-default-name">Template Name</label>
                           <div class="col-sm-8">
-                            <input type="text" class="form-control" id="basic-default-name" placeholder="John Doe" />
+                            <input type="text" class="form-control" id="basic-default-name" value="Leave Policy 1" />
                           </div>
                         </div>
                         <div class="row mb-3">
                           <label class="col-sm-4 col-form-label" for="basic-default-company">Leave Policy Cycle</label>
-                          <div class="col-sm-8">
-                            <div class="nav-align-top">
-                              <ul class="nav nav-pills" role="tablist">
-                                <li class="nav-item">
-                                  <button type="button" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-top-home" aria-controls="navs-pills-top-home" aria-selected="true">Monthly</button>
-                                </li>
-                                <li class="nav-item">
-                                  <button type="button" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-pills-top-profile" aria-controls="navs-pills-top-profile" aria-selected="false">Yearly</button>
-                                </li>
-                              </ul> 
-                            </div>
+                          <div class="col-sm-8  mt-3">
+                            <h6>Yearly</h6>
                           </div>
                         </div>
-                    <div class="row">
-                      <div class="tab-content content_tab">
-                        <div class="tab-pane fade show active" id="navs-pills-top-home" role="tabpanel">
-                          <div class="row mb-3">
-                            <label class="col-sm-4 col-form-label" for="basic-default-email">Sandwich Leaves <i class="bx bx-error-alt" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="right" data-bs-html="true" title="<span>Tooltip on right</span>"></i></label>
-                            <div class="col-sm-8 mt-2">
-                                <div class="form-check form-check-inline radio_form">
-                                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1"  checked/>
-                                  <label class="form-check-label" for="inlineRadio1">Count</label>
-                                </div>
-                                <div class="form-check form-check-inline radio_form">
-                                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2" />
-                                  <label class="form-check-label" for="inlineRadio2">Ignore</label>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tab-pane fade" id="navs-pills-top-profile" role="tabpanel">
-                          <div class="row mb-3">
+                        <div class="row mb-3">
                             <label class="col-sm-4 col-form-label" for="basic-default-email">Leave Period</label>
                             <div class="col-sm-5">
                               <div class="row">
@@ -342,14 +315,12 @@ function deletFun() {
                               </div>
                             </div>
                           </div>
-                          
-
                           <div class="row mb-3">
                             <label class="col-sm-4 col-form-label" for="basic-default-email">Accrual Type</label>
                             <div class="col-sm-8">
                               <div class="row">
                                 <div class="mb-3">
-                                  <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                                  <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example" disabled>
                                     <option selected>All at once</option>
                                     <option value="1">Month Start</option>
                                     <option value="2">Month End</option>
@@ -358,23 +329,21 @@ function deletFun() {
                               </div>
                             </div>
                           </div>
-
+                   
                           <div class="row mb-3">
                             <label class="col-sm-4 col-form-label" for="basic-default-email">Sandwich Leaves <i class="bx bx-error-alt" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="right" data-bs-html="true" title="<span>Tooltip on right</span>"></i></label>
                             <div class="col-sm-8 mt-2">
-                                <div class="form-check form-check-inline  radio_form ">
-                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked/>
+                                <div class="form-check form-check-inline radio_form">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1"  checked/>
                                   <label class="form-check-label" for="inlineRadio1">Count</label>
                                 </div>
                                 <div class="form-check form-check-inline radio_form">
-                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2" />
                                   <label class="form-check-label" for="inlineRadio2">Ignore</label>
                                 </div>
                             </div>
                           </div>
-                        </div> 
-                      </div>
-                    </div>            
+                         
                   </form>
                 </div>
               </div>
@@ -402,7 +371,7 @@ function deletFun() {
                           <input type="text" class="form-control" id="defaultFormControlInput" value="Casual Leave" placeholder="Category Name" aria-describedby="defaultFormControlHelp" />
                         </td>
                         <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" placeholder="days per year" aria-describedby="defaultFormControlHelp" />
+                          <input type="text" class="form-control" id="defaultFormControlInput" value="3" aria-describedby="defaultFormControlHelp" />
                         </td>
                         <td>
                           <div>
@@ -433,7 +402,7 @@ function deletFun() {
                           <input type="text" class="form-control" id="defaultFormControlInput" value="Sick Leave" placeholder="Category Name" aria-describedby="defaultFormControlHelp" />
                         </td>
                         <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" placeholder="days per year" aria-describedby="defaultFormControlHelp" />
+                          <input type="text" class="form-control" id="defaultFormControlInput" value="4" aria-describedby="defaultFormControlHelp" />
                         </td>
                         <td>
                           <div>
@@ -464,7 +433,7 @@ function deletFun() {
                           <input type="text" class="form-control" id="defaultFormControlInput" value="Annual Leave" placeholder="Category Name" aria-describedby="defaultFormControlHelp" />
                         </td>
                         <td>
-                          <input type="text" class="form-control" id="defaultFormControlInput" placeholder="days per year" aria-describedby="defaultFormControlHelp" />
+                          <input type="text" class="form-control" id="defaultFormControlInput" value="9" aria-describedby="defaultFormControlHelp" />
                         </td>
                         <td>
                           <div>
@@ -630,11 +599,13 @@ function deletFun() {
           </div>
         </div>     
       </div>
-
-      <button type="button" class="btn btn-lg btn-primary float-end" data-bs-toggle="modal" data-bs-target="#modalCenter">
+      
+      <button type="button" class="btn btn-lg btn-primary float-end ml-2" data-bs-toggle="modal" data-bs-target="#modalCenter">
         Save & Apply
       </button>
-      
+      <button type="button" class="btn btn-lg btn-primary float-end" data-bs-toggle="modal" data-bs-target="#modalCenter">
+        Delete
+      </button>
         </div>
         
               
