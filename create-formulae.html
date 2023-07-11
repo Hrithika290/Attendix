@@ -4,7 +4,7 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-      <title>Additional Allowance & Deduction Profile</title>
+      <title>Create Formulae</title>
       <meta name="description" content="Create your shift - Payroll" />
       <meta name="keywords" content="Payroll">
       <!-- Canonical SEO -->
@@ -41,8 +41,19 @@
          gtag('js', new Date());
          gtag('config', 'GA_MEASUREMENT_ID');
 
-  
-      </script>
+
+//duplicate
+function duplicate() {    
+    var original = document.getElementById('service');
+    var rows = original.parentNode.rows;
+    var i = rows.length - 1;
+    var clone = original.cloneNode(true); 
+    clone.id = "duplic" + (i); 
+    original.parentNode.insertBefore(clone, rows[i]);
+}
+</script>
+
+     
       <!-- Custom notification for demo -->
       <!-- beautify ignore:end -->
    </head>
@@ -53,7 +64,7 @@
             <!-- Menu -->
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo ">
-                    <a href="dashboard.html" class="app-brand-link">
+                    <a href="index-2.html" class="app-brand-link">
                         <span class="app-brand-logo demo">
                             
                         </span>
@@ -110,7 +121,6 @@
                     </a>
                   </li>
                 </ul>
-
                 <div>
                   <p style="margin: 0rem 1rem; padding: 0.625rem 1rem; color: white;">Version 0.0.1</p>
                 </div>
@@ -137,7 +147,7 @@
                       <ul class="navbar-nav flex-row align-items-center ms-auto"> 
                         <!-- Place this tag where you want the button to render. -->
                         <li class="nav-item lh-1 me-3">
-                          <a class="github-button" href="javscript:void(0);" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
+                          <a class="github-button" href="https://github.com/themeselection/sneat-html-admin-template-free" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
                         </li>
                         <!-- User -->
                         <li class="nav-item navbar-dropdown dropdown-user dropdown">
@@ -198,9 +208,14 @@
                           </ul>
                         </li>
                         <!--/ User -->
+                        
+              
                       </ul>
                     </div>  
                 </nav>
+                
+              
+                
               <!-- / Navbar -->
               
                     
@@ -211,228 +226,72 @@
                       <!-- Content -->
                       
         <div class="container-xxl flex-grow-1 container-p-y">
-          <h4 class="fw-bold py-3 mb-4">
-            <span class="text-muted fw-light">Dashboard/</span> Additional Allowance & Deduction Profile
-            <button class="btn btn-primary float-end" onclick="submitForm(event)">Create Profile</button>
-        </h4>
-         
-         
-
+          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Create Formulae</h4>
           <div class="row">
-             <div class="col-xxl">
-              <div class="card">
-                <div class="card-header d-flex align-items-center justify-content-between">
-                    <!-- <h5 class="mb-0">Holidays</h5> <button id="addmore" class="btn btn-lg btn-primary float-end" onclick="duplicate()">Add Holiday</button> -->
-                    <h5 class="mb-0">Additional Allowance Profile</h5> 
-                </div>
-               
-                <div class="card-body">
-                    <div class="row mb-5">
-                        <div class="col-md mb-4 mb-md-0">
-                          <div class="accordion mt-3" id="accordionExample">
-                            <div class="card accordion-item active">
-                              <h2 class="accordion-header" id="headingOne">
-                                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionOne" aria-expanded="true" aria-controls="accordionOne">
-                                  Fixed Allowance
-                                </button>
-                              </h2>
-                      
-                              <div id="accordionOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                  <div class="table-responsive text-nowrap">
-                                    <table class="table">
-                                      <thead>
-                                        <tr>
-                                          <th>Additional Allowance Profile</th>
-                                          <th>Formula</th>
-                                          <th>Actions</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody class="table-border-bottom-0">
-                                        <tr>
-                                          <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Travel Allowance</strong></td>
-                                          <td>Formula 1</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
-                                        </tr>
-                                        
-                                        <tr>
-                                          <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Rent Allowance</strong></td>
-                                          <td>Formula 2</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td><i class="fab fa-vuejs fa-lg text-success me-3"></i> <strong>Medical Allowance</strong></td>
-                                          <td>Formula 3</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Childcare Allowance</strong></td>
-                                          <td>Formula 4</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card accordion-item">
-                              <h2 class="accordion-header" id="headingTwo">
-                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionTwo" aria-expanded="false" aria-controls="accordionTwo">
-                                  Rent Allowance
-                                </button>
-                              </h2>
-                              <div id="accordionTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                  <div class="table-responsive text-nowrap">
-                                    <table class="table">
-                                      <thead>
-                                        <tr>
-                                          <th>Additional Allowance Profile</th>
-                                          <th>Formula</th>
-                                          <th>Actions</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody class="table-border-bottom-0">
-                                        <tr>
-                                          <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Housing Allowance</strong></td>
-                                          <td>Formula 1</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
-                                        </tr>
-                                        
-                                        <tr>
-                                          <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Hostel Rent Allowance</strong></td>
-                                          <td>Formula 2</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
-                                        </tr>
-                                        
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            
+                <!-- Basic Layout -->
+                <div class="col-xxl">
+                  <div class="card mb-4">
+                    <!-- <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="mb-0">Create Leave Template</h5> <small class="text-muted float-end">Default label</small>
+                    </div> -->
+                    <div class="card-body">
+                      <form>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-default-name">Name</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="basic-default-name" placeholder="Formulae 1" />
                           </div>
                         </div>
-                        
-                      </div>
-                </div>
-              </div>
-              <div class="card mt-5">
-                <div class="card-header d-flex align-items-center justify-content-between">
-                    <!-- <h5 class="mb-0">Holidays</h5> <button id="addmore" class="btn btn-lg btn-primary float-end" onclick="duplicate()">Add Holiday</button> -->
-                    <h5 class="mb-0">Additional Deduction Profile</h5> 
-                </div>
-                
-                <div class="card-body">
-                    <div class="row mb-5">
-                        <div class="col-md mb-4 mb-md-0">
-                          <div class="accordion mt-3" id="accordionExample">
-                            <div class="card accordion-item active">
-                              <h2 class="accordion-header" id="headingOne">
-                                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion1" aria-expanded="true" aria-controls="accordionOne">
-                                  Fixed Deduction
-                                </button>
-                              </h2>
-                      
-                              <div id="accordion1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                  <div class="table-responsive text-nowrap">
-                                    <table class="table">
-                                      <thead>
-                                        <tr>
-                                          <th>Additional Allowance Profile</th>
-                                          <th>Formula</th>
-                                          <th>Actions</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody class="table-border-bottom-0">
-                                        <tr>
-                                          <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>PF</strong></td>
-                                          <td>Formula 1</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
-                                        </tr>
-                                        
-                                        <tr>
-                                          <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>ESI</strong></td>
-                                          <td>Formula 2</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
-                                        </tr>
-                                        
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card accordion-item">
-                              <h2 class="accordion-header" id="headingTwo">
-                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion2" aria-expanded="false" aria-controls="accordionTwo">
-                                  Salary Deduction
-                                </button>
-                              </h2>
-                              <div id="accordion2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                  <div class="table-responsive text-nowrap">
-                                    <table class="table">
-                                      <thead>
-                                        <tr>
-                                          <th>Additional Allowance Profile</th>
-                                          <th>Formula</th>
-                                          <th>Actions</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody class="table-border-bottom-0">
-                                        <tr>
-                                          <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Repayment of Loans</strong></td>
-                                          <td>Formula 1</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
-                                        </tr>
-                                        
-                                        <tr>
-                                          <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Union Dues</strong></td>
-                                          <td>Formula 2</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
-                                        </tr>
-                                        
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-default-name">Type</label>
+                          <div class="col-sm-10">
+                            <select name="blood-group" id="" class="form-select">
+                              <option value="allowance">Allowance</option>
+                              <option value="deduction">Deduction</option>
+                              <option value="shift">Shift</option>
+                              <option value="overtime">Overtime</option>
+                              <option value="gracetime">Gracetime</option>
+                            </select>
                           </div>
                         </div>
-                        
-                      </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-default-name">Field</label>
+                          <div class="col-sm-10">
+                            <select name="blood-group" id="" class="form-select">
+                              <option value="bs">Basic Salary</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-default-email">Day wise</label>
+                          <div class="col-sm-7 mt-2">
+                              <div class="form-check form-check-inline radio_form">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1"  checked/>
+                                <label class="form-check-label" for="inlineRadio1">On</label>
+                              </div>
+                              <div class="form-check form-check-inline radio_form">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2" />
+                                <label class="form-check-label" for="inlineRadio2">Off</label>
+                              </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <button type="button" class="btn btn-primary float-end" role="tab">fx</button>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-default-name">Formulae</label>
+                          <div class="col-sm-10">
+                            <textarea name="" id="" cols="10" rows="4" placeholder="" class="form-control" readonly></textarea>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-lg btn-primary float-end mt-3" onclick="submitForm(event)">
+                          Save & Apply
+                        </button>      
+                  </form>
                 </div>
               </div>
             </div>     
-          </div> 
-          
-         
+          </div>
         </div>
         
               
@@ -468,12 +327,8 @@
           <!-- / Layout wrapper -->
   <script>
   function submitForm(event) {
-    event.preventDefault(); // Prevent the default form submission
-    
-    // Perform any form validation or processing if needed
-    
-    // Redirect to the desired URL
-    window.location.href = "create-allowance-deduction-profile.html";
+    event.preventDefault(); 
+    window.location.href = "formulae.html";
   }
 </script>
       <!-- Core JS -->

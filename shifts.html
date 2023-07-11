@@ -216,7 +216,7 @@
                                              <div class="modal-dialog modal-sm" role="document">
                                                <div class="modal-content">
                                                  <div class="modal-header">
-                                                   <h5 class="modal-title" id="exampleModalLabel2">Edit Shit</h5>
+                                                   <h5 class="modal-title" id="exampleModalLabel2">Edit Shift</h5>
                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                  </div>
                                                  <div class="modal-body">
@@ -227,9 +227,15 @@
                                                      </div>
                                                    </div>
                                                    <div class="row g-2">
+                                                      <label class="form-label" for="emailSmall">Shift Time</label>
+
                                                      <div class="col mb-0">
-                                                       <label class="form-label" for="emailSmall">Shift Time</label>
-                                                       <input type="text" class="form-control" id="emailSmall" value="09:00 AM - 06:00 PM">
+                                                       <div class="col-md-6 d-inline-flex">
+                                                         <input class="form-control" type="time" value="9.00" id="from" />
+                                                     </div>
+                                                     <div class="col-md-6 d-inline-flex">
+                                                         <input class="form-control" type="time" value="To" id="to" />
+                                                     </div>
                                                      </div>
                                                      
                                                    </div>

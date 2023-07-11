@@ -377,7 +377,8 @@ input[type="radio"] {
   background-color: #f4f1f2;
 }
 .card-bg .card{
-  background-color: #f6f6f6;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background-color: #fbfbfb;
   box-shadow: none;
 }
 .payroll-title{
@@ -554,16 +555,39 @@ input[type="radio"] {
 }
 
 
+.salry button{
+  padding: 10px 15px;
+}
+
+
+.table-branch th{
+  font-size: 11px;
+  padding: 15px 8px;
+  border: 1px solid #dfdfdf;
+}
+.table-branch td{
+  border: 1px solid #dfdfdf;
+  padding: 8px;
+  font-size: 13px;
+}
 
 
 
-
-
-
-
-
-
-
+.btn-margin{
+  margin-top: 35px;
+}
+.profile-view label{
+  font-weight: 700;
+}
+.profile-view .profileData{
+  padding: 15px 20px;
+  /* border-bottom: 1px solid #f6f6f6; */
+}
+.profile-view hr{
+  padding: 0;
+  margin: 0;
+  color: #f6f6f6;
+}
 
 
 
