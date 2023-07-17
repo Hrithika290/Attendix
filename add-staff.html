@@ -948,82 +948,30 @@
           <h5 class="payroll-title">Overtime</h5>
           <hr>
         </div>
-        <div class="col-md-3 mt-4">
-        <h6 style="vertical-align: middle;">Over time (working Day)</h6>
-        </div>
-        <div class="mb-3 col-md-4">
-          <label for="hm" class="form-label">Hours/Minutes</label>
-          <select name="mode" id=""class="form-control form-select">
-            <option value="1">Hours</option>
-            <option value="2">Minutes</option>
-          </select>
-        </div>
-       
-        <div class="mb-3 col-md-4">
-          <label for="amount" class="form-label">Amount</label>
-          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
-        </div>
-        <div class="col-md-3 mt-4">
-          <h6 style="vertical-align: middle;">Over time (Off Day)</h6>
-        </div>
-        <div class="mb-3 col-md-4">
-          <label for="hm" class="form-label">Hours/Minutes</label>
-          <select name="mode" id=""class="form-control form-select">
-            <option value="1">Hours</option>
-            <option value="2">Minutes</option>
-          </select>
-        </div>
-        <div class="mb-3 col-md-4">
-          <label for="amount" class="form-label">Amount</label>
-          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
-        </div>
-        <div class="col-md-3 mt-4">
-          <h6 style="vertical-align: middle;">Over time (HoliDay)</h6>
-          </div>
-          <div class="mb-3 col-md-4">
-            <label for="hm" class="form-label">Hours/Minutes</label>
+        <div class="col-md-12 mb-3">
+            <label for="amount" class="form-label">Choose Overtime Template</label>
             <select name="mode" id=""class="form-control form-select">
-              <option value="1">Hours</option>
-              <option value="2">Minutes</option>
+              <option value="casual-leave">Overtime Template 1</option>
+              <option value="sick-leave">Overtime Template 2</option>
+              <option value="annual-leave">Overtime Template 3</option>
             </select>
-          </div>
-        <div class="mb-3 col-md-4">
-          <label for="amount" class="form-label">Amount</label>
-          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
         </div>
+          
+
+        
+        
         <div class="row mb-3 mt-3">
           <h5 class="payroll-title">Partial Day</h5>
           <hr>
         </div>
-        <div class="col-md-3 mt-4">
-          <h6 style="vertical-align: middle;">Partial Day work</h6>
-          </div>
-          <div class="mb-3 col-md-4">
-            <label for="hm" class="form-label">Hours/Minutes</label>
-            <select name="mode" id=""class="form-control form-select">
-              <option value="1">Hours</option>
-              <option value="2">Minutes</option>
-            </select>
-          </div>
-        <div class="mb-3 col-md-4">
-          <label for="amount" class="form-label">Amount</label>
-          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
-        </div>
-
-        <div class="col-md-3 mt-4">
-          <h6 style="vertical-align: middle;">Partial Day deduction</h6>
-          </div>
-          <div class="mb-3 col-md-4">
-            <label for="hm" class="form-label">Hours/Minutes</label>
-            <select name="mode" id=""class="form-control form-select">
-              <option value="1">Hours</option>
-              <option value="2">Minutes</option>
-            </select>
-          </div>
-        <div class="mb-3 col-md-4">
-          <label for="amount" class="form-label">Amount</label>
-          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
-        </div>
+        <div class="col-md-12 mb-3">
+          <label for="amount" class="form-label">Choose Partial Day Template</label>
+          <select name="mode" id=""class="form-control form-select">
+            <option value="casual-leave">Partial Day Template 1</option>
+            <option value="sick-leave">Partial Day Template 2</option>
+            <option value="annual-leave">Partial Day Template 3</option>
+          </select>
+      </div>
 
         <div class="row mb-3 mt-3">
           <h5 class="payroll-title">Additional Allowance Profile</h5>
@@ -1058,7 +1006,7 @@
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Travel Allowance</strong></td>
+                            <td><strong>Travel Allowance</strong></td>
                             <td>Formula 1</td>
                             <td>
                               <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
@@ -1066,21 +1014,21 @@
                           </tr>
                           
                           <tr>
-                            <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Rent Allowance</strong></td>
+                            <td><strong>Rent Allowance</strong></td>
                             <td>Formula 2</td>
                             <td>
                               <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
                             </td>
                           </tr>
                           <tr>
-                            <td><i class="fab fa-vuejs fa-lg text-success me-3"></i> <strong>Medical Allowance</strong></td>
+                            <td><strong>Medical Allowance</strong></td>
                             <td>Formula 3</td>
                             <td>
                               <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
                             </td>
                           </tr>
                           <tr>
-                            <td><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Childcare Allowance</strong></td>
+                            <td><strong>Childcare Allowance</strong></td>
                             <td>Formula 4</td>
                             <td>
                               <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
@@ -1154,7 +1102,7 @@
                         </thead>
                         <tbody class="table-border-bottom-0">
                           <tr>
-                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>PF</strong></td>
+                            <td><strong>PF</strong></td>
                             <td>Formula 1</td>
                             <td>
                               <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
@@ -1162,7 +1110,7 @@
                           </tr>
                           
                           <tr>
-                            <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>ESI</strong></td>
+                            <td><strong>ESI</strong></td>
                             <td>Formula 2</td>
                             <td>
                               <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>

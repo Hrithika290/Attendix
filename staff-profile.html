@@ -32,22 +32,6 @@
       <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
       <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
       <script src="assets/js/config.js"></script>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async="async" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         
-         function gtag() {
-           dataLayer.push(arguments);
-         }
-         gtag('js', new Date());
-         gtag('config', 'GA_MEASUREMENT_ID');
-      </script>
-
-     
-      <!-- Custom notification for demo -->
-      <!-- beautify ignore:end -->
    </head>
    <body>
       <!-- Layout wrapper -->
@@ -251,6 +235,8 @@
                   </li>
                 </ul>
                 <div class="tab-content">
+
+                <!-- Personal Info -->
                   <div class="tab-pane fade show active" id="navs-pills-personal-info" role="tabpanel">
                     <div class="card-body">
                         <div class="d-flex align-items-start align-items-sm-center gap-4">
@@ -466,6 +452,8 @@
                               </div> 
                       </div>
                   </div>
+
+                  <!-- Contact Info -->
                   <div class="tab-pane fade" id="navs-pills-contact-info" role="tabpanel">
                     <div class="card-body">
                             <div class="row">
@@ -474,53 +462,59 @@
                                     <div class="card-body p-0">
                                         <form>
                                             <div class="row profileData">
-                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Permenant Address</span></label>
-                                                <div class="col-sm-7 mt-2">
+                                                <label class="col-sm-5 col-form-label" for="basic-default-name"><span>Permenant Address</span></label>
+                                                <div class="col-sm-6 mt-2">
                                                   <span></span>
                                                 </div>
                                             </div><hr>
                                             <div class="row profileData">
-                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Communication Address</span></label>
-                                                <div class="col-sm-7 mt-2">
+                                                <label class="col-sm-5 col-form-label" for="basic-default-name"><span>Communication Address</span></label>
+                                                <div class="col-sm-6 mt-2">
                                                   <span></span>
                                                 </div>
-                                            </div>
+                                            </div><hr>
                                             <div class="row profileData">
-                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Mobile Number</span></label>
-                                              <div class="col-sm-7 mt-2">
+                                              <label class="col-sm-5 col-form-label" for="basic-default-name"><span>Mobile Number</span></label>
+                                              <div class="col-sm-6 mt-2">
                                                 <span>4563215897</span>
                                               </div>
                                             </div><hr>
                                             <div class="row profileData">
-                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Whatsapp Number</span></label>
-                                                <div class="col-sm-7 mt-2">
+                                                <label class="col-sm-5 col-form-label" for="basic-default-name"><span>Whatsapp Number</span></label>
+                                                <div class="col-sm-6 mt-2">
                                                   <span>9632587412</span>
                                                 </div>
                                             </div><hr>
                                             <div class="row profileData">
-                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Email</span></label>
-                                                <div class="col-sm-7 mt-2">
+                                                <label class="col-sm-5 col-form-label" for="basic-default-name"><span>Email</span></label>
+                                                <div class="col-sm-6 mt-2">
                                                   <span>demo@gmail.com</span>
                                                 </div>
                                             </div><hr>
                                             <div class="row profileData">
-                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>City</span></label>
-                                                <div class="col-sm-7 mt-2">
+                                                <label class="col-sm-5 col-form-label" for="basic-default-name"><span>City</span></label>
+                                                <div class="col-sm-6 mt-2">
                                                   <span>Chelari</span>
                                                 </div>
                                             </div><hr>
                                             <div class="row profileData">
-                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>District</span></label>
-                                                <div class="col-sm-7 mt-2">
+                                                <label class="col-sm-5 col-form-label" for="basic-default-name"><span>District</span></label>
+                                                <div class="col-sm-6 mt-2">
                                                   <span>Malappuram</span>
                                                 </div>
                                             </div><hr>
                                             <div class="row profileData">
-                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>State</span></label>
-                                                <div class="col-sm-7 mt-2">
+                                                <label class="col-sm-5 col-form-label" for="basic-default-name"><span>State</span></label>
+                                                <div class="col-sm-6 mt-2">
                                                   <span>Kerala</span>
                                                 </div>
-                                            </div>
+                                            </div><hr>
+                                            <div class="row profileData">
+                                              <label class="col-sm-5 col-form-label" for="basic-default-name"><span>Post</span></label>
+                                              <div class="col-sm-6 mt-2">
+                                                <span>Kodakkad</span>
+                                              </div>
+                                          </div>
                                           </form>
                                     </div>
                                   </div>
@@ -529,15 +523,16 @@
                                   <div class="card mb-4 ">
                                     <div class="card-body p-0">
                                         <form>
+                                          
                                             <div class="row profileData">
-                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>PIN</span></label>
-                                                <div class="col-sm-7 mt-2">
+                                                <label class="col-sm-5 col-form-label" for="basic-default-name"><span>PIN</span></label>
+                                                <div class="col-sm-6 mt-2">
                                                   <span>676319</span>
                                                 </div>
                                             </div><hr>
                                             <div class="row profileData">
-                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Country</span></label>
-                                                <div class="col-sm-7 mt-2">
+                                                <label class="col-sm-5 col-form-label" for="basic-default-name"><span>Country</span></label>
+                                                <div class="col-sm-6 mt-2">
                                                   <span>Indian</span>
                                                 </div>
                                             </div>
@@ -546,32 +541,32 @@
                                                 <hr>
                                             </div>
                                             <div class="row profileData">
-                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Name</span></label>
-                                                <div class="col-sm-7 mt-2">
+                                                <label class="col-sm-5 col-form-label" for="basic-default-name"><span>Name</span></label>
+                                                <div class="col-sm-6 mt-2">
                                                   <span>Rithika</span>
                                                 </div>
                                             </div><hr>
                                             <div class="row profileData">
-                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Address</span></label>
-                                              <div class="col-sm-7 mt-2">
+                                              <label class="col-sm-5 col-form-label" for="basic-default-name"><span>Address</span></label>
+                                              <div class="col-sm-6 mt-2">
                                                 <span></span>
                                               </div>
                                             </div><hr>
                                             <div class="row profileData">
-                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Phone Number</span></label>
-                                                <div class="col-sm-7 mt-2">
+                                                <label class="col-sm-5 col-form-label" for="basic-default-name"><span>Phone Number</span></label>
+                                                <div class="col-sm-6 mt-2">
                                                   <span>254368741</span>
                                                 </div>
                                             </div><hr>
                                             <div class="row profileData">
-                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Email</span></label>
-                                                <div class="col-sm-7 mt-2">
+                                                <label class="col-sm-5 col-form-label" for="basic-default-name"><span>Email</span></label>
+                                                <div class="col-sm-6 mt-2">
                                                   <span>demo@gmail.com</span>
                                                 </div>
                                             </div><hr>
                                             <div class="row profileData">
-                                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Relation</span></label>
-                                                <div class="col-sm-7 mt-2">
+                                                <label class="col-sm-5 col-form-label" for="basic-default-name"><span>Relation</span></label>
+                                                <div class="col-sm-6 mt-2">
                                                   <span>Sister</span>
                                                 </div>
                                             </div>
@@ -605,11 +600,11 @@
                                                     </div>
                                                     <div class="mb-3 col-md-4">
                                                       <label for="m-num" class="form-label">Mobile Number</label>
-                                                      <input class="form-control"   id="phone" name="phone" type="text" value="+91 1234567890" autofocus />
+                                                      <input class="form-control"   id="phone" name="phone" type="text" value="4563215897" autofocus />
                                                       </div>
                                                       <div class="mb-3 col-md-4">
                                                       <label for="w-num" class="form-label">Whatsapp Number</label>
-                                                      <input class="form-control" id="phone2" name="phone2" type="text" value="+91 1234567890" />
+                                                      <input class="form-control" id="phone2" name="phone2" type="text" value="9632587412" />
                                                       </div>
                                                       <div class="mb-3 col-md-4">
                                                         <label for="e-mail" class="form-label">Email Address</label>
@@ -617,19 +612,19 @@
                                                         </div>
                                                       <div class="mb-3 col-md-4">
                                                       <label for="city" class="form-label">City</label>
-                                                      <input class="form-control" type="text" name="city" id="city" value="city" />
+                                                      <input class="form-control" type="text" name="city" id="city" value="Chelari" />
                                                       </div>
                                                       <div class="mb-3 col-md-4">
                                                       <label for="district" class="form-label">District</label>
-                                                      <input class="form-control" type="text" name="district" id="district" value="district" />
+                                                      <input class="form-control" type="text" name="district" id="district" value="Malappuram" />
                                                       </div>
                                                       <div class="mb-3 col-md-4">
                                                       <label for="state" class="form-label">State</label>
-                                                      <input class="form-control" type="text" name="state" id="state" value="state" />
+                                                      <input class="form-control" type="text" name="state" id="state" value="Kerala" />
                                                       </div>
                                                       <div class="mb-3 col-md-4">
                                                       <label for="post" class="form-label">Post</label>
-                                                      <input class="form-control" type="text" name="post" id="post" value="post" />
+                                                      <input class="form-control" type="text" name="post" id="post" value="Kodakkad" />
                                                       </div>
                                                       <div class="mb-3 col-md-4">
                                                       <label for="pin" class="form-label">PIN Code</label>
@@ -637,14 +632,14 @@
                                                       </div>
                                                       <div class="mb-3 col-md-4">
                                                       <label for="country" class="form-label">Country</label>
-                                                      <input class="form-control" type="text" name="country" id="country" value="country" />
+                                                      <input class="form-control" type="text" name="country" id="country" value="Indian" />
                                                       </div>
                                                       <span><input type="checkbox" id="myCheck" onclick="sevenhost()"> Emergency Contact</span>
                                                       <div id="emergency-contact"  style="display:none">
                                                         <div class="row">
                                                         <div class="mb-3 col-md-6">
                                                           <label for="name" class="form-label">Name</label>
-                                                          <input class="form-control" type="text" name="name" id="name" value="name" />
+                                                          <input class="form-control" type="text" name="name" id="name" value="Rithika" />
                                                         </div>
                                                         <div class="mb-3 col-md-6">
                                                           <label for="address" class="form-label">Address</label>
@@ -652,15 +647,15 @@
                                                         </div>
                                                         <div class="mb-3 col-md-4">
                                                           <label for="phone" class="form-label">Phone</label>
-                                                          <input class="form-control" type="text" name="phone" id="phone" value="phone" />
+                                                          <input class="form-control" type="text" name="phone" id="phone" value="254368741" />
                                                         </div>
                                                         <div class="mb-3 col-md-4">
                                                           <label for="email" class="form-label">Email</label>
-                                                          <input class="form-control" type="text" name="email" id="email" value="Email" />
+                                                          <input class="form-control" type="text" name="email" id="email" value="demo@gmail.com" />
                                                         </div>
                                                         <div class="mb-3 col-md-4">
                                                           <label for="relation" class="form-label">Relation</label>
-                                                          <input class="form-control" type="text" name="relation" id="relation" value="relation" />
+                                                          <input class="form-control" type="text" name="relation" id="relation" value="Sister" />
                                                         </div>
                                                       </div>
                                                       </div>
@@ -678,44 +673,41 @@
                               </div> 
                     </div>
                   </div>
+
+                  <!-- Official details -->
                   <div class="tab-pane fade" id="navs-pills-office-details" role="tabpanel">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-xl card-bg">
                                   <div class="card mb-4 ">
-                                    <div class="card-body">
+                                    <div class="card-body p-0">
                                         <form>
-                                            <div class="row mb-3">
+                                            <div class="row profileData">
                                                 <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Department</span></label>
-                                                <div class="col-sm-1 col-form-label">:</div>
                                                 <div class="col-sm-7 mt-2">
                                                   <span>IT</span>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-3">
+                                            </div><hr>
+                                            <div class="row profileData">
                                                 <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Designation</span></label>
-                                                <div class="col-sm-1 col-form-label">:</div>
                                                 <div class="col-sm-7 mt-2">
                                                   <span>Web Designer</span>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-3">
+                                            </div><hr>
+                                            <div class="row profileData">
                                                 <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Branch / Location</span></label>
-                                                <div class="col-sm-1 col-form-label">:</div>
                                                 <div class="col-sm-7 mt-2">
                                                   <span>Calicut</span>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-3">
+                                            </div><hr>
+                                            <div class="row profileData">
                                               <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Emp Group</span></label>
-                                              <div class="col-sm-1 col-form-label">:</div>
                                               <div class="col-sm-7 mt-2">
                                                 <span>Group 1</span>
                                               </div>
-                                            </div>
-                                            <div class="row mb-3">
+                                            </div><hr>
+                                            <div class="row profileData">
                                                 <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Qualification</span></label>
-                                                <div class="col-sm-1 col-form-label">:</div>
                                                 <div class="col-sm-7 mt-2">
                                                   <span>Diploma</span>
                                                 </div>
@@ -790,66 +782,59 @@
                               </div> 
                         </div>
                   </div>
+
+                  <!-- Bank Details -->
                   <div class="tab-pane fade" id="navs-pills-bank-details" role="tabpanel">
-                    
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-xl card-bg">
                                   <div class="card mb-4 ">
-                                    <div class="card-body">
+                                    <div class="card-body p-0">
                                         <form>
-                                            <div class="row mb-3">
+                                            <div class="row profileData">
                                                 <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Bank Name</span></label>
-                                                <div class="col-sm-1 col-form-label">:</div>
                                                 <div class="col-sm-7 mt-2">
                                                   <span>SBI</span>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-3">
+                                            </div><hr>
+                                            <div class="row profileData">
                                                 <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Account No</span></label>
-                                                <div class="col-sm-1 col-form-label">:</div>
                                                 <div class="col-sm-7 mt-2">
                                                   <span>25200 45873 45551</span>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-3">
+                                            </div><hr>
+                                            <div class="row profileData">
                                                 <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Branch Name</span></label>
-                                                <div class="col-sm-1 col-form-label">:</div>
                                                 <div class="col-sm-7 mt-2">
                                                   <span>Chettippadi</span>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-3">
+                                            </div><hr>
+                                            <div class="row profileData">
                                               <label class="col-sm-4 col-form-label" for="basic-default-name"><span>IFSC Code</span></label>
-                                              <div class="col-sm-1 col-form-label">:</div>
                                               <div class="col-sm-7 mt-2">
                                                 <span>SBI55658</span>
                                               </div>
-                                            </div>
-                                            <div class="row mb-3">
+                                            </div><hr>
+                                            <div class="row profileData">
                                                 <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Statutory Details</span></label>
-                                                <div class="col-sm-1 col-form-label">:</div>
                                                 <div class="col-sm-7 mt-2">
                                                   <span></span>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-3">
+                                            </div><hr>
+                                            <div class="row profileData">
                                                 <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Pan Card No</span></label>
-                                                <div class="col-sm-1 col-form-label">:</div>
                                                 <div class="col-sm-7 mt-2">
                                                   <span>45467678678</span>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-3">
+                                            </div><hr>
+                                            <div class="row profileData">
                                                 <label class="col-sm-4 col-form-label" for="basic-default-name"><span>PF No</span></label>
-                                                <div class="col-sm-1 col-form-label">:</div>
                                                 <div class="col-sm-7 mt-2">
                                                   <span>45467678678</span>
                                                 </div>
-                                            </div>
-                                            <div class="row mb-3">
+                                            </div><hr>
+                                            <div class="row profileData">
                                                 <label class="col-sm-4 col-form-label" for="basic-default-name"><span>ESI No</span></label>
-                                                <div class="col-sm-1 col-form-label">:</div>
                                                 <div class="col-sm-7 mt-2">
                                                   <span>45467678678</span>
                                                 </div>
@@ -867,7 +852,7 @@
                                     <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
                                       <div class="modal-content">
                                         <div class="modal-header">
-                                          <h5 class="modal-title" id="exampleModalLabel3">Update Office Details</h5>
+                                          <h5 class="modal-title" id="exampleModalLabel3">Update Bank Details</h5>
                                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -923,395 +908,61 @@
                       
             
                   </div>
+
+                  <!-- Payroll -->
                   <div class="tab-pane fade" id="navs-pills-bank-payroll" role="tabpanel">
-                    
                     <div class="card-body">
                         <div class="row">
                             <div class="col-xl card-bg">
-                              <div class="card mb-4 ">
-                                <div class="card-body">
-                                    <form>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Shift Mode</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>Default shift</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Shift Type</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>Fixed Shift</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Shift Name</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>Shift 1</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                          <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Payroll Profile</span></label>
-                                          <div class="col-sm-1 col-form-label">:</div>
-                                          <div class="col-sm-7 mt-2">
-                                            <span> </span>
-                                          </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <h5 class="text-primary">Salary Structure</h5>
-                                            <hr>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Salary Type</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>Monthly</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <h5 class="text-primary">Earnings</h5>
-                                            <hr>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Basic</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>5000</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>DA</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>3500</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>HRA</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>3500</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Medicall Allowance</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>3500</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <h5 class="text-primary">Deductions</h5>
-                                            <hr>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Provident Fund</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>3500</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>ESI</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>3500</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <h5 class="text-primary">Contributions</h5>
-                                            <hr>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>PF</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>3500</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>ESI</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>3500</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <h5 class="text-primary">Overtime/Partial Day</h5>
-                                            <hr>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Over time (working Day)</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-4 mt-2">
-                                              <span>3500</span>
-                                            </div>
-                                            <div class="col-sm-3 mt-2">
-                                                <span>3500</span>
-                                              </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Over time (Off Day)</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-4 mt-2">
-                                              <span>3500</span>
-                                            </div>
-                                            <div class="col-sm-3 mt-2">
-                                                <span>3500</span>
-                                              </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Over time (HoliDay)</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-4 mt-2">
-                                              <span>3500</span>
-                                            </div>
-                                            <div class="col-sm-3 mt-2">
-                                                <span>3500</span>
-                                              </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Partial Day work</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>3500</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Partial Day deduction</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>3500</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <h5 class="text-primary">Overtime/Partial Day</h5>
-                                            <hr>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Additional Allowance Profile</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>3500</span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Additional Deduction Profile</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span>3500</span>
-                                            </div>
-                                        </div>
-                                      </form>
-                                </div>
+
+                              <!-- Shift details -->
+                              <div class="row profileData">
+                                <h4 class="fw-bold p-0 m-0">
+                                  <span class="text-muted fw-light d-inline-flex"><img src="assets/img/icons/staffprofile/salary.png" width="40px" height="40px"  alt=""><h5 class="text-primary">Shift</h5></span>
+                                  <button class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#editShift">Edit</button>
+                                </h4>
                               </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="mb-3">
-                              <button class="btn btn-primary d-grid float-end" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-payroll" style="margin-top: 11px;"> Edit Payroll </button>
-                            </div>
-                            <div class="modal fade" id="edit-payroll" tabindex="-1" aria-hidden="true">
-                                <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                              <div class="modal fade" id="editShift" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-md" role="document">
                                   <div class="modal-content">
                                     <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel3">Update Payroll</h5>
+                                      <h5 class="modal-title" id="exampleModalLabel2">Edit Shift Details</h5>
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="card-body">
-                                            <form id="formAccountSettings" method="POST" onsubmit="return false">
-                                              <div class="row">
-                                                <div class="mb-3 col-md-6">
-                                                  <label for="mode" class="form-label">Shift Mode</label>
-                                                  <select name="mode" id=""class="form-control form-select">
-                                                    <option value="1">Default Shift </option>
-                                                    <option value="2">Assigned Shift</option>
-                                                  </select>
-                                              </div>
-                                              <div class="mb-3 col-md-6">
-                                                <label for="mode" class="form-label">Shift Type</label>
-                                                <select name="mode" id=""class="form-control form-select">
-                                                  <option value="1">Fixed shift </option>
-                                                  <option value="2">Rotational shift</option>
-                                                  <option value="2">Open shifts</option>
-                                                </select>
-                                            </div>
-                                            <div class="mb-3 col-md-6">
-                                              <label for="mode" class="form-label">Shift</label>
-                                              <select name="mode" id=""class="form-control form-select">
-                                                <option value="1">Shift 1</option>
-                                                <option value="2">Shift 2</option>
-                                                <option value="2">Shift 3</option>
-                                              </select>
-                                          </div>
-                                          <div class="mb-3 col-md-6">
-                                            <label for="mode" class="form-label">Select a payroll policy profile</label>
-                                            <select name="mode" id=""class="form-control form-select">
-                                              <option value="1">profile 1</option>
-                                              <option value="2">profile 2</option>
-                                              <option value="2">profile 3</option>
-                                            </select>
-                                          </div>
-                                          <div class="row mb-3 mt-3">
-                                            <h5 class="text-primary">Salary Structure</h5>
-                                            <hr>
-                                          </div>
-                      
-                                        <div class="mb-3 col-md-12">
-                                          <label for="mode" class="form-label">Salary Type</label>
+                                      <div class="row">
+                                        <div class="mb-3 col-md-6">
+                                          <label for="mode" class="form-label">Shift Mode</label>
                                           <select name="mode" id=""class="form-control form-select">
-                                            <option value="1">Daily</option>
-                                            <option value="2">Weekly</option>
-                                            <option value="2">Hourly</option>
-                                            <option value="2">Monthly</option>
+                                            <option value="1">Default Shift </option>
+                                            <option value="2">Assigned Shift (Don't choose)</option>
                                           </select>
-                                        </div>
-                                        <div class="row mb-3 mt-3">
-                                          <h5 class="text-primary">Earnings</h5>
-                                          <hr>
-                                        </div>
-                                        <div class="mb-3 col-md-6">
-                                          <label for="basic" class="form-label">Basic</label>
-                                          <input class="form-control" type="text" id="basic" name="basic" value="" autofocus />
-                                        </div>
-                                        <div class="mb-3 col-md-6">
-                                          <label for="da" class="form-label">DA</label>
-                                          <input class="form-control" type="text" id="da" name="da" value="" autofocus />
-                                        </div>
-                                        <div class="mb-3 col-md-4">
-                                          <label for="hra" class="form-label">HRA</label>
-                                          <input class="form-control" type="text" id="hra" name="hra" value="" autofocus />
-                                        </div>
-                                        <div class="mb-3 col-md-4">
-                                          <label for="medi-allo" class="form-label">Medical Allowance</label>
-                                          <input class="form-control" type="text" id="medi-allo" name="medi-allo" value="" autofocus />
-                                        </div>
-                                        <div class="mb-3 col-md-4">
-                                          <label for="spe-allo" class="form-label">Special Allowance</label>
-                                          <input class="form-control" type="text" id="spe-allo" name="spe-allo" value="" autofocus />
-                                        </div>
-                                        <div class="row mb-3 mt-3">
-                                          <h5 class="text-primary">Deductions</h5>
-                                          <hr>
-                                        </div>
-                                        <div class="mb-3 col-md-6">
-                                            <label for="pro-fund" class="form-label">Provident Fund</label>
-                                            <input class="form-control" type="text" id="pro-fund" name="pro-fund" value="" autofocus />
-                                        </div>
-                                        <div class="mb-3 col-md-6">
-                                          <label for="esi" class="form-label">ESI</label>
-                                          <input class="form-control" type="text" id="esi" name="esi" value="" autofocus />
-                                        </div>
-                                        <div class="row mb-3 mt-3">
-                                          <h5 class="text-primary">Contributions</h5>
-                                          <hr>
-                                        </div>
-                                        <div class="mb-3 col-md-6">
-                                          <label for="pf" class="form-label">PF</label>
-                                          <input class="form-control" type="text" id="pf" name="pf" value="" autofocus />
-                                        </div>
-                                        <div class="mb-3 col-md-6">
-                                          <label for="esi" class="form-label">ESI</label>
-                                          <input class="form-control" type="text" id="esi" name="esi" value="" autofocus />
-                                        </div>
-                                        <div class="row mb-3 mt-3">
-                                          <h5 class="text-primary">Overtime/Partial Day</h5>
-                                          <hr>
-                                        </div>
-                                        <div class="mb-3 col-md-4">
-                                          <label for="ot" class="form-label">Over time (working Day)</label>
-                                          <select name="mode" id=""class="form-control form-select">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="2">3</option>
-                                            <option value="2">4</option>
-                                          </select>
-                                        </div>
-                                        <div class="mb-3 col-md-4">
-                                          <label for="hm" class="form-label">Hours/Minutes</label>
-                                          <input class="form-control" type="time" id="hm" name="hm" value="" autofocus />
-                                        </div>
-                                        <div class="mb-3 col-md-4">
-                                          <label for="amount" class="form-label">Amount</label>
-                                          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
-                                        </div>
-                                        <div class="mb-3 col-md-4">
-                                          <label for="ot" class="form-label">Over time (Off Day)</label>
-                                          <select name="mode" id=""class="form-control form-select">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="2">3</option>
-                                            <option value="2">4</option>
-                                          </select>
-                                        </div>
-                                        <div class="mb-3 col-md-4">
-                                          <label for="hm" class="form-label">Hours/Minutes</label>
-                                          <input class="form-control" type="time" id="hm" name="hm" value="" autofocus />
-                                        </div>
-                                        <div class="mb-3 col-md-4">
-                                          <label for="amount" class="form-label">Amount</label>
-                                          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
-                                        </div>
-                                        <div class="mb-3 col-md-4">
-                                          <label for="ot" class="form-label">Over time (HoliDay)</label>
-                                          <select name="mode" id=""class="form-control form-select">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="2">3</option>
-                                            <option value="2">4</option>
-                                          </select>
-                                        </div>
-                                        <div class="mb-3 col-md-4">
-                                          <label for="hm" class="form-label">Hours/Minutes</label>
-                                          <input class="form-control" type="time" id="hm" name="hm" value="" autofocus />
-                                        </div>
-                                        <div class="mb-3 col-md-4">
-                                          <label for="amount" class="form-label">Amount</label>
-                                          <input class="form-control" type="text" id="amount" name="amount" value="" autofocus />
-                                        </div>
-                                        <div class="mb-3 col-md-6">
-                                          <label for="ot" class="form-label">Partial Day work</label>
-                                          <select name="mode" id=""class="form-control form-select">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="2">3</option>
-                                            <option value="2">4</option>
-                                          </select>
-                                        </div>
-                                        <div class="mb-3 col-md-6">
-                                          <label for="ot" class="form-label">Partial Day deduction</label>
-                                          <select name="mode" id=""class="form-control form-select">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="2">3</option>
-                                            <option value="2">4</option>
-                                          </select>
-                                        </div>
-                                        <div class="mb-3 col-md-6">
-                                          <label for="ot" class="form-label">Additional Allowance Profile</label>
-                                          <select name="mode" id=""class="form-control form-select">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="2">3</option>
-                                            <option value="2">4</option>
-                                          </select>
-                                        </div>
-                                        <div class="mb-3 col-md-6">
-                                          <label for="ot" class="form-label">Additional Deduction Profile</label>
-                                          <select name="mode" id=""class="form-control form-select">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="2">3</option>
-                                            <option value="2">4</option>
-                                          </select>
-                                        </div>
-                                          
-                                              </div>
-                                            </form>
-                                          </div>
+                                      </div>
+                                      <div class="mb-3 col-md-6">
+                                        <label for="mode" class="form-label">Shift Type</label>
+                                        <select name="mode" id=""class="form-control form-select">
+                                          <option value="1">Fixed shift </option>
+                                          <option value="2">Rotational shift (Don't choose)</option>
+                                          <option value="2">Open shifts (Don't choose)</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                      <label for="mode" class="form-label">Shift</label>
+                                      <select name="mode" id=""class="form-control form-select">
+                                        <option value="1">Shift 1</option>
+                                        <option value="2">Shift 2</option>
+                                        <option value="2">Shift 3</option>
+                                      </select>
+                                  </div>
+                                  <div class="mb-3 col-md-6">
+                                    <label for="mode" class="form-label">Select a payroll policy profile</label>
+                                    <select name="mode" id=""class="form-control form-select">
+                                      <option value="1">profile 1</option>
+                                      <option value="2">profile 2</option>
+                                      <option value="2">profile 3</option>
+                                    </select>
+                                  </div>
+                                  </div>
                                     </div>
                                     <div class="modal-footer">
                                       <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
@@ -1319,28 +970,494 @@
                                     </div>
                                   </div>
                                 </div>
-                            </div>
-                          </div> 
-                    </div>
+                              </div>
+                              <div class="card mb-4 ">
+                                <div class="card-body p-0">
+                                    <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Shift Mode</span></label>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>Default shift</span>
+                                            </div>
+                                        </div><hr>
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Shift Type</span></label>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>Fixed Shift</span>
+                                            </div>
+                                        </div><hr>
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Shift Name</span></label>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>Shift 1</span>
+                                            </div>
+                                        </div><hr>
+                                        <div class="row profileData">
+                                          <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Payroll Profile</span></label>
+                                          <div class="col-sm-7 mt-2">
+                                            <span> </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                              </div>
+
+                              <!-- Salry structure -->
+                              <div class="row profileData">
+                                      <h4 class="fw-bold p-0 m-0">
+                                        <span class="text-muted fw-light d-inline-flex"><img src="assets/img/icons/staffprofile/salary.png" width="40px" height="40px"  alt=""><h5 class="text-primary">Salary Structure</h5></span>
+                                        <button class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#editSalarystr">Edit</button>
+                                      </h4>
+                              </div>
+                              <div class="modal fade" id="editSalarystr" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-md" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel2">Edit Salary Structure</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                              <div class="modal-body">
+                                <div class="row">
+                                  <div class="mb-3 col-md-12">
+                                    <label for="type" class="form-label">Salary Type</label>
+                                    <select name="type" id=""class="form-control form-select">
+                                      <option value="monthly">Monthly</option>
+                                      <option value="daily">Daily (Don't choose)</option>
+                                      <option value="weekly">Weekly (Don't choose)</option>
+                                      <option value="hourly">Hourly (Don't choose)</option>
+                                    </select>
+                                  </div>
+                                  </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card mb-4 ">
+                                      <div class="card-body p-0 m-0">
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Salary Type</span></label>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>Monthly</span>
+                                            </div>
+                                        </div>
+                                        </div>
+                              </div>
+
+                              <!-- Earnings -->
+                              <div class="row profileData">
+                                <h4 class="fw-bold p-0 m-0">
+                                  <span class="text-muted fw-light d-inline-flex"><img src="assets/img/icons/staffprofile/salary.png" width="40px" height="40px"  alt=""><h5 class="text-primary">Earnings</h5></span>
+                                  <button class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#editEarnings">Edit</button>
+                                </h4>
+                              </div>
+                              <div class="modal fade" id="editEarnings" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-md" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel2">Edit Earnings</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                              <div class="modal-body">
+                                <div class="row">
+                                  <div class="mb-3 col-md-6">
+                                    <label for="basic" class="form-label">Basic</label>
+                                    <input class="form-control" type="text" id="basic" name="basic" value="5000" autofocus />
+                                  </div>
+                                  <div class="mb-3 col-md-6">
+                                    <label for="da" class="form-label">DA</label>
+                                    <input class="form-control" type="text" id="da" name="da" value="3500" autofocus />
+                                  </div>
+                                  <div class="mb-3 col-md-4">
+                                    <label for="hra" class="form-label">HRA</label>
+                                    <input class="form-control" type="text" id="hra" name="hra" value="3500" autofocus />
+                                  </div>
+                                  <div class="mb-3 col-md-4">
+                                    <label for="medi-allo" class="form-label">Medical Allowance</label>
+                                    <input class="form-control" type="text" id="medi-allo" name="medi-allo" value="3500" autofocus />
+                                  </div>
+                                  <div class="mb-3 col-md-4">
+                                    <label for="spe-allo" class="form-label">Special Allowance</label>
+                                    <input class="form-control" type="text" id="spe-allo" name="spe-allo" value="2500" autofocus />
+                                  </div>
+                                  </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card mb-4 ">
+                                          <div class="card-body p-0">
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Basic</span></label>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>5000</span>
+                                            </div>
+                                        </div><hr>
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>DA</span></label>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div><hr>
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>HRA</span></label>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div><hr>
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Medical Allowance</span></label>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div>
+                                        <div class="row profileData">
+                                          <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Special Allowance</span></label>
+                                          <div class="col-sm-7 mt-2">
+                                            <span>2500</span>
+                                          </div>
+                                      </div>
+                                          </div>
+                              </div>
+
+                              <!-- Deductions -->
+                              <div class="row profileData">
+                                <h4 class="fw-bold p-0 m-0">
+                                  <span class="text-muted fw-light d-inline-flex"><img src="assets/img/icons/staffprofile/salary.png" width="40px" height="40px"  alt=""><h5 class="text-primary">Deductions</h5></span>
+                                  <button class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#editDeductions">Edit</button>
+                                </h4>
+                              </div>
+                              <div class="modal fade" id="editDeductions" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-md" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel2">Edit Deductions</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                              <div class="modal-body">
+                                <div class="row">
+                                  <div class="mb-3 col-md-6">
+                                    <label for="pro-fund" class="form-label">Provident Fund</label>
+                                    <input class="form-control" type="text" id="pro-fund" name="pro-fund" value="3500" autofocus />
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                  <label for="esi" class="form-label">ESI</label>
+                                  <input class="form-control" type="text" id="esi" name="esi" value="3500" autofocus />
+                                </div>
+                                  </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card mb-4 ">
+                                        <div class="card-body p-0">  
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Provident Fund</span></label>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div><hr>
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>ESI</span></label>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div>
+                                        </div>
+                              </div>
+
+                              <!-- Contributions -->
+                              <div class="row profileData">
+                                          <h4 class="fw-bold p-0 m-0">
+                                            <span class="text-muted fw-light d-inline-flex"><img src="assets/img/icons/staffprofile/salary.png" width="40px" height="40px"  alt=""><h5 class="text-primary">Contributions</h5></span>
+                                            <button class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#editContributions">Edit</button>
+                                          </h4>
+                              </div>
+                              <div class="modal fade" id="editContributions" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-md" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel2">Edit Contributions</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                              <div class="modal-body">
+                                <div class="row">
+                                  <div class="mb-3 col-md-6">
+                                    <label for="pro-fund" class="form-label">PF</label>
+                                    <input class="form-control" type="text" id="pro-fund" name="pro-fund" value="3500" autofocus />
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                  <label for="esi" class="form-label">ESI</label>
+                                  <input class="form-control" type="text" id="esi" name="esi" value="3500" autofocus />
+                                </div>
+                                  </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card mb-4 ">
+                                          <div class="card-body p-0">  
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>PF</span></label>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div><hr>
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>ESI</span></label>
+                                            <div class="col-sm-7 mt-2">
+                                              <span>3500</span>
+                                            </div>
+                                        </div>
+                                        </div>
+                              </div>
+
+                              <!-- Overtime -->
+                              <div class="row profileData">
+                                          <h4 class="fw-bold p-0 m-0">
+                                            <span class="text-muted fw-light d-inline-flex"><img src="assets/img/icons/staffprofile/salary.png" width="40px" height="40px"  alt=""><h5 class="text-primary">Overtime</h5></span>
+                                            <button class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#editOvertime">Edit</button>
+                                          </h4>
+                              </div>
+                              <div class="modal fade" id="editOvertime" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-md" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel2">Edit Overtime</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                              <div class="modal-body">
+                                <div class="row">
+                                  <div class="mb-3 col-md-12">
+                                    <label for="type" class="form-label">Choose overtime template</label>
+                                    <select name="type" id=""class="form-control form-select">
+                                      <option value="temp1">Template 1</option>
+                                      <option value="temp2">Template 2</option>
+                                      <option value="temp3">Template 3</option>
+                                      <option value="temp4">Template 4</option>
+                                    </select>
+                                  </div>
+                                  </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card mb-4 ">
+                                          <div class="card-body p-0">
+                                            <div class="row profileData">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Template Name</span></label>
+                                              <div class="col-sm-4 mt-2">
+                                                <span>Overtime Policy 1</span>
+                                              </div>
+                                          </div><hr>
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Over time (working Day)</span></label>
+                                            <div class="col-sm-4 mt-2">
+                                              <span>Hour</span>
+                                            </div>
+                                            <div class="col-sm-3 mt-2">
+                                                <span>260</span>
+                                              </div>
+                                        </div><hr>
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Over time (Off Day)</span></label>
+                                            <div class="col-sm-4 mt-2">
+                                              <span>Minute</span>
+                                            </div>
+                                            <div class="col-sm-3 mt-2">
+                                                <span>50</span>
+                                              </div>
+                                        </div><hr>
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Over time (HoliDay)</span></label>
+                                            <div class="col-sm-4 mt-2">
+                                              <span>Hour</span>
+                                            </div>
+                                            <div class="col-sm-3 mt-2">
+                                                <span>300</span>
+                                              </div>
+                                        </div><hr>
+                                       
+                                        </div>
+                              </div>
+
+                              <!-- Partial Day -->
+                              <div class="row profileData">
+                                <h4 class="fw-bold p-0 m-0">
+                                  <span class="text-muted fw-light d-inline-flex"><img src="assets/img/icons/staffprofile/salary.png" width="40px" height="40px"  alt=""><h5 class="text-primary">Partial Day</h5></span>
+                                  <button class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#editPartialDay">Edit</button>
+                                </h4>
+                              </div>
+                              <div class="modal fade" id="editPartialDay" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-md" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel2">Edit Partial Day</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                              <div class="modal-body">
+                                <div class="row">
+                                  <div class="mb-3 col-md-12">
+                                    <label for="type" class="form-label">Choose Partial day template</label>
+                                    <select name="type" id=""class="form-control form-select">
+                                      <option value="temp1">Template 1</option>
+                                      <option value="temp2">Template 2</option>
+                                      <option value="temp3">Template 3</option>
+                                      <option value="temp4">Template 4</option>
+                                    </select>
+                                  </div>
+                                  </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card mb-4 ">
+                                          <div class="card-body p-0">
+                                            <div class="row profileData">
+                                              <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Template Name</span></label>
+                                              <div class="col-sm-4 mt-2">
+                                                <span>Template 1</span>
+                                              </div>
+                                          </div><hr>
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Partial Day work</span></label>
+                                            <div class="col-sm-4 mt-2">
+                                              <span>Hour</span>
+                                            </div>
+                                            <div class="col-sm-3 mt-2">
+                                                <span>300</span>
+                                              </div>
+                                        </div><hr>
+                                        <div class="row profileData">
+                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Partial Day deduction</span></label>
+                                            <div class="col-sm-4 mt-2">
+                                              <span>Hour</span>
+                                            </div>
+                                            <div class="col-sm-3 mt-2">
+                                                <span>300</span>
+                                              </div>
+                                        </div>
+                                        </div>
+                              </div>
+
+                              <!-- Additional Allowance -->
+                              <div class="row profileData">
+                                <h4 class="fw-bold p-0 m-0">
+                                  <span class="text-muted fw-light d-inline-flex"><img src="assets/img/icons/staffprofile/salary.png" width="40px" height="40px"  alt=""><h5 class="text-primary">Profile</h5></span>
+                                </h4>
+                              </div>
+                              <div class="card mb-4" >
+                                <div class="card-body p-0">
+                                  <div class="row profileData">
+                                    <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Allowance Profile Name</span></label>
+                                      <div class="col-sm-6 mt-2">
+                                        <span>Fixed Allowance</span>
+                                      </div>
+                                      <button class="btn btn-primary float-end col-sm-2" data-bs-toggle="modal" data-bs-target="#editallowance">Edit Allowance</button>
+
+                                  </div><hr>
+                                  <div class="row profileData">
+                                    <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Deduction Profile Name</span></label>
+                                      <div class="col-sm-6 mt-2">
+                                        <span>Fixed Deduction</span>
+                                      </div>
+                                      <button class="btn btn-primary float-end col-sm-2" data-bs-toggle="modal" data-bs-target="#editdeduction">Edit Allowance</button>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="modal fade" id="editallowance" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-md" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel2">Edit Additional Allowance</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                              <div class="modal-body">
+                                <div class="row">
+                                  <div class="mb-3 col-md-12">
+                                    <label for="type" class="form-label">Choose Additional Allowance</label>
+                                    <select name="type" id=""class="form-control form-select">
+                                      <option value="temp1">Fixed Allowance</option>
+                                      <option value="temp2">Rent Allowance</option>
+                                    </select>
+                                  </div>
+                                  </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal fade" id="editdeduction" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-md" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel2">Edit Additional Deduction</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                              <div class="modal-body">
+                                <div class="row">
+                                  <div class="mb-3 col-md-12">
+                                    <label for="type" class="form-label">Choose Additional Deduction</label>
+                                    <select name="type" id=""class="form-control form-select">
+                                      <option value="temp1">Fixed Deduction</option>
+                                      <option value="temp2">Salary Deduction</option>
+                                    </select>
+                                  </div>
+                                  </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                </div>
+              </div>
+            </div>
                   
         
                   </div>
+
+                  <!-- Leave Policy -->
                   <div class="tab-pane fade" id="navs-pills-bank-leave" role="tabpanel">      
                 <div class="card-body">
                     <div class="row">
                         <div class="col-xl card-bg">
                           <div class="card mb-4 ">
-                            <div class="card-body">
-                                <form>
-                                    <div class="row mb-3">
-                                        <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Leave Policy</span></label>
-                                        <div class="col-sm-1 col-form-label">:</div>
-                                        <div class="col-sm-7 mt-2">
-                                          <span></span>
-                                        </div>
-                                    </div>
-                                   
-                                  </form>
+                            <div class="card-body p-0">
+                              <div class="row profileData">
+                                <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Leave Policy</span></label>
+                                  <div class="col-sm-6 mt-2">
+                                    <span>Leave Policy 1</span>
+                                  </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1350,28 +1467,24 @@
                           <button class="btn btn-primary d-grid float-end" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-leave" style="margin-top: 11px;"> Edit Leave Details </button>
                         </div>
                         <div class="modal fade" id="edit-leave" tabindex="-1" aria-hidden="true">
-                            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                            <div class="modal-dialog modal-md modal-dialog-scrollable" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel3">Update Leave Details</h5>
+                                  <h5 class="modal-title" id="exampleModalLabel3">Update Leave Policy</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="card-body">
-                                        <form>
-                                            <div class="row mb-3">
-                                              <div class="col-md-12">
-                                                <label for="amount" class="form-label">Select Leave Policy</label>
-                                                <select name="mode" id=""class="form-control form-select">
-                                                  <option value="1">1</option>
-                                                  <option value="2">2</option>
-                                                  <option value="2">3</option>
-                                                  <option value="2">4</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                          </form>
-                                    </div>
+                                    <div class="row mb-3">
+                                      <div class="col-md-12">
+                                          <label for="amount" class="form-label">Select Leave Policy</label>
+                                          <select name="mode" id=""class="form-control form-select">
+                                            <option value="p1">Policy 1</option>
+                                            <option value="p2">Policy 2</option>
+                                            <option value="p3">Policy 3</option>
+                                            <option value="p4">Policy 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
@@ -1385,29 +1498,27 @@
               
     
                   </div>
+
+                  <!-- Settings -->
                   <div class="tab-pane fade" id="navs-pills-bank-settings" role="tabpanel">      
                     <div class="card-body">
                         <div class="row">
                             <div class="col-xl card-bg">
                               <div class="card mb-4 ">
-                                <div class="card-body">
-                                    <form>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Attendace Settings</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span></span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Attendance Holidays</span></label>
-                                            <div class="col-sm-1 col-form-label">:</div>
-                                            <div class="col-sm-7 mt-2">
-                                              <span></span>
-                                            </div>
-                                        </div>
-                                       
-                                      </form>
+                                <div class="card-body p-0">
+                                      <div class="row profileData">
+                                        <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Attendace Settings</span></label>
+                                          <div class="col-sm-6 mt-2">
+                                            <span>Branch 1</span><br>
+                                            <span>Branch 2</span>
+                                          </div>
+                                      </div><hr>
+                                       <div class="row profileData">
+                                          <label class="col-sm-4 col-form-label" for="basic-default-name"><span>Attendance Holidays</span></label>
+                                          <div class="col-sm-7 mt-2">
+                                              <span>Off days</span>
+                                           </div>
+                                      </div>
                                 </div>
                               </div>
                             </div>
@@ -1424,30 +1535,35 @@
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="card-body">
-                                            <form>
-                                                <div class="row mb-3">
-                                                  <div class="col-md-6">
-                                                    <label for="amount" class="form-label">Attendace Settings</label>
-                                                    <select name="mode" id=""class="form-control form-select">
-                                                      <option value="1">1</option>
-                                                      <option value="2">2</option>
-                                                      <option value="2">3</option>
-                                                      <option value="2">4</option>
-                                                    </select>
-                                                  </div>
-                                                  <div class="col-md-6">
-                                                    <label for="amount" class="form-label">Attendance Holidays</label>
-                                                    <select name="mode" id=""class="form-control form-select">
-                                                      <option value="1">1</option>
-                                                      <option value="2">2</option>
-                                                      <option value="2">3</option>
-                                                      <option value="2">4</option>
-                                                    </select>
-                                                  </div>
-                                                </div>
-                                              </form>
+                                      <div class="row mb-3">
+                                        <div class="col-md-6">
+                                          <div class="row checkboxes">
+                                            <label for="amount" class="form-label mb-3">Attendace Settings</label>
+                                            <div class="col-md-6">
+                                              <input class="form-check-input" id="selectAll" type="checkbox"><label for='selectAll' class="ml-2">Select All</label><br>
+                                              <input class="form-check-input" id="mce-group[19]-19-0" type="checkbox" name="group[19][8]" value="8" /><label for="mce-group[19]-19-0" class="ml-2">Branch 1</label><br>
+                                              <input class="form-check-input" id="mce-group[19]-19-1" type="checkbox" name="group[19][16]" value="16" /><label for="mce-group[19]-19-1" class="ml-2">Branch 2</label><br>
+                                              <input class="form-check-input" id="mce-group[19]-19-2" type="checkbox" name="group[19][32]" value="32" /><label for="mce-group[19]-19-2" class="ml-2">Branch 3</label><br>
+                                              <input class="form-check-input" id="mce-group[19]-19-2" type="checkbox" name="group[19][32]" value="32" /><label for="mce-group[19]-19-2" class="ml-2">Mobile App</label><br>
+                                            
+                                            </div>
+                                            <div class="col-md-6">
+                                              <input class="form-check-input" id="mce-group[19]-19-3" type="checkbox" name="group[19][64]" value="64" /><label for="mce-group[19]-19-3" class="ml-2">Branch 4</label><br>
+                                              <input class="form-check-input" id="mce-group[19]-19-4" type="checkbox" name="group[19][128]" value="128" /><label for="mce-group[19]-19-4" class="ml-2">Branch 5</label><br>
+                                              <input class="form-check-input" id="mce-group[19]-19-5" type="checkbox" name="group[19][256]" value="256" /><label for="mce-group[19]-19-5" class="ml-2">Branch 6</label><br>
+                                              <input class="form-check-input" id="mce-group[19]-19-6" type="checkbox" name="group[19][512]" value="512" /><label for="mce-group[19]-19-6" class="ml-2">Branch 7</label><br>
+                                            </div>
+                                            
+                                          </div>
                                         </div>
+                                        <div class="col-md-6">
+                                          <label for="amount" class="form-label">Attendance Holidays</label>
+                                          <div class="col-md-6">
+                                            <input class="form-check-input" id="off-day" type="checkbox" name="off-day" value="" /><label for="off-day" class="ml-2">Off days</label><br>
+                                            <input class="form-check-input" id="holiday" type="checkbox" name="holiday" value="" /><label for="holiday" class="ml-2">Holidays</label><br>
+                                          </div>
+                                           </div>
+                                         </div>
                                     </div>
                                     <div class="modal-footer">
                                       <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
@@ -1460,7 +1576,7 @@
                     </div>
                   
         
-                      </div>
+                  </div>
                 </div>
               </div>
             

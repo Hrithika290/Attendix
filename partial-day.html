@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<!-- beautify ignore:start -->
 <html lang="en" class="light-style layout-menu-fixed " dir="ltr" data-theme="theme-default" data-assets-path="assets/" data-template="vertical-menu-template-free">
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-      <title>Overtime Rule</title>
-      <meta name="description" content="Overtime Rule - Payroll" />
+      <title>Partial Day Templates</title>
+      <meta name="description" content="Partial Day Templates - Payroll" />
       <meta name="keywords" content="Payroll">
-      <!-- Canonical SEO -->
-      <link rel="canonical" href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/">
       <!-- Favicon -->
       <link rel="icon" type="image/x-icon" href="assets/img/favicon.jpg" />
       <!-- Fonts -->
@@ -42,7 +39,6 @@
                 <div class="app-brand demo ">
                     <a href="dashboard.html" class="app-brand-link">
                         <span class="app-brand-logo demo">
-                            
                         </span>
                         <span class="app-brand-text demo menu-text fw-bolder">Foxiom Leads</span>
                     </a>
@@ -105,8 +101,8 @@
             <div class="layout-page">
               <!-- Navbar -->
            <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar"> 
-                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0   d-xl-none ">
-                      <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0  d-xl-none ">
+                    <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
                         <i class="bx bx-menu bx-sm"></i>
                       </a>
                     </div>
@@ -181,36 +177,50 @@
                         <!--/ User -->
                       </ul>
                     </div>  
-                </nav>
-            <!-- Content wrapper -->
-         <div class="content-wrapper">
-      <!-- Content -->     
+                </nav>  
+              <!-- / Navbar -->
+<!-- Content wrapper -->
+    <div class="content-wrapper">             
+<!-- Content -->      
         <div class="container-xxl flex-grow-1 container-p-y">
             <h4 class="fw-bold py-3 mb-4">
-                <span class="text-muted fw-light">Dashboard /</span> Overtime Rule
-            </h4>   
+                <span class="text-muted fw-light">Dashboard /</span> Partial Day Templates
+                <button class="btn btn-primary float-end" onclick="createTemp(event)">Create Template</button>
+            </h4>
           <div class="row">
-             <div class="col-xxl">
-                <div class="card">
-                    <div class="table-responsive text-nowrap">
-                      <table class="table table-hover settings_row">
-                        <tbody class="table-border-bottom-0">
-                          <tr class="clickable-row" data-href='overtime.html'>
-                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i><strong>Overtime</strong></td>
-                            <td class="Stting_right"><i class="bx bx-chevron-right bx-md align-middle"></i></td>
-                          </tr>
-                          <tr class="clickable-row" data-href='partial-day.html'>
-                            <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Partial Day</strong></td>
-                            <td class="Stting_right"><i class="bx bx-chevron-right bx-md align-middle"></td>
-                          </tr>
-                        </tbody>
-                      </table>
+            <div class="col-xxl"> 
+              <div class="card mb-2 p-2">
+                <div class="row">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="col-md-8">
+                    <!-- <span class=""><svg fill="#5C011D" width="30px" height="30px" viewBox="0 0 32.00 32.00" xmlns="http://www.w3.org/2000/svg" stroke="#5C011D" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"></path></g></svg> -->
+                      <h6 class="px-2 pt-3">Partial Day Policy 1</h6>
+                    </div>
+                    <div class="col-md-4">
+                      <button class="btn btn-primary btn-sm ml-2 float-end" onclick="viewData(event)">View</button>  
+                      <button class="btn btn-primary btn-sm float-end" onclick="editData(event)">Edit</button>  
                     </div>
                   </div>
+                </div>
+              </div>
+              <div class="card mb-2 p-2">
+                <div class="row">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="col-md-8">
+                    <!-- <span class=""><svg fill="#5C011D" width="30px" height="30px" viewBox="0 0 32.00 32.00" xmlns="http://www.w3.org/2000/svg" stroke="#5C011D" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"></path></g></svg> -->
+                      <h6 class="px-2 pt-3">Partial Day Policy 2</h6>
+                    </div>
+                    <div class="col-md-4">
+                      <button class="btn btn-primary btn-sm ml-2 float-end" onclick="viewData(event)">View</button>  
+                      <button class="btn btn-primary btn-sm float-end" onclick="editData(event)">Edit</button>  
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>     
-          </div> 
+          </div>
         </div>
-        
+
               <!-- Footer -->
               <footer class="content-footer footer bg-footer-theme">
                 <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
@@ -225,8 +235,6 @@
                 </div>
               </footer>
               <!-- / Footer -->
-              
-                        
                         <div class="content-backdrop fade"></div>
                       </div>
                       <!-- Content wrapper -->
@@ -238,12 +246,20 @@
       </div>
       <!-- / Layout wrapper -->
           <!-- / Layout wrapper -->
-<script>
-  jQuery(document).ready(function($) {
-  $(".clickable-row").click(function() {
-      window.location = $(this).data("href");
-  });
-});
+  <script>
+  function createTemp(event) {
+    event.preventDefault(); 
+    window.location.href = "create-partialday.html";
+  }
+
+  function editData(event) {
+    event.preventDefault(); 
+    window.location.href = "create-partialday.html";
+  }
+  function viewData(event) {
+    event.preventDefault(); 
+    window.location.href = "partialday-data.html";
+  }
 </script>
       <script src="assets/vendor/libs/jquery/jquery.js"></script>
       <script src="assets/vendor/libs/popper/popper.js"></script>

@@ -4,8 +4,8 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-      <title>Overtime Rule</title>
-      <meta name="description" content="Overtime Rule - Payroll" />
+      <title>Create Overtime Template</title>
+      <meta name="description" content="Create Overtime Template - Payroll" />
       <meta name="keywords" content="Payroll">
       <!-- Canonical SEO -->
       <link rel="canonical" href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/">
@@ -32,7 +32,7 @@
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async="async" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-   </head>
+      </head>
    <body>
       <!-- Layout wrapper -->
       <div class="layout-wrapper layout-content-navbar  ">
@@ -52,6 +52,7 @@
                 </div>
                 <div class="menu-inner-shadow"></div>
                 <ul class="menu-inner py-1">
+                  <!-- Dashboard -->
                   <li class="menu-item">
                     <a href="dashboard.html" class="menu-link">
                       <i class="menu-icon tf-icons bx bx-home-circle"></i>
@@ -64,6 +65,7 @@
                       <div data-i18n="Authentications">Shifts</div>
                     </a>
                   </li>
+                  <!-- Layouts -->
                   <li class="menu-item">
                     <a href="staff-list.html" class="menu-link">
                       <i class="menu-icon tf-icons bx bx-user"></i>
@@ -120,6 +122,9 @@
                       </div>
                       <!-- /Search -->
                       <ul class="navbar-nav flex-row align-items-center ms-auto"> 
+                        <li class="nav-item lh-1 me-3">
+                          <a class="github-button" href="https://github.com/themeselection/sneat-html-admin-template-free" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
+                        </li>
                         <!-- User -->
                         <li class="nav-item navbar-dropdown dropdown-user dropdown">
                           <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
@@ -137,7 +142,7 @@
                                     </div>
                                   </div>
                                   <div class="flex-grow-1">
-                                    <span class="fw-semibold d-block">Foxiom Leads</span>
+                                    <span class="fw-semibold d-block">John Doe</span>
                                     <small class="text-muted">Admin</small>
                                   </div>
                                 </div>
@@ -182,35 +187,86 @@
                       </ul>
                     </div>  
                 </nav>
-            <!-- Content wrapper -->
-         <div class="content-wrapper">
-      <!-- Content -->     
+              <!-- / Navbar --> 
+              
+<!-- Content wrapper -->
+<div class="content-wrapper">             
         <div class="container-xxl flex-grow-1 container-p-y">
-            <h4 class="fw-bold py-3 mb-4">
-                <span class="text-muted fw-light">Dashboard /</span> Overtime Rule
-            </h4>   
-          <div class="row">
-             <div class="col-xxl">
-                <div class="card">
-                    <div class="table-responsive text-nowrap">
-                      <table class="table table-hover settings_row">
-                        <tbody class="table-border-bottom-0">
-                          <tr class="clickable-row" data-href='overtime.html'>
-                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i><strong>Overtime</strong></td>
-                            <td class="Stting_right"><i class="bx bx-chevron-right bx-md align-middle"></i></td>
-                          </tr>
-                          <tr class="clickable-row" data-href='partial-day.html'>
-                            <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Partial Day</strong></td>
-                            <td class="Stting_right"><i class="bx bx-chevron-right bx-md align-middle"></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-            </div>     
-          </div> 
-        </div>
-        
+          <h4 class="fw-bold py-3 mb-4">
+            <span class="text-muted fw-light">Dashboard /</span> Create Overtime Template
+        </h4>     
+        <div class="card overTime">
+            <div class="row mb-3 mt-3">
+              <h5 class="payroll-title">Overtime</h5>
+              <hr>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm-4">
+                <h6>Template Name </h6>
+              </div>
+              <div class="col-sm-8">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4">
+                <h6>Select Hour/Minutes</h6>
+              </div>
+              <div class="col-sm-4">
+                <h6>Amount</h6>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm-4">
+                <h6>Over time (working Day)</h6>
+              </div>
+              <div class="col-sm-4">
+                <select name="time" id="" class="form-select">
+                  <option value="1">Hour</option>
+                  <option value="2">Minutes</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm-4">
+                <h6>Over time (Off Day)</h6>
+              </div>
+              <div class="col-sm-4">
+                <select name="time" id="" class="form-select">
+                  <option value="1">Hour</option>
+                  <option value="2">Minutes</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm-4">
+                <h6>Over time (HoliDay)</h6>
+              </div>
+              <div class="col-sm-4">
+                <select name="time" id="" class="form-select">
+                  <option value="1">Hour</option>
+                  <option value="2">Minutes</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <button id="addmore" class="btn btn-lg btn-primary float-end mt-3" onclick="submitForm(event)">Submit</button>
+              </div>
+            </div>
+    </div>
+  </div>
+ 
               <!-- Footer -->
               <footer class="content-footer footer bg-footer-theme">
                 <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
@@ -237,20 +293,27 @@
          <div class="layout-overlay layout-menu-toggle"></div>
       </div>
       <!-- / Layout wrapper -->
-          <!-- / Layout wrapper -->
-<script>
-  jQuery(document).ready(function($) {
-  $(".clickable-row").click(function() {
-      window.location = $(this).data("href");
-  });
-});
+    <!-- / Layout wrapper -->
+  <script>
+  function submitForm(event) {
+    event.preventDefault(); 
+    window.location.href = "overtime-data.html";
+  }
 </script>
+      <!-- Core JS -->
+      <!-- build:js assets/vendor/js/core.js -->
       <script src="assets/vendor/libs/jquery/jquery.js"></script>
       <script src="assets/vendor/libs/popper/popper.js"></script>
       <script src="assets/vendor/js/bootstrap.js"></script>
       <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
       <script src="assets/vendor/js/menu.js"></script>
+      <!-- endbuild -->
+      <!-- Vendors JS -->
+      <!-- Main JS -->
       <script src="assets/js/main.js"></script>
+      <!-- Page JS -->
+      <!-- Place this tag in your head or just before your close body tag. -->
       <script async defer src="../../../buttons.github.io/buttons.js"></script>
    </body>
+   <!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template-free/html/tables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 May 2023 08:59:46 GMT -->
 </html>
