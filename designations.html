@@ -232,6 +232,17 @@
                                     <input type="text" id="dname" class="form-control" value="" required>
                                 </div>
                             </div>
+                            <div class="row">
+                              <div class="col mb-3">
+                                  <label for="dname" class="form-label">Department Name</label>
+                                  <select name="dept" id="" class="form-control form-select">
+                                    <option value="it">IT</option>
+                                    <option value="advertising">Advertising</option>
+                                    <option value="management">Management</option>
+                                    <option value="robo">Automation</option>
+                                  </select>
+                              </div>
+                          </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
@@ -258,7 +269,8 @@
         <thead>
           <tr class="text-nowrap">
             <th>SI.No</th>
-            <th style="width: 85%;">Designations</th>
+            <th style="width: 45%;">Designations</th>
+            <th style="width: 45%;">Department</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -266,6 +278,7 @@
           <tr>
             <th scope="row">1</th>
             <td>Web Designer</td>
+            <td>IT</td>
             <td>
                 <div class="dropdown">
                     <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
@@ -283,8 +296,19 @@
                             <div class="modal-body">
                               <div class="row">
                                 <div class="col mb-3">
-                                  <label for="nameSmall" class="form-label">Department Name</label>
+                                  <label for="nameSmall" class="form-label">Designation Name</label>
                                   <input type="text" id="nameSmall" class="form-control" value="Web Designer">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col mb-3">
+                                  <label for="nameSmall" class="form-label">Department Name</label>
+                                  <select name="dept" id="" class="form-control form-select">
+                                    <option value="it">IT</option>
+                                    <option value="advertising">Advertising</option>
+                                    <option value="management">Management</option>
+                                    <option value="robo">Automation</option>
+                                  </select>
                                 </div>
                               </div>
                             </div>
@@ -301,6 +325,7 @@
           <tr>
             <th scope="row">2</th>
             <td>Web Developement</td>
+            <td>IT</td>
             <td>
                 <div class="dropdown">
                     <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
@@ -314,6 +339,7 @@
           <tr>
             <th scope="row">3</th>
             <td>Client Realationship Manager (CRM)</td>
+            <td>Advertising</td>
             <td>
                 <div class="dropdown">
                     <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
@@ -327,6 +353,7 @@
           <tr>
             <th scope="row">4</th>
             <td>HR Executive</td>
+            <td>Management</td>
             <td>
                 <div class="dropdown">
                     <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
@@ -340,6 +367,7 @@
           <tr>
             <th scope="row">5</th>
             <td>Graphic Designer</td>
+            <td>Advertising</td>
             <td>
                 <div class="dropdown">
                     <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
@@ -353,6 +381,7 @@
           <tr>
             <th scope="row">6</th>
             <td>Accountant</td>
+            <td>Management</td>
             <td>
                 <div class="dropdown">
                     <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
