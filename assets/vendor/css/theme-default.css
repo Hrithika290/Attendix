@@ -814,11 +814,11 @@ a:hover {
 
 .bg-menu-theme .menu-item.open:not(.menu-item-closing)>.menu-toggle,
 .bg-menu-theme .menu-item.active>.menu-link {
-    color: #566a7f
+    color: #ffffff;
 }
 
 .bg-menu-theme .menu-item.active>.menu-link:not(.menu-toggle) {
-    background-color: #fff
+    background-color: #bf658c
 }
 
 .bg-menu-theme.menu-horizontal .menu-sub>.menu-item.active>.menu-link:not(.menu-toggle) {

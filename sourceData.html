@@ -3,8 +3,8 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-      <title>Partial Day Data</title>
-      <meta name="description" content="Partial Day Data - Payroll" />
+      <title>Punching</title>
+      <meta name="description" content="Create your shift - Payroll" />
       <meta name="keywords" content="Payroll">
       <!-- Favicon -->
       <link rel="icon" type="image/x-icon" href="assets/img/favicon.jpg" />
@@ -24,7 +24,7 @@
       <!-- Helpers -->
       <script src="assets/vendor/js/helpers.js"></script>
       <script src="assets/js/config.js"></script>
-      </head>
+   </head>
    <body>
       <!-- Layout wrapper -->
       <div class="layout-wrapper layout-content-navbar  ">
@@ -84,7 +84,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item active open">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bx-dock-top"></i>
                     <div data-i18n="Account Settings">Attendance</div>
@@ -100,14 +100,14 @@
                         <div data-i18n="Connections">Punching</div>
                       </a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item active">
                       <a href="departments.html" class="menu-link">
                         <div data-i18n="Account">Attendance Data</div>
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="settings.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx bx-cog"></i>
                     <div data-i18n="Authentications">Settings</div>
@@ -213,145 +213,127 @@
                   </div>
                </nav>
                <!-- / Navbar -->
-              
+             
                <div class="content-wrapper">
                   <!-- Content -->
                   <div class="container-xxl flex-grow-1 container-p-y">
-                     <h4 class="fw-bold py-3 mb-4">
-                        <span class="text-muted fw-light">Company /</span> Data
-                     </h4>
-                     <div class="card mb-4 ">
-                        <div class="card-body p-3">
-                          <div class="row profileData">
-                            <label class="col-sm-4 col-form-label" for="basic-default-name"><span><strong>Template Name</strong></span></label>
-                            <div class="col-sm-7 mt-2">
-                              <span>Partial Day Template 1</span>
-                            </div>
-                          </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h4 class="fw-bold py-3 mb-4">
+                          <span class="text-muted fw-light">Dashboard /</span> Sources
+                       </h4>
+                      </div>
+                    </div>
+                    <div class="card mb-5">
+                        <h5 class="card-header"></h5>
+                        <div class="table-responsive text-nowrap">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>EMP ID</th>
+                                <th>Attendance Date</th>
+                                <th>Check In</th>
+                                <th>Check Out</th>
+                                <th>In Device ID</th>
+                                <th>Out Device ID</th>
+                                <th>Status</th>
+                              </tr>
+                            </thead>
+                            <tbody class="table-border-bottom-0">
+                              <tr>
+                                <td>Fox0156</td>
+                                <td>20/07/2023</td>
+                                <td>
+                                  9:30 am
+                                </td>
+                                <td>
+                                  5:30 pm
+                                </td>
+                                <td>
+                                  DeviceX67
+                                </td>
+                                <td>
+                                   DeviceX67
+                                </td>
+                                <td><span class="badge bg-label-success me-1">Present</span></td>
+                              </tr>
+                              <tr>
+                                <td>Fox0157</td>
+                                <td>20/07/2023</td>
+                                <td>
+                                  9:00 am
+                                </td>
+                                <td>
+                                  6:00 pm
+                                </td>
+                                <td>
+                                  DeviceX67
+                                </td>
+                                <td>
+                                   DeviceX67
+                                </td>
+                                <td><span class="badge bg-label-success me-1">Present</span></td>
+                              </tr>
+                              <tr>
+                                <td>Fox0158</td>
+                                <td>20/07/2023</td>
+                                <td>
+                                  9:00 am
+                                </td>
+                                <td>
+                                  1:30 pm
+                                </td>
+                                <td>
+                                  DeviceX67
+                                </td>
+                                <td>
+                                   DeviceX67
+                                </td>
+                                <td><span class="badge bg-label-warning me-1">Half day</span></td>
+                              </tr>
+                              <tr>
+                                <td>Fox0159</td>
+                                <td>20/07/2023</td>
+                                <td>
+                                  --
+                                </td>
+                                <td>
+                                  --
+                                </td>
+                                <td>
+                                  --
+                                </td>
+                                <td>
+                                   --
+                                </td>
+                                <td><span class="badge bg-label-danger me-1">Absent</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
-                    </div> 
-                    <div class="card p-3">
-                        <div class="table-responsive text-wrap">
-                                      <table class="table holiday-table">
-                                        <thead>
-                                          <tr>
-                                            <th>PARTIAL DAY</th>
-                                            <th>HOURS/MINUTES</th>
-                                            <th>AMOUNT</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody class="table-border-bottom-0">
-                                          <tr>
-                                            <td><strong>Partial Day Work</strong></td>
-                                            <td>
-                                             <span>Hour</span>
-                                            </td>
-                                            <td>
-                                                5000
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td><strong>Partial Day Deduction</strong></td>
-                                            <td>
-                                             <span>Minute</span>
-                                            </td>
-                                            <td>
-                                                300
-                                            </td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </div>
-                                  </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                        <button class="btn btn-primary float-end">Submit</button>
+                        </div>
+                    </div>
+                </div>
 
-                                  <div class="row mt-3">
-                                    <div class="mb-3">
-                                      <button class="btn btn-primary d-grid float-end" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-bank" style="margin-top: 11px;"> Edit Template </button>
-                                    </div>
-                                    <div class="modal fade" id="edit-bank" tabindex="-1" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-                                          <div class="modal-content">
-                                            <div class="modal-header">
-                                              <h5 class="modal-title" id="exampleModalLabel3">Update Partial Day Data</h5>
-                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="row mb-3">
-                                                  <div class="col-sm-4">
-                                                    <h6>Template Name </h6>
-                                                  </div>
-                                                  <div class="col-sm-8">
-                                                    <input type="text" class="form-control" value="Partial Day Template 1">
-                                                  </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                  <div class="col-sm-4"></div>
-                                                  <div class="col-sm-4">
-                                                    <h6>Select Hour/Minutes</h6>
-                                                  </div>
-                                                  <div class="col-sm-4">
-                                                    <h6>Amount</h6>
-                                                  </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                  <div class="col-sm-4">
-                                                    <h6>Partial Day Work</h6>
-                                                  </div>
-                                                  <div class="col-sm-4">
-                                                    <select name="time" id="" class="form-select">
-                                                      <option value="1">Hour</option>
-                                                      <option value="2">Minutes</option>
-                                                    </select>
-                                                  </div>
-                                                  <div class="col-sm-4">
-                                                    <input type="text" class="form-control" id="defaultFormControlInput" value="5000"  aria-describedby="defaultFormControlHelp">
-                                                  </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                  <div class="col-sm-4">
-                                                    <h6>Partial Day Deduction</h6>
-                                                  </div>
-                                                  <div class="col-sm-4">
-                                                    <select name="time" id="" class="form-select">
-                                                      <option value="1">Hour</option>
-                                                      <option value="2">Minutes</option>
-                                                    </select>
-                                                  </div>
-                                                  <div class="col-sm-4">
-                                                    <input type="text" class="form-control" id="defaultFormControlInput"  value="300" aria-describedby="defaultFormControlHelp">
-                                                  </div>
-                                                </div>
-                                        </div>
-                                            
-                                            <div class="modal-footer">
-                                              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-                                              <button type="button" class="btn btn-primary">Save changes</button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div> 
-                     </div>
-                  </div>
-
-
-
-
-                  
+                
                   <!-- / Content -->
                   <!-- Footer -->
                   <footer class="content-footer footer bg-footer-theme">
-                     <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                       <div class="mb-2 mb-md-0"> © <script>
-                           document.write(new Date().getFullYear())
-                         </script>, All rights reserved by <a href="https://foxiom.com/"  class="footer-link fw-bolder">Foxiom</a>
-                       </div>
-                       <div>
-                         <a href="javascript:void(0);" class="footer-link me-4">Privacy Policy</a>
-                         <a href="javascript:void(0);" class="footer-link me-4">Support</a>
-                       </div>
-                     </div>
-                   </footer>
+                    <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                      <div class="mb-2 mb-md-0"> © <script>
+                          document.write(new Date().getFullYear())
+                        </script>, All rights reserved by <a href="https://foxiom.com/"  class="footer-link fw-bolder">Foxiom</a>
+                      </div>
+                      <div>
+                        <a href="javascript:void(0);" class="footer-link me-4">Privacy Policy</a>
+                        <a href="javascript:void(0);" class="footer-link me-4">Support</a>
+                      </div>
+                    </div>
+                  </footer>
                   <!-- / Footer -->
                   <div class="content-backdrop fade"></div>
                </div>
@@ -363,14 +345,31 @@
          <div class="layout-overlay layout-menu-toggle"></div>
       </div>
       <!-- / Layout wrapper -->
-  
+  <script>
+  function submitForm(event) {
+    event.preventDefault(); // Prevent the default form submission
+    
+    // Perform any form validation or processing if needed
+    
+    // Redirect to the desired URL
+    window.location.href = "shifts.html";
+  }
+</script>
+      <!-- Core JS -->
+      <!-- build:js assets/vendor/js/core.js -->
       <script src="assets/vendor/libs/jquery/jquery.js"></script>
       <script src="assets/vendor/libs/popper/popper.js"></script>
       <script src="assets/vendor/js/bootstrap.js"></script>
       <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
       <script src="assets/vendor/js/menu.js"></script>
+      <!-- endbuild -->
+      <!-- Vendors JS -->
+      <!-- Main JS -->
       <script src="assets/js/main.js"></script>
+      <!-- Page JS -->
       <script src="assets/js/form-basic-inputs.js"></script>
+      <!-- Place this tag in your head or just before your close body tag. -->
       <script async defer src="../../../buttons.github.io/buttons.js"></script>
    </body>
+   <!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template-free/html/forms-input-groups.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 May 2023 08:59:46 GMT -->
 </html>

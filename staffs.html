@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-      <title>Automation Rules</title>
+      <title>Staff List</title>
       <meta name="description" content="Create your shift - Payroll" />
       <meta name="keywords" content="Payroll">
       <!-- Favicon -->
@@ -24,7 +24,6 @@
       <!-- Helpers -->
       <script src="assets/vendor/js/helpers.js"></script>
       <script src="assets/js/config.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
    </head>
    <body>
       <!-- Layout wrapper -->
@@ -57,13 +56,13 @@
                   </a>
                 </li>
                 
-                <li class="menu-item">
+                <li class="menu-item active open">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bx-user"></i>
                     <div data-i18n="Account Settings">Employees</div>
                   </a>
                   <ul class="menu-sub">
-                    <li class="menu-item">
+                    <li class="menu-item active">
                       <a href="staffs.html" class="menu-link">
                         <div data-i18n="Connections">All Employees</div>
                       </a>
@@ -108,7 +107,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="settings.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx bx-cog"></i>
                     <div data-i18n="Authentications">Settings</div>
@@ -136,8 +135,8 @@
             <div class="layout-page">
               <!-- Navbar -->
            <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar"> 
-                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0   d-xl-none ">
-                      <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0   d-xl-none ">
+                    <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
                         <i class="bx bx-menu bx-sm"></i>
                       </a>
                     </div>
@@ -151,7 +150,6 @@
                       </div>
                       <!-- /Search -->
                       <ul class="navbar-nav flex-row align-items-center ms-auto"> 
-                        <!-- Place this tag where you want the button to render. -->
                         <li class="nav-item lh-1 me-3">
                           <a class="github-button" href="dashboard.html" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
                         </li>
@@ -224,53 +222,169 @@
               
                     
               
-                    <!-- Content wrapper -->
-                    <div class="content-wrapper">
-              
-                      <!-- Content -->
+<!-- Content wrapper -->
+    <div class="content-wrapper">             
+<!-- Content -->
                       
         <div class="container-xxl flex-grow-1 container-p-y">
-          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Settings</h4>    
-          <div class="row">
-             <div class="col-xxl">
-                <div class="card">
-                    <h5 class="card-header">Automation Rules</h5>
-                    <div class="table-responsive text-nowrap">
-                      <table class="table table-hover settings_row">
-                        <thead>
-                            
-                        </thead>
-                        <tbody class="table-border-bottom-0">
-                          <tr>
-                            <td><a href="overtime-rule.html"><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Overtime Rules</strong></a></td>
-                            <td class="Stting_right"><a href="overtime-rule.html"><i class="bx bx-chevron-right bx-md align-middle"></i></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="gracetime-rule.html"><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Gracetime Rules</strong></a></td>
-                            <td class="Stting_right"><a href="gracetime-rule.html"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="allowance-deduction-rule.html"><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Allowance & Deduction Rules</strong></a></td>
-                            <td class="Stting_right"><a href="allowance-deduction-rule.html"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="#"><i class="fab fa-vuejs fa-lg text-success me-3"></i> <strong>Break Rules</strong></a></td>
-                            <td class="Stting_right"><a href="#"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <!-- <tr>
-                            <td><a href="#"><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Gracetime Rule</strong></a></td>
-                            <td class="Stting_right"><a href="#"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="#"><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Breaktime Rule</strong></a></td>
-                            <td class="Stting_right"><a href="#"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr> -->
-                        </tbody>
-                      </table>
-                    </div>
+            <div class="row">
+                <div class="col-lg-6">
+                     <h4 class="fw-bold py-3 mb-4">
+                        <span class="text-muted fw-light">Dashboard /</span> Staff List
+                     </h4>
+                </div>
+                <div class="col-lg-6">
+                  <div class="mb-3" style="float: right;">
+                    <button class="btn btn-primary d-inline-flex " onclick="submitForm(event)"  style="margin-top: 11px;"> Attendance Log</button>
+                    <button class="btn btn-primary d-inline-flex " onclick="submitForm(event)"  style="margin-top: 11px;"> Add staff </button>
                   </div>
-            </div>     
-          </div> 
+                </div> 
+              </div>
+              <!-- Horizontal -->
+<div class="row mb-2">
+  <div class="col-md">
+    <div class="card mb-3 card-profile">  
+      <div class="row g-0">
+        <div class="col-4">
+          <img class="card-img staff-list-img" src="assets/img/staff-pro.jpg" alt="Card image" />
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <span class="card-title">Ram Govindh</span><br>
+            <span>Web Developer</span><br>
+          </div>
+        </div>
+      </div><hr>
+      <div class="row p-3">
+        <div class="col-md-6">
+          <button class="btn btn-sm btn-outline-danger float-end">Delete Profile</button>
+        </div>
+      <div class="col-md-6">
+        <button class="btn btn-sm btn-outline-success" onclick="submitstaffView(event)">View Profile</button>
+      </div>
+      </div><hr>
+    </div>
+  </div>
+  <div class="col-md">
+    <div class="card mb-3 card-profile">  
+      <div class="row g-0">
+        <div class="col-4">
+          <img class="card-img staff-list-img" src="assets/img/staff-pro1.jpg" alt="Card image" />
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <span class="card-title">Angel</span><br>
+            <span>Web Designer</span><br>
+          </div>
+        </div>
+      </div><hr>
+      <div class="row p-3">
+        <div class="col-md-6">
+          <button class="btn btn-sm btn-outline-danger float-end">Delete Profile</button>
+        </div>
+      <div class="col-md-6">
+        <button class="btn btn-sm btn-outline-success" onclick="submitstaffView(event)">View Profile</button>
+      </div>
+      </div><hr>
+    </div>
+  </div>
+  <div class="col-md">
+    <div class="card mb-3 card-profile">  
+      <div class="row g-0">
+        <div class="col-4">
+          <img class="card-img staff-list-img" src="assets/img/staff-pro3.jpg" alt="Card image" />
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <span class="card-title">Rohit Sharma</span><br>
+            <span>Marketing Executive</span><br>
+          </div>
+        </div>
+      </div><hr>
+      <div class="row p-3">
+        <div class="col-md-6">
+          <button class="btn btn-sm btn-outline-danger float-end">Delete Profile</button>
+        </div>
+      <div class="col-md-6">
+        <button class="btn btn-sm btn-outline-success" onclick="submitstaffView(event)">View Profile</button>
+      </div>
+      </div><hr>
+    </div>
+  </div>
+</div>
+<div class="row mb-2">
+  <div class="col-md">
+    <div class="card mb-3 card-profile">  
+      <div class="row g-0">
+        <div class="col-4">
+          <img class="card-img staff-list-img" src="assets/img/staff-pro1.jpg" alt="Card image" />
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <span class="card-title">Lissa</span><br>
+            <span>Graphic Designer</span><br>
+          </div>
+        </div>
+      </div><hr>
+      <div class="row p-3">
+        <div class="col-md-6">
+          <button class="btn btn-sm btn-outline-danger float-end">Delete Profile</button>
+        </div>
+      <div class="col-md-6">
+        <button class="btn btn-sm btn-outline-success" onclick="submitstaffView(event)">View Profile</button>
+      </div>
+      </div><hr>
+    </div>
+  </div>
+  <div class="col-md">
+    <div class="card mb-3 card-profile">  
+      <div class="row g-0">
+        <div class="col-4">
+          <img class="card-img staff-list-img" src="assets/img/staff-pro3.jpg" alt="Card image" />
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <span class="card-title">Arun</span><br>
+            <span>Accountant</span><br>
+          </div>
+        </div>
+      </div><hr>
+      <div class="row p-3">
+        <div class="col-md-6">
+          <button class="btn btn-sm btn-outline-danger float-end">Delete Profile</button>
+        </div>
+      <div class="col-md-6">
+        <button class="btn btn-sm btn-outline-success" onclick="submitstaffView(event)">View Profile</button>
+      </div>
+      </div><hr>
+    </div>
+  </div>
+  <div class="col-md">
+    <div class="card mb-3 card-profile">  
+      <div class="row g-0">
+        <div class="col-4">
+          <img class="card-img staff-list-img" src="assets/img/staff-pro.jpg" alt="Card image" />
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <span class="card-title">Aditi</span><br>
+            <span>HR Manager</span><br>
+          </div>
+        </div>
+      </div><hr>
+      <div class="row p-3">
+        <div class="col-md-6">
+          <button class="btn btn-sm btn-outline-danger float-end">Delete Profile</button>
+        </div>
+      <div class="col-md-6">
+        <button class="btn btn-sm btn-outline-success" onclick="submitstaffView(event)">View Profile</button>
+      </div>
+      </div><hr>
+    </div>
+  </div>
+</div>
+<!--/ Horizontal -->
+          
         </div>
         
               
@@ -282,7 +396,7 @@
                 <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
                   <div class="mb-2 mb-md-0"> © <script>
                       document.write(new Date().getFullYear())
-                    </script>, All rights reserved by <a href="https://foxiom.com/" class="footer-link fw-bolder">Foxiom</a>
+                    </script>, All rights reserved by <a href="https://foxiom.com/"  class="footer-link fw-bolder">Foxiom</a>
                   </div>
                   <div>
                     <a href="javascript:void(0);" class="footer-link me-4">Privacy Policy</a>
@@ -291,8 +405,6 @@
                 </div>
               </footer>
               <!-- / Footer -->
-              
-                        
                         <div class="content-backdrop fade"></div>
                       </div>
                       <!-- Content wrapper -->
@@ -311,7 +423,16 @@
     // Perform any form validation or processing if needed
     
     // Redirect to the desired URL
-    window.location.href = "add-shift.html";
+    window.location.href = "add-staff.html";
+  }
+
+  function submitstaffView(event) {
+    event.preventDefault(); // Prevent the default form submission
+    
+    // Perform any form validation or processing if needed
+    
+    // Redirect to the desired URL
+    window.location.href = "staff-profile.html";
   }
 </script>
       <!-- Core JS -->
@@ -329,5 +450,4 @@
       <!-- Place this tag in your head or just before your close body tag. -->
       <script async defer src="../../../buttons.github.io/buttons.js"></script>
    </body>
-   <!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template-free/html/tables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 May 2023 08:59:46 GMT -->
 </html>

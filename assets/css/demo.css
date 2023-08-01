@@ -610,18 +610,57 @@ input[type="radio"] {
   margin-top: 12px;
 }
 
+.staff-list-img{
+  border-radius: 100px;
+  padding: 15px;
+  margin: 5px 0px;
+}
+.card-profile .card-body{
+  padding-top: 35px;
+  padding-left: 10px;
+}
+.card-profile .card-body .card-title{
+  font-size: 22px;
+  font-weight: 600;
+  color: #322f30;
+  line-height: 16px;
+}
+.card-profile .card-body span{
+  font-size: 15px;
+  line-height: 28px;
+}
+.card-profile .card-body small{
+  font-weight: 600;
+  background-color: #1b376f;
+  color: #fff;
+}
+.card-profile hr{
+  margin: 0;
+}
 
 
+.staff-list-img img{
+  width: 110px;
+  height: 110px;
+}
+.menu-inner .menu-sub li a{
+  background-color: #000000;
+}
 
-
-
-
-
-
-
-
-
-
+.count{
+  font-size: 15px;
+  font-weight: 500;
+}
+.source .card .bxs-hand-up:before{
+    color: #6b0021;
+    background: #ffd5e2;
+    padding: 15px;
+    font-size: 22px;
+    border-radius: 50px;
+}
+.search-btn{
+  margin-top: 30px;
+}
 
 
 

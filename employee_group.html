@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-      <title>Automation Rules</title>
+      <title>Employee Group</title>
       <meta name="description" content="Create your shift - Payroll" />
       <meta name="keywords" content="Payroll">
       <!-- Favicon -->
@@ -20,11 +20,9 @@
       <link rel="stylesheet" href="assets/css/demo.css" />
       <!-- Vendors CSS -->
       <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-      <!-- Page CSS -->
-      <!-- Helpers -->
       <script src="assets/vendor/js/helpers.js"></script>
       <script src="assets/js/config.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+     
    </head>
    <body>
       <!-- Layout wrapper -->
@@ -57,7 +55,7 @@
                   </a>
                 </li>
                 
-                <li class="menu-item">
+                <li class="menu-item active open">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bx-user"></i>
                     <div data-i18n="Account Settings">Employees</div>
@@ -78,7 +76,7 @@
                         <div data-i18n="Notifications">Designations</div>
                       </a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item active">
                       <a href="group.html" class="menu-link">
                         <div data-i18n="Notifications">Employee Group</div>
                       </a>
@@ -108,7 +106,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="settings.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx bx-cog"></i>
                     <div data-i18n="Authentications">Settings</div>
@@ -151,11 +149,7 @@
                       </div>
                       <!-- /Search -->
                       <ul class="navbar-nav flex-row align-items-center ms-auto"> 
-                        <!-- Place this tag where you want the button to render. -->
-                        <li class="nav-item lh-1 me-3">
-                          <a class="github-button" href="dashboard.html" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
-                        </li>
-                        <!-- User -->
+                        
                         <li class="nav-item navbar-dropdown dropdown-user dropdown">
                           <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                             <div class="avatar avatar-online">
@@ -172,7 +166,7 @@
                                     </div>
                                   </div>
                                   <div class="flex-grow-1">
-                                    <span class="fw-semibold d-block">Foxiom Leads</span>
+                                    <span class="fw-semibold d-block">John Doe</span>
                                     <small class="text-muted">Admin</small>
                                   </div>
                                 </div>
@@ -214,75 +208,203 @@
                           </ul>
                         </li>
                         <!--/ User -->
-                      </ul>
-                    </div>  
-                </nav>
-                
-              
-                
-              <!-- / Navbar -->
-              
-                    
-              
-                    <!-- Content wrapper -->
-                    <div class="content-wrapper">
-              
-                      <!-- Content -->
-                      
+                    </ul>
+                </div>  
+            </nav>               
+<!-- / Navbar -->              
+<!-- Content wrapper -->
+    <div class="content-wrapper">             
         <div class="container-xxl flex-grow-1 container-p-y">
-          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Settings</h4>    
-          <div class="row">
-             <div class="col-xxl">
-                <div class="card">
-                    <h5 class="card-header">Automation Rules</h5>
-                    <div class="table-responsive text-nowrap">
-                      <table class="table table-hover settings_row">
-                        <thead>
-                            
-                        </thead>
-                        <tbody class="table-border-bottom-0">
-                          <tr>
-                            <td><a href="overtime-rule.html"><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Overtime Rules</strong></a></td>
-                            <td class="Stting_right"><a href="overtime-rule.html"><i class="bx bx-chevron-right bx-md align-middle"></i></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="gracetime-rule.html"><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Gracetime Rules</strong></a></td>
-                            <td class="Stting_right"><a href="gracetime-rule.html"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="allowance-deduction-rule.html"><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Allowance & Deduction Rules</strong></a></td>
-                            <td class="Stting_right"><a href="allowance-deduction-rule.html"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="#"><i class="fab fa-vuejs fa-lg text-success me-3"></i> <strong>Break Rules</strong></a></td>
-                            <td class="Stting_right"><a href="#"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <!-- <tr>
-                            <td><a href="#"><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Gracetime Rule</strong></a></td>
-                            <td class="Stting_right"><a href="#"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="#"><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Breaktime Rule</strong></a></td>
-                            <td class="Stting_right"><a href="#"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr> -->
-                        </tbody>
-                      </table>
+          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Employee Groups
+           <button class="btn btn-md btn-primary float-end" data-bs-toggle="modal" data-bs-target="#addDesi">Add Employee Group</button>
+          </h4>
+          <div class="modal fade" id="addDesi" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel2">Add Group</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col mb-3">
+                                    <label for="dname" class="form-label">Name</label>
+                                    <input type="text" id="dname" class="form-control" value="" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
                     </div>
-                  </div>
-            </div>     
-          </div> 
-        </div>
-        
-              
-                        
-                        
-              
+                 </div>
+            </div>
+         <div class="row mb-3">
+            <div class="float-end d-inline-flex col-md-3">
+                <span class="count p-2">Show </span>
+                  <select name="shift" class="form-select">
+                    <option value="Shift 1" class="selected">10</option>
+                    <option value="Shift 2">50</option>
+                    <option value="Shift 3">100</option>
+                  </select> 
+                  <span class="count p-2"> entries</span>
+            </div>
+         </div>       
+<!-- Responsive Table -->
+<div class="card">
+    <div class="table-responsive text-nowrap">
+      <table class="table">
+        <thead>
+          <tr class="text-nowrap">
+            <th>SI.No</th>
+            <th style="width: 85%;">Employee Group</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Group 1</td>
+            <td>
+                <div class="dropdown">
+                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                    <div class="dropdown-menu">
+                       <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editGrp"><i class="bx bx-edit-alt me-1" ></i> Edit</a>
+                       <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target=""><i class="bx bx-trash me-1"  ></i> Delete</a>
+                    </div>
+                    <div class="modal fade" id="editGrp" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-sm" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel2">Edit Group</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col mb-3">
+                                  <label for="nameSmall" class="form-label">Name</label>
+                                  <input type="text" id="nameSmall" class="form-control" value="Group 1">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Group 2</td>
+            <td>
+                <div class="dropdown">
+                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                    <div class="dropdown-menu">
+                       <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editGrp"><i class="bx bx-edit-alt me-1" ></i> Edit</a>
+                       <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#"><i class="bx bx-trash me-1"  ></i> Delete</a>
+                    </div>
+                </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Group 3</td>
+            <td>
+                <div class="dropdown">
+                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                    <div class="dropdown-menu">
+                       <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editGrp"><i class="bx bx-edit-alt me-1" ></i> Edit</a>
+                       <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#"><i class="bx bx-trash me-1"  ></i> Delete</a>
+                    </div>
+                </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Group 4</td>
+            <td>
+                <div class="dropdown">
+                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                    <div class="dropdown-menu">
+                       <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editGrp"><i class="bx bx-edit-alt me-1" ></i> Edit</a>
+                       <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#"><i class="bx bx-trash me-1"  ></i> Delete</a>
+                    </div>
+                </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Group 5</td>
+            <td>
+                <div class="dropdown">
+                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                    <div class="dropdown-menu">
+                       <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editGrp"><i class="bx bx-edit-alt me-1" ></i> Edit</a>
+                       <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#"><i class="bx bx-trash me-1"  ></i> Delete</a>
+                    </div>
+                </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Group 6</td>
+            <td>
+                <div class="dropdown">
+                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                    <div class="dropdown-menu">
+                       <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editGrp"><i class="bx bx-edit-alt me-1" ></i> Edit</a>
+                       <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#"><i class="bx bx-trash me-1"  ></i> Delete</a>
+                    </div>
+                </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!--/ Responsive Table -->
+
+
+
+  <div class="demo-inline-spacing float-end">
+    <!-- Basic Pagination -->
+    <nav aria-label="Page navigation">
+      <ul class="pagination">
+        <li class="page-item first">
+          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-left"></i></a>
+        </li>
+        <li class="page-item prev">
+          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevron-left"></i></a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="javascript:void(0);">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="javascript:void(0);">2</a>
+        </li>
+        <li class="page-item next">
+          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevron-right"></i></a>
+        </li>
+        <li class="page-item last">
+          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-right"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!--/ Basic Pagination -->
+  </div>
+    </div>
+                
               <!-- Footer -->
               <footer class="content-footer footer bg-footer-theme">
                 <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
                   <div class="mb-2 mb-md-0"> © <script>
                       document.write(new Date().getFullYear())
-                    </script>, All rights reserved by <a href="https://foxiom.com/" class="footer-link fw-bolder">Foxiom</a>
+                    </script>, All rights reserved by <a href="https://foxiom.com/"  class="footer-link fw-bolder">Foxiom</a>
                   </div>
                   <div>
                     <a href="javascript:void(0);" class="footer-link me-4">Privacy Policy</a>
@@ -303,17 +425,7 @@
          <div class="layout-overlay layout-menu-toggle"></div>
       </div>
       <!-- / Layout wrapper -->
-          <!-- / Layout wrapper -->
-  <script>
-  function submitForm(event) {
-    event.preventDefault(); // Prevent the default form submission
-    
-    // Perform any form validation or processing if needed
-    
-    // Redirect to the desired URL
-    window.location.href = "add-shift.html";
-  }
-</script>
+ 
       <!-- Core JS -->
       <!-- build:js assets/vendor/js/core.js -->
       <script src="assets/vendor/libs/jquery/jquery.js"></script>
