@@ -316,25 +316,19 @@
                       <input class="form-control" type="text" name="mother-name" id="mother-name" placeholder="Mother Name" />
                       </div>
                       <div class="mb-3 col-md-4">
-                      <div class="col-md">
-                         
-                      </div>
-                      <label for="mother-name" class="form-label">Marital Status</label><br>
-                      <div class="form-check form-check-inline radio_form mt-2">
-                          <input class="form-check-input" name="maritalStatus" type="radio" value="married" onclick="marriageField(this)" />
-                          <label class="form-check-label" for="inlineRadio1">Yes</label>
-                        </div>
-                        <div class="form-check form-check-inline radio_form">
-                          <input class="form-check-input" name="maritalStatus" type="radio" value="unmarried" onclick="marriageField(this)" checked/>
-                          <label class="form-check-label" for="inlineRadio2">No</label>
-                        </div>
-                      <!-- <input class="form-control" type="text" name="mother-name" id="mother-name" value="Mother Name" /> -->
-                      </div>
-                      <div class="mb-3 col-md-4" id="spouseName" style="display: none;">
-                      <label for="spouse-name" class="form-label">Spouse Name</label>
-                      <input class="form-control" type="text" id="spouse-name" name="spouse-name" placeholder="Spouse Name" />
-                      </div>
-                     
+                        <label for="category" class="form-label">Marital Status</label>
+                        <select id="category"  class="form-select">
+                          <option value="single">Single</option>
+                          <option value="married">Married</option>
+                          <option value="divorced">Divorced</option>
+                          <option value="widow">Widow</option>
+                        </select>
+                    </div>
+                    <div  class="mb-3 col-md-4 hidden" id="customItemContainer">
+                      <label for="customItem" class="form-label">Spouse Name</label>
+                      <input type="text" class="form-control" id="customItem" placeholder="Spouse Name">
+                    </div>
+
                       <div class="mb-3 col-md-4">
                       <label for="religion" class="form-label">Religion</label>
                       <input type="text" class="form-control" id="religion" name="religion" placeholder="Religion" />
@@ -701,7 +695,7 @@
             </div>
               <div class="card-body">
                   <div class="row">
-                      <div class="mb-3 col-md-6">
+                      <div class="mb-3 col-md-4">
                           <label for="department" class="form-label">Department</label>
                           <select name="department" id=""class="form-control form-select">
                             <option value="it-dp">IT</option>
@@ -709,7 +703,7 @@
                             <option value="robofoxy-dp">Robofoxy</option>
                           </select>
                       </div>
-                      <div class="mb-3 col-md-6">
+                      <div class="mb-3 col-md-4">
                         <label for="designation" class="form-label">Designation</label>
                         <select name="designation" id=""class="form-control form-select">
                           <option value="developer">Developer</option>
@@ -717,6 +711,20 @@
                           <option value="graphic-designer">Graphic Designer</option>
                         </select>
                       </div>
+                      <div class="mb-3 col-md-4">
+                        <label for="qualification" class="form-label">Qualification</label>
+                        <select id="qualification"  class="form-select">
+                          <option value="bca">BCA</option>
+                          <option value="computer-science">Bsc Computer Science</option>
+                          <option value="english">BA English</option>
+                          <option value="chemistry">Bsc Chemistry</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </div>
+                    <div  class="mb-3 col-md-4 hidden" id="othercourse">
+                      <label for="otherItem" class="form-label">Course Name</label>
+                      <input type="text" class="form-control" id="otherItem" placeholder="Course Name">
+                    </div>
                       <div class="mb-3 col-md-4">
                         <label for="designation" class="form-label">Branch/Location</label>
                         <select name="designation" id=""class="form-control form-select">
@@ -1332,19 +1340,20 @@
                 separateDialCode: true,
                 // excludeCountries: ["in", "il"],
                 preferredCountries: ["ru", "jp", "pk", "no","in"]
-            });
+            });   
+            
+            
 
 
 
 
-
-           
             
 </script>
 
 
 <script src="assets/js/wizard.js"></script>
-  
+  <!-- Main JS -->
+  <script src="assets/js/main.js" ></script>
      <script src="assets/js/additional.js"></script>
       <!-- Core JS -->
       <!-- build:js assets/vendor/js/core.js -->
@@ -1355,8 +1364,6 @@
       <script src="assets/vendor/js/menu.js"></script>
       <!-- endbuild -->
       <!-- Vendors JS -->
-      <!-- Main JS -->
-      <script src="assets/js/main.js"></script>
       <!-- Page JS -->
       <!-- Place this tag in your head or just before your close body tag. -->
       <script async defer src="../../../buttons.github.io/buttons.js"></script>

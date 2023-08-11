@@ -1,3 +1,44 @@
+
+const categorySelect = document.getElementById("category");
+const customItemContainer = document.getElementById("customItemContainer");
+const customItemInput = document.getElementById("customItem");
+
+categorySelect.addEventListener("change", function() {
+    const selectedCategory = categorySelect.value;
+
+    if (selectedCategory === "married") {
+        customItemContainer.classList.remove("hidden");
+    } else {
+        customItemContainer.classList.add("hidden");
+    }
+});
+
+customItemInput.addEventListener("input", function() {
+    // Handle custom item input as needed
+});
+
+
+const qualification = document.getElementById("qualification");
+const otherCourse = document.getElementById("othercourse");
+const otherItem = document.getElementById("otherItem");
+
+qualification.addEventListener("change", function() {
+    const selectedCategory = qualification.value;
+
+    if (selectedCategory === "other") {
+      otherCourse.classList.remove("hidden");
+    } else {
+      otherCourse.classList.add("hidden");
+    }
+});
+
+otherItem.addEventListener("input", function() {
+    // Handle custom item input as needed
+});
+
+
+
+
 "use strict";
 let menu, animate;
 ! function() {
@@ -139,7 +180,6 @@ function marriageField(radio) {
     spouseName.style.display = "block";
   }
 }
-
 
 
 

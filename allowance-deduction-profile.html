@@ -226,14 +226,11 @@
             <span class="text-muted fw-light">Dashboard/</span> Additional Allowance & Deduction Profile
             <button class="btn btn-primary float-end" onclick="submitForm(event)">Create Profile</button>
         </h4>
-         
-         
 
           <div class="row">
              <div class="col-xxl">
               <div class="card">
                 <div class="card-header d-flex align-items-center justify-content-between">
-                    <!-- <h5 class="mb-0">Holidays</h5> <button id="addmore" class="btn btn-lg btn-primary float-end" onclick="duplicate()">Add Holiday</button> -->
                     <h5 class="mb-0">Additional Allowance Profile</h5> 
                 </div>
                
@@ -247,7 +244,6 @@
                                   Fixed Allowance
                                 </button>
                               </h2>
-                      
                               <div id="accordionOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                   <div class="table-responsive text-nowrap">
@@ -256,42 +252,30 @@
                                         <tr>
                                           <th>Additional Allowance Profile</th>
                                           <th>Formula</th>
-                                          <th>Actions</th>
                                         </tr>
                                       </thead>
                                       <tbody class="table-border-bottom-0">
                                         <tr>
-                                          <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Travel Allowance</strong></td>
+                                          <td><strong>Travel Allowance</strong></td>
                                           <td>Formula 1</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
                                         </tr>
                                         
                                         <tr>
-                                          <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Rent Allowance</strong></td>
+                                          <td><strong>Rent Allowance</strong></td>
                                           <td>Formula 2</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
                                         </tr>
                                         <tr>
-                                          <td><i class="fab fa-vuejs fa-lg text-success me-3"></i> <strong>Medical Allowance</strong></td>
+                                          <td><strong>Medical Allowance</strong></td>
                                           <td>Formula 3</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
                                         </tr>
                                         <tr>
-                                          <td><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Childcare Allowance</strong></td>
+                                          <td><strong>Childcare Allowance</strong></td>
                                           <td>Formula 4</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
                                         </tr>
                                       </tbody>
                                     </table>
-                                  </div>
+                                  </div><hr>
+                                  <button class="btn btn-primary btn-sm float-end mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#editProfile">Edit Profile</button>
                                 </div>
                               </div>
                             </div>
@@ -309,38 +293,122 @@
                                         <tr>
                                           <th>Additional Allowance Profile</th>
                                           <th>Formula</th>
-                                          <th>Actions</th>
                                         </tr>
                                       </thead>
                                       <tbody class="table-border-bottom-0">
                                         <tr>
-                                          <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Housing Allowance</strong></td>
+                                          <td><strong>Housing Allowance</strong></td>
                                           <td>Formula 1</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
                                         </tr>
                                         
                                         <tr>
-                                          <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Hostel Rent Allowance</strong></td>
+                                          <td><strong>Hostel Rent Allowance</strong></td>
                                           <td>Formula 2</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
                                         </tr>
-                                        
                                       </tbody>
                                     </table>
-                                  </div>
+                                  </div><hr>
+                                  <button class="btn btn-primary btn-sm float-end mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#editProfile">Edit Profile</button>
+
                                 </div>
                               </div>
                             </div>
-                            
                           </div>
                         </div>
-                        
                       </div>
+                  </div>
+
+
+                <div class="modal fade" id="editProfile" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="mb-0">Edit Additional Allowance Profile</h5> 
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                    <div class="card-body">
+                      <form>
+                        <div class="row mb-5">
+                          <div class="col-sm-12">
+                          <label class="col-form-label" for="basic-default-name">Allowance Profile Name</label>
+                            <input type="text" class="form-control" id="basic-default-name" value="Fixed Allowance" />
+                          </div>
+                          <div class="col-md-5">
+                          <label class="col-form-label" for="basic-default-name">Choose Allowance</label>
+                            <select id="" name="allowances" class="form-control form-select">
+                              <option value="" class="selected">Travel allowance</option>
+                              <option value="">Rent allowance</option>
+                              <option value="">Medical allowance</option>
+                            </select>
+                          </div>
+                          <div class="col-md-5">
+                          <label class="col-form-label" for="basic-default-name">Choose Formula</label>
+                            <select id="" name="allowances" class="form-control form-select">
+                              <option value="" class="selected">Formula 1</option>
+                              <option value="">Formula 2</option>
+                              <option value="">Formula 3</option>
+                            </select>
+                          </div>
+                          <div class="col-md-1">
+                            <button id="addmore" class="btn btn-primary btn-margin">+</button>
+                          </div>
+                        </div>
+                    </form>
+    
+    
+                    <div class="card mt-5">
+                      <div class="table-responsive text-nowrap">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Additional Allowances</th>
+                              <th>Formula</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody class="table-border-bottom-0">
+                            <tr>
+                              <td><strong>Travel Allowance</strong></td>
+                              <td>Formula 1</td>
+                              <td>
+                                <a href="javascript:void(0);"><i class="bx bx-trash me-2"></i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><strong>Rent Allowance</strong></td>
+                              <td>Formula 2</td>
+                              <td>
+                                <a href="javascript:void(0);"><i class="bx bx-trash me-2"></i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><strong>Medical Allowance</strong></td>
+                              <td>Formula 3</td>
+                              <td>
+                                <a href="javascript:void(0);"><i class="bx bx-trash me-2"></i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><strong>Childcare Allowance</strong></td>
+                              <td>Formula 4</td>
+                              <td>
+                                <a href="javascript:void(0);"><i class="bx bx-trash me-2"></i></a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+
               </div>
               <div class="card mt-5">
                 <div class="card-header d-flex align-items-center justify-content-between">
@@ -367,29 +435,23 @@
                                         <tr>
                                           <th>Additional Allowance Profile</th>
                                           <th>Formula</th>
-                                          <th>Actions</th>
                                         </tr>
                                       </thead>
                                       <tbody class="table-border-bottom-0">
                                         <tr>
-                                          <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>PF</strong></td>
+                                          <td><strong>PF</strong></td>
                                           <td>Formula 1</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
                                         </tr>
                                         
                                         <tr>
-                                          <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>ESI</strong></td>
+                                          <td> <strong>ESI</strong></td>
                                           <td>Formula 2</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
                                         </tr>
                                         
                                       </tbody>
                                     </table>
-                                  </div>
+                                  </div><hr>
+                                  <button class="btn btn-primary btn-sm float-end mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#editDeductionProfile">Edit Profile</button>
                                 </div>
                               </div>
                             </div>
@@ -407,29 +469,24 @@
                                         <tr>
                                           <th>Additional Allowance Profile</th>
                                           <th>Formula</th>
-                                          <th>Actions</th>
                                         </tr>
                                       </thead>
                                       <tbody class="table-border-bottom-0">
                                         <tr>
-                                          <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Repayment of Loans</strong></td>
+                                          <td><strong>Repayment of Loans</strong></td>
                                           <td>Formula 1</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
                                         </tr>
                                         
                                         <tr>
-                                          <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Union Dues</strong></td>
+                                          <td><strong>Union Dues</strong></td>
                                           <td>Formula 2</td>
-                                          <td>
-                                            <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-                                          </td>
                                         </tr>
                                         
                                       </tbody>
                                     </table>
-                                  </div>
+                                  </div><hr>
+                                  <button class="btn btn-primary btn-sm float-end mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#editDeductionProfile">Edit Profile</button>
+
                                 </div>
                               </div>
                             </div>
@@ -439,6 +496,95 @@
                         
                       </div>
                 </div>
+
+                <div class="modal fade" id="editDeductionProfile" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="mb-0">Edit Additional Deduction Profile</h5> 
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                    <div class="card-body">
+                      <form>
+                        <div class="row mb-5">
+                          <div class="col-sm-12">
+                          <label class="col-form-label" for="basic-default-name">Deduction Profile Name</label>
+                            <input type="text" class="form-control" id="basic-default-name" value="Fixed Deduction" />
+                          </div>
+                          <div class="col-md-5">
+                          <label class="col-form-label" for="basic-default-name">Choose Deduction</label>
+                            <select id="" name="allowances" class="form-control form-select">
+                              <option value="" class="selected">PF</option>
+                              <option value="">ESI</option>
+                            </select>
+                          </div>
+                          <div class="col-md-5">
+                          <label class="col-form-label" for="basic-default-name">Choose Formula</label>
+                            <select id="" name="allowances" class="form-control form-select">
+                              <option value="" class="selected">Formula 1</option>
+                              <option value="">Formula 2</option>
+                            </select>
+                          </div>
+                          <div class="col-md-1">
+                            <button id="addmore" class="btn btn-primary btn-margin">+</button>
+                          </div>
+                        </div>
+                    </form>
+    
+    
+                    <div class="card mt-5">
+                      <div class="table-responsive text-nowrap">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Additional Deductions</th>
+                              <th>Formula</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody class="table-border-bottom-0">
+                            <tr>
+                              <td><strong>Travel Allowance</strong></td>
+                              <td>Formula 1</td>
+                              <td>
+                                <a href="javascript:void(0);"><i class="bx bx-trash me-2"></i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><strong>Rent Allowance</strong></td>
+                              <td>Formula 2</td>
+                              <td>
+                                <a href="javascript:void(0);"><i class="bx bx-trash me-2"></i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><strong>Medical Allowance</strong></td>
+                              <td>Formula 3</td>
+                              <td>
+                                <a href="javascript:void(0);"><i class="bx bx-trash me-2"></i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><strong>Childcare Allowance</strong></td>
+                              <td>Formula 4</td>
+                              <td>
+                                <a href="javascript:void(0);"><i class="bx bx-trash me-2"></i></a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+              </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
             </div>     
           </div> 
