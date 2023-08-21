@@ -1,40 +1,38 @@
 
-const categorySelect = document.getElementById("category");
-const customItemContainer = document.getElementById("customItemContainer");
-const customItemInput = document.getElementById("customItem");
+// const categorySelect = document.getElementById("category");
+// const customItemContainer = document.getElementById("customItemContainer");
+// const customItemInput = document.getElementById("customItem");
 
-categorySelect.addEventListener("change", function() {
-    const selectedCategory = categorySelect.value;
+// categorySelect.addEventListener("change", function() {
+//     const selectedCategory = categorySelect.value;
 
-    if (selectedCategory === "married") {
-        customItemContainer.classList.remove("hidden");
-    } else {
-        customItemContainer.classList.add("hidden");
-    }
-});
+//     if (selectedCategory === "married") {
+//         customItemContainer.classList.remove("hidden");
+//     } else {
+//         customItemContainer.classList.add("hidden");
+//     }
+// });
 
-customItemInput.addEventListener("input", function() {
-    // Handle custom item input as needed
-});
+// customItemInput.addEventListener("input", function() {
+// });
 
 
-const qualification = document.getElementById("qualification");
-const otherCourse = document.getElementById("othercourse");
-const otherItem = document.getElementById("otherItem");
+// const qualification = document.getElementById("qualification");
+// const otherCourse = document.getElementById("othercourse");
+// const otherItem = document.getElementById("otherItem");
 
-qualification.addEventListener("change", function() {
-    const selectedCategory = qualification.value;
+// qualification.addEventListener("change", function() {
+//     const selectedCategory = qualification.value;
 
-    if (selectedCategory === "other") {
-      otherCourse.classList.remove("hidden");
-    } else {
-      otherCourse.classList.add("hidden");
-    }
-});
+//     if (selectedCategory === "other") {
+//       otherCourse.classList.remove("hidden");
+//     } else {
+//       otherCourse.classList.add("hidden");
+//     }
+// });
 
-otherItem.addEventListener("input", function() {
-    // Handle custom item input as needed
-});
+// otherItem.addEventListener("input", function() {
+// });
 
 
 
@@ -83,7 +81,14 @@ let menu, animate;
         e.addEventListener("show.bs.collapse", c), e.addEventListener("hide.bs.collapse", c)
     });
     window.Helpers.setAutoUpdate(!0), window.Helpers.initPasswordToggle(), window.Helpers.initSpeechToText(), window.Helpers.isSmallScreen() || window.Helpers.setCollapsed(!0, !1)
-}();
+
+
+
+    ///
+    const categorySelect = document.getElementById("category");
+
+
+  }();
 
 
 function toggleFields(radio) {
