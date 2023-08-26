@@ -3,8 +3,8 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-      <title>Settings</title>
-      <meta name="description" content="Create your shift - Payroll" />
+      <title>Leave Allotments</title>
+      <meta name="description" content="Leave Allotments - Payroll" />
       <meta name="keywords" content="Payroll">
       <!-- Favicon -->
       <link rel="icon" type="image/x-icon" href="assets/img/favicon.jpg" />
@@ -20,6 +20,7 @@
       <link rel="stylesheet" href="assets/css/demo.css" />
       <!-- Vendors CSS -->
       <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+      
       <!-- Page CSS -->
       <!-- Helpers -->
       <script src="assets/vendor/js/helpers.js"></script>
@@ -151,7 +152,7 @@
                       </div>
                       <!-- /Search -->
                       <ul class="navbar-nav flex-row align-items-center ms-auto"> 
-                        <!-- User -->
+                        
                         <li class="nav-item navbar-dropdown dropdown-user dropdown">
                           <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                             <div class="avatar avatar-online">
@@ -210,77 +211,266 @@
                           </ul>
                         </li>
                         <!--/ User -->
-                      </ul>
-                    </div>  
-                </nav>
-                
-              
-                
-              <!-- / Navbar -->
-              
-                    
-              
-                    <!-- Content wrapper -->
-                    <div class="content-wrapper">
-              
-                      <!-- Content -->
-                      
+                    </ul>
+                </div>  
+            </nav>               
+<!-- / Navbar -->              
+<!-- Content wrapper -->
+    <div class="content-wrapper">             
         <div class="container-xxl flex-grow-1 container-p-y">
-          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Settings</h4>    
+          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Leave Allotment
+           <button class="btn btn-md btn-primary float-end" onclick="allotement(event)">Add Leave Details</button>
+          </h4>
+         <div class="row mb-3">
+            <div class="d-inline-flex col-md-3">
+                <span class="count p-2">Show </span>
+                  <select name="shift" class="form-select">
+                    <option value="Shift 1" class="selected">10</option>
+                    <option value="Shift 2">50</option>
+                    <option value="Shift 3">100</option>
+                  </select> 
+                  <span class="count p-2"> entries</span>
+            </div>
+            <div class="col-md-5"></div>
+            <div class="float-end d-inline-flex col-md-4">
+                  <select name="shift" class="form-select">
+                    <option value="paid" class="selected">Paid</option>
+                    <option value="unapproved">Unapproved</option>
+                    <option value="unpaid">Unpaid</option>
+                  </select> 
+                  <button class="btn btn-dark ms-2">Search</button>
+            </div>
+         </div>       
+<!-- Responsive Table -->
+<div class="card" >
+    <div class="table-responsive text-nowrap">
+      <table class="table">
+        <thead>
+          <tr class="text-nowrap">
+            <th>SI.No</th>
+            <th>Entry Date</th>
+            <th>EMP ID</th>
+            <th>Employee Name</th>
+            <th>Leave Type</th>
+            <th>Leave Category</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>20/07/2023</td>
+            <td>Fox3241</td>
+            <td><img src="assets/img/avatars/5.png" alt="Avatar" class="rounded-circle avatar avatar-xs me-2">Joseph</td>
+            <td><span class="badge bg-label-success me-1">Paid</span></td>
+            <td>Casual Leave</td>
+            <td>21/08/2023</td>
+            <td>25/08/2023</td>
+            <td>
+              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
+              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editallotement"><i class="bx bx-edit me-1"></i></a>
+            </td>
+            <td><button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#Details">Details</button></td>
+            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>25/07/2023</td>
+            <td>Fox3242</td>
+            <td><img src="assets/img/avatars/7.png" alt="Avatar" class="rounded-circle avatar avatar-xs me-2">John Mathayi</td>
+            <td><span class="badge bg-label-danger me-1">Unapproved</span></td>
+            <td></td>
+            <td>25/08/2023</td>
+            <td>28/08/2023</td>
+            <td>
+              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
+              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editallotement"><i class="bx bx-edit me-1"></i></a>
+            </td>
+            <td><button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#Details">Details</button></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>24/07/2023</td>
+            <td>Fox3243</td>
+            <td><img src="assets/img/avatars/5.png" alt="Avatar" class="rounded-circle avatar avatar-xs me-2">Nolan</td>
+            <td><span class="badge bg-label-primary me-1">Unpaid</span></td>
+            <td></td>
+            <td>27/08/2023</td>
+            <td>30/08/2023</td>
+            <td>
+              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
+              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editallotement"><i class="bx bx-edit me-1"></i></a>
+               
+            </td>
+            <td><button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#Details">Details</button></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>30/07/2023</td>
+            <td>Fox3244</td>
+            <td><img src="assets/img/avatars/6.png" alt="Avatar" class="rounded-circle avatar avatar-xs me-2">Vedhika</td>
+            <td><span class="badge bg-label-success me-1">Paid</span></td>
+            <td>Holiday Leave</td>
+            <td>02/09/2023</td>
+            <td></td>
+            <td>
+              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
+              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editallotement"><i class="bx bx-edit me-1"></i></a>
+            </td>
+            <td><button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#Details">Details</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!--/ Responsive Table -->
+
+<!-- edit allotement -->
+<div class="modal fade" id="editallotement" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel2">Edit Allotement</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+        <div class="card-body">
           <div class="row">
-             <div class="col-xxl">
-                <div class="card">
-                    <h5 class="card-header">Business Settings</h5>
-                    <div class="table-responsive text-nowrap">
-                      <table class="table table-hover settings_row">
-                        <thead>
-                            
-                        </thead>
-                        <tbody class="table-border-bottom-0">
-                          <tr>
-                            <td><a href="leave-policy-list.html"><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Leave Policy</strong></a></td>
-                            <td class="Stting_right"><a href="leave-policy-list.html"><i class="bx bx-chevron-right bx-md align-middle"></i></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="leave-allotment.html"><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Leave Allotement</strong></a></td>
-                            <td class="Stting_right"><a href="leave-allotment.html"><i class="bx bx-chevron-right bx-md align-middle"></i></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="holiday-policy.html"><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Holiday Policy</strong></a></td>
-                            <td class="Stting_right"><a href="holiday-policy.html"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="automation-rule.html"><i class="fab fa-vuejs fa-lg text-success me-3"></i> <strong>Automation Rules</strong></a></td>
-                            <td class="Stting_right"><a href="automation-rule.html"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="formulae.html"><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Formula</strong></a></td>
-                            <td class="Stting_right"><a href="formulae.html"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="payroll-policy.html"><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Payroll Policy</strong></a></td>
-                            <td class="Stting_right"><a href="payroll-policy.html"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="generate-salary.html"><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Generate Salary</strong></a></td>
-                            <td class="Stting_right"><a href="generate-salary.html"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <!-- <tr>
-                            <td><a href="#"><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Breaktime Rule</strong></a></td>
-                            <td class="Stting_right"><a href="#"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr> -->
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-            </div>     
-          </div> 
+                <div class="col-sm-4">
+                    <label class=" col-form-label" for="">Entry No</label>
+                    <input type="number" class="form-control" id="" />
+                </div>
+                <div class="col-sm-4">
+                    <label class=" col-form-label" for="">Entry Date</label>
+                    <input type="date" class="form-control" id="" />
+                </div>
+                <div class="col-sm-4">
+                    <label class=" col-form-label" for="">EMP Id</label>
+                    <input type="text" class="form-control" id="" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label class=" col-form-label" for="">Employee Name</label>
+                    <input type="text" class="form-control" id="" />
+                </div>
+                <div class="col-sm-4">
+                    <label class=" col-form-label" for="">Leave Type</label>
+                    <select name="shift" id="category" class="form-select">
+                        <option value="Unpaid" class="selected">Unpaid Leave</option>
+                        <option value="Unapproved">Unapproved Leave</option>
+                        <option value="Paid" >Paid Leave</option>
+                    </select>
+                </div>
+                <div class="col-sm-4 hidden" id="customItemContainer">
+                    <label class=" col-form-label" for="">Leave Category</label>
+                    <select name="shift" class="form-select">
+                        <option value="Casual Leave" class="selected">Casual Leave</option>
+                        <option value="Sick Leave">Sick Leave</option>
+                        <option value="Holiday Leave">Holiday Leave</option>
+                      </select>
+                </div>
+                <div class="col-sm-4">
+                    <label class=" col-form-label" for="">From</label>
+                    <input type="date" class="form-control" id="" />
+                </div>
+                <div class="col-sm-4">
+                    <label class=" col-form-label" for="">To</label>
+                    <input type="date" class="form-control" id="" />
+                </div>
+            </div>
+            
+              <button class="btn btn-primary btn-lg mt-5" style="float: right;">Submit</button> 
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- allotement details -->
+  <div class="modal fade" id="Details" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel2">Joseph</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        <div class="modal-body">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>EMP ID</th>
+                    <th>Leave Type</th>
+                    <th>Leave Category</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Fox3241</td>
+                    <td>Paid</td>
+                    <td>Holiday Leave</td>
+                    <td>21/08/2023</td>
+                  </tr>
+                  <tr>
+                    <td>Fox3241</td>
+                    <td>Paid</td>
+                    <td>Holiday Leave</td>
+                    <td>22/08/2023</td>
+                  </tr>
+                  <tr>
+                    <td>Fox3241</td>
+                    <td>Paid</td>
+                    <td>Holiday Leave</td>
+                    <td>23/08/2023</td>
+                  </tr>
+                  <tr>
+                    <td>Fox3241</td>
+                    <td>Paid</td>
+                    <td>Holiday Leave</td>
+                    <td>24/08/2023</td>
+                  </tr>
+                  <tr>
+                    <td>Fox3241</td>
+                    <td>Paid</td>
+                    <td>Holiday Leave</td>
+                    <td>25/08/2023</td>
+                  </tr>
+                </tbody>
+              </table>
         </div>
-        
-              
-                        
-                        
-              
+      </div>
+    </div>
+  </div>
+
+  <div class="demo-inline-spacing float-end">
+    <!-- Basic Pagination -->
+    <nav aria-label="Page navigation">
+      <ul class="pagination">
+        <li class="page-item first">
+          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-left"></i></a>
+        </li>
+        <li class="page-item prev">
+          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevron-left"></i></a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="javascript:void(0);">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="javascript:void(0);">2</a>
+        </li>
+        <li class="page-item next">
+          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevron-right"></i></a>
+        </li>
+        <li class="page-item last">
+          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-right"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!--/ Basic Pagination -->
+  </div>
+    </div>
+                
               <!-- Footer -->
               <footer class="content-footer footer bg-footer-theme">
                 <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
@@ -308,30 +498,18 @@
       </div>
       <!-- / Layout wrapper -->
           <!-- / Layout wrapper -->
-  <script>
-  function submitForm(event) {
-    event.preventDefault(); // Prevent the default form submission
-    
-    // Perform any form validation or processing if needed
-    
-    // Redirect to the desired URL
-    window.location.href = "add-shift.html";
-  }
-</script>
-      <!-- Core JS -->
-      <!-- build:js assets/vendor/js/core.js -->
+  
+      <script>
+        function allotement(event) {
+        event.preventDefault(); 
+        window.location.href = "add-leave-allotement.html";
+        }
+      </script>
       <script src="assets/vendor/libs/jquery/jquery.js"></script>
       <script src="assets/vendor/libs/popper/popper.js"></script>
       <script src="assets/vendor/js/bootstrap.js"></script>
       <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
       <script src="assets/vendor/js/menu.js"></script>
-      <!-- endbuild -->
-      <!-- Vendors JS -->
-      <!-- Main JS -->
       <script src="assets/js/main.js"></script>
-      <!-- Page JS -->
-      <!-- Place this tag in your head or just before your close body tag. -->
-      <script async defer src="../../../buttons.github.io/buttons.js"></script>
    </body>
-   <!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template-free/html/tables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 May 2023 08:59:46 GMT -->
 </html>

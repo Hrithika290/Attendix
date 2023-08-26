@@ -3,8 +3,8 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-      <title>Settings</title>
-      <meta name="description" content="Create your shift - Payroll" />
+      <title>Generate Salary</title>
+      <meta name="description" content="Generate Salary - Payroll" />
       <meta name="keywords" content="Payroll">
       <!-- Favicon -->
       <link rel="icon" type="image/x-icon" href="assets/img/favicon.jpg" />
@@ -20,6 +20,7 @@
       <link rel="stylesheet" href="assets/css/demo.css" />
       <!-- Vendors CSS -->
       <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+      
       <!-- Page CSS -->
       <!-- Helpers -->
       <script src="assets/vendor/js/helpers.js"></script>
@@ -151,7 +152,7 @@
                       </div>
                       <!-- /Search -->
                       <ul class="navbar-nav flex-row align-items-center ms-auto"> 
-                        <!-- User -->
+                        
                         <li class="nav-item navbar-dropdown dropdown-user dropdown">
                           <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                             <div class="avatar avatar-online">
@@ -210,77 +211,140 @@
                           </ul>
                         </li>
                         <!--/ User -->
-                      </ul>
-                    </div>  
-                </nav>
-                
-              
-                
-              <!-- / Navbar -->
-              
-                    
-              
-                    <!-- Content wrapper -->
-                    <div class="content-wrapper">
-              
-                      <!-- Content -->
-                      
+                    </ul>
+                </div>  
+            </nav>               
+<!-- / Navbar -->              
+<!-- Content wrapper -->
+    <div class="content-wrapper">             
         <div class="container-xxl flex-grow-1 container-p-y">
-          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Settings</h4>    
-          <div class="row">
-             <div class="col-xxl">
-                <div class="card">
-                    <h5 class="card-header">Business Settings</h5>
-                    <div class="table-responsive text-nowrap">
-                      <table class="table table-hover settings_row">
-                        <thead>
-                            
-                        </thead>
-                        <tbody class="table-border-bottom-0">
-                          <tr>
-                            <td><a href="leave-policy-list.html"><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Leave Policy</strong></a></td>
-                            <td class="Stting_right"><a href="leave-policy-list.html"><i class="bx bx-chevron-right bx-md align-middle"></i></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="leave-allotment.html"><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Leave Allotement</strong></a></td>
-                            <td class="Stting_right"><a href="leave-allotment.html"><i class="bx bx-chevron-right bx-md align-middle"></i></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="holiday-policy.html"><i class="fab fa-react fa-lg text-info me-3"></i> <strong>Holiday Policy</strong></a></td>
-                            <td class="Stting_right"><a href="holiday-policy.html"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="automation-rule.html"><i class="fab fa-vuejs fa-lg text-success me-3"></i> <strong>Automation Rules</strong></a></td>
-                            <td class="Stting_right"><a href="automation-rule.html"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="formulae.html"><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Formula</strong></a></td>
-                            <td class="Stting_right"><a href="formulae.html"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="payroll-policy.html"><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Payroll Policy</strong></a></td>
-                            <td class="Stting_right"><a href="payroll-policy.html"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <tr>
-                            <td><a href="generate-salary.html"><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Generate Salary</strong></a></td>
-                            <td class="Stting_right"><a href="generate-salary.html"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr>
-                          <!-- <tr>
-                            <td><a href="#"><i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>Breaktime Rule</strong></a></td>
-                            <td class="Stting_right"><a href="#"><i class="bx bx-chevron-right bx-md align-middle"></a></td>
-                          </tr> -->
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-            </div>     
-          </div> 
-        </div>
-        
-              
-                        
-                        
-              
+          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Generate Salary
+           <button class="btn btn-md btn-primary float-end" onclick="allotement(event)">Add Leave Details</button>
+          </h4>
+         <div class="row mb-3">
+            <div class="col-md-3">
+                <label for="nameSmall" class="form-label">Salary Type</label>
+                <select name="dept" id="" class="form-control form-select">
+                    <option value="">Hourly</option>
+                    <option value="">Daily Wage</option>
+                    <option value="">Weekly</option>
+                    <option value="">Monthly</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+            <div class="row" id="customItemContainer">
+                <div class="col-md-6">
+                <label for="nameSmall" class="form-label">From</label>
+                <input type="date" class="form-control">
+                </div>
+                <div class="col-md-6">
+                <label for="nameSmall" class="form-label">To</label>
+                <input type="date" class="form-control">
+                </div>
+            </div>
+            </div>
+            <div class="col-md-3">
+                
+            </div>
+            
+         </div>       
+<!-- Responsive Table -->
+<div class="card" >
+    <div class="table-responsive text-nowrap">
+      <table class="table table-hover">
+        <thead>
+          <tr class="text-nowrap">
+            <th><a href="" class="view_details">+</a></th>
+            <th>Period</th>
+            <th>EMP ID</th>
+            <th>Employee Name</th>
+            <th>Department</th>
+            <th>Designation</th>
+            <th>Branch</th>
+            <th>Basic Salary</th>
+            <th>Working time in minute</th>
+            <th>working time in hour</th>
+            <th>late coming in minute</th>
+            <th>late coming in hour</th>
+            <th>late coming count</th>
+            <th>Early going in minute</th>
+            <th>early going in hours</th>
+            <th>early going count</th>
+            <th>Less time in minute</th>
+            <th>Less time in hours</th>
+            <th>Regular days overtime in minute</th>
+            <th>Holidays overtime in minute</th>
+            <th>Offdays overtime in minute</th>
+            <th>Regular days overtime in hour</th>
+            <th>Holidays overtime in hour</th>
+            <th>Offdays overtime in hour</th>
+            <th>Company working days count</th>
+            <th>Attendance working days</th>
+            <th>Absence days count</th>
+            <th>Unpaid Leave</th>
+            <th>Unapproved Leave</th>
+            <th>Paid Leave</th>
+            <th>Casual Leave</th>
+            <th>Sick Leave</th>
+            <th>Annual Leave</th>
+            <th>Spl Leave 1</th>
+            <th>Spl Leave 2</th>
+            <th>Spl Leave 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th><input class="form-check-input" type="checkbox" value=""/></th>
+            <td>Fox3241</td>
+            <td>214we#21</td>
+            <td><img src="assets/img/avatars/5.png" alt="Avatar" class="rounded-circle avatar avatar-xs me-2">Joseph</td>
+            <td>IT</td>
+            <td>Web Designer</td>
+            <td>Kakkanchery</td>
+            <td>Daily Wage</td>
+            <td>Daily Wage</td>
+
+          </tr>
+          <tr>
+            <th><input class="form-check-input" type="checkbox" value=""/></th>
+            <td>Fox3242</td>
+            <td>314fg*45</td>
+            <td><img src="assets/img/avatars/7.png" alt="Avatar" class="rounded-circle avatar avatar-xs me-2">John Mathayi</td>
+            <td>IT</td>
+            <td>Flutter Developer</td>
+            <td>EMP Group 2</td>
+            <td>Daily Wage</td>
+          </tr>
+          <tr>
+            <th><input class="form-check-input" type="checkbox" value=""/></th>
+            <td>Fox3243</td>
+            <td>5148%34</td>
+            <td><img src="assets/img/avatars/5.png" alt="Avatar" class="rounded-circle avatar avatar-xs me-2">Nolan</td>
+            <td>Advertising</td>
+            <td>Graphics Designing</td>
+            <td>EMP Group 4</td>
+            <td>Daily Wage</td>
+          </tr>
+          <tr>
+            <th><input class="form-check-input" type="checkbox" value=""/></th>
+            <td>Fox3244</td>
+            <td>623*/64</td>
+            <td><img src="assets/img/avatars/6.png" alt="Avatar" class="rounded-circle avatar avatar-xs me-2">Vedhika</td>
+            <td>Robofoxy</td>
+            <td>CRM</td>
+            <td>EMP Group 4</td>
+            <td>Daily Wage</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <!--/ Responsive Table -->
+  <button class="btn btn-primary btn-md mt-5" onclick="punching_Details(event)" style="float: right;">Next</button> 
+</div>
+                
               <!-- Footer -->
               <footer class="content-footer footer bg-footer-theme">
                 <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
@@ -308,30 +372,19 @@
       </div>
       <!-- / Layout wrapper -->
           <!-- / Layout wrapper -->
-  <script>
-  function submitForm(event) {
-    event.preventDefault(); // Prevent the default form submission
-    
-    // Perform any form validation or processing if needed
-    
-    // Redirect to the desired URL
-    window.location.href = "add-shift.html";
-  }
-</script>
-      <!-- Core JS -->
-      <!-- build:js assets/vendor/js/core.js -->
+  
+      <script>
+        function punching_Details(event) {
+          event.preventDefault(); 
+          window.location.href = "punching_details.html";
+        }
+        
+      </script>
       <script src="assets/vendor/libs/jquery/jquery.js"></script>
       <script src="assets/vendor/libs/popper/popper.js"></script>
       <script src="assets/vendor/js/bootstrap.js"></script>
       <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
       <script src="assets/vendor/js/menu.js"></script>
-      <!-- endbuild -->
-      <!-- Vendors JS -->
-      <!-- Main JS -->
       <script src="assets/js/main.js"></script>
-      <!-- Page JS -->
-      <!-- Place this tag in your head or just before your close body tag. -->
-      <script async defer src="../../../buttons.github.io/buttons.js"></script>
    </body>
-   <!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template-free/html/tables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 May 2023 08:59:46 GMT -->
 </html>
