@@ -3,9 +3,9 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-      <title>Punching Details</title>
-      <meta name="description" content="Punching Details - Payroll" />
-      <meta name="keywords" content="Payroll">
+      <title>Salary Report</title>
+      <meta name="description" content="Salary Report - Payroll" />
+      <meta name="keywords" content="Salary Report">
       <!-- Favicon -->
       <link rel="icon" type="image/x-icon" href="assets/img/favicon.jpg" />
       <!-- Fonts -->
@@ -218,8 +218,8 @@
 <!-- Content wrapper -->
     <div class="content-wrapper">             
         <div class="container-xxl flex-grow-1 container-p-y">
-          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Punching Details
-           <button class="btn btn-md btn-primary float-end" onclick="allotement(event)">Add Leave Details</button>
+          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Salary Report
+           <button class="btn btn-md btn-primary float-end" onclick="salary_report(event)">Add Leave Details</button>
           </h4>
           
 <!-- Responsive Table -->
@@ -731,7 +731,7 @@
 
 
   <!--/ Responsive Table -->
-  <button class="btn btn-primary btn-md mt-5" onclick="salary_report(event)" style="float: right;">Next</button> 
+  <button class="btn btn-primary btn-md mt-5" onclick="punching_Details(event)" style="float: right;">Next</button> 
   <button class="btn btn-primary btn-md mt-5 me-2" onclick="generate(event)" style="float: right;">Back</button> 
 </div>
                 
@@ -763,16 +763,7 @@
       <!-- / Layout wrapper -->
           <!-- / Layout wrapper -->
   
-      <script>
-        function salary_report(event) {
-          event.preventDefault(); 
-          window.location.href = "salary_report.html";
-        }
-        function generate(event) {
-          event.preventDefault(); 
-          window.location.href = "generate-salary.html";
-        }
-      </script>
+   
       <script src="assets/vendor/libs/jquery/jquery.js"></script>
       <script src="assets/vendor/libs/popper/popper.js"></script>
       <script src="assets/vendor/js/bootstrap.js"></script>

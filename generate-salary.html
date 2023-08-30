@@ -221,33 +221,70 @@
           <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Generate Salary
            <button class="btn btn-md btn-primary float-end" onclick="allotement(event)">Add Leave Details</button>
           </h4>
-         <div class="row mb-3">
-            <div class="col-md-3">
-                <label for="nameSmall" class="form-label">Salary Type</label>
-                <select name="dept" id="" class="form-control form-select">
-                    <option value="">Hourly</option>
-                    <option value="">Daily Wage</option>
-                    <option value="">Weekly</option>
-                    <option value="">Monthly</option>
-                </select>
+          <div class="row mb-4">
+            <div class="col-md-3 mt-2">
+              <label for="" class="form-label">Select Branch</label>
+              <select name="branch" id="" class="form-control form-select">
+                <option value="">Kakkanchery</option>
+                <option value="">Saudi</option>
+                <option value="">Qatar</option>
+              </select>
             </div>
-            <div class="col-md-6">
-            <div class="row" id="customItemContainer">
-                <div class="col-md-6">
-                <label for="nameSmall" class="form-label">From</label>
-                <input type="date" class="form-control">
-                </div>
-                <div class="col-md-6">
-                <label for="nameSmall" class="form-label">To</label>
-                <input type="date" class="form-control">
-                </div>
+            <div class="col-md-3 mt-2">
+              <label for="" class="form-label">Department</label>
+              <select name="dept" id="" class="form-control form-select">
+                <option value="">IT</option>
+                <option value="">Advertising</option>
+                <option value="">Robofoxy</option>
+              </select>
             </div>
+            <div class="col-md-3 mt-2">
+              <label for="" class="form-label">Designation</label>
+              <select name="designation" id="" class="form-control form-select">
+                <option value="">Web Developer</option>
+                <option value="">Graphic Designer</option>
+                <option value="">CRM</option>
+              </select>
             </div>
-            <div class="col-md-3">
-                
+            <div class="col-md-3 mt-2">
+              <label for="" class="form-label">Branch/Location</label>
+              <select name="designation" id="" class="form-control form-select">
+                <option value="">Branch 1</option>
+                <option value="">Branch 2</option>
+                <option value="">Branch 3</option>
+              </select>
             </div>
-            
-         </div>       
+            <div class="col-md-3 mt-2">
+              <label for="" class="form-label">EMP Group</label>
+              <select name="designation" id="" class="form-control form-select">
+                <option value="">Group 1</option>
+                <option value="">Group 2</option>
+                <option value="">Group 3</option>
+              </select>
+            </div>
+            <div class="col-md-3 mt-2">
+              <label for="nameSmall" class="form-label">Salary Type</label>
+              <select name="dept" id="" class="form-control form-select">
+                  <option value="">Monthly</option>
+                  <option value="">Daily Wage</option>
+                  <option value="">Weekly</option>
+                  <option value="">Hourly</option>
+              </select>
+          </div>
+          <div class="col-md-6 mt-2">
+          <div class="row" id="customItemContainer">
+              <div class="col-md-6">
+              <label for="nameSmall" class="form-label">From</label>
+              <input type="date" class="form-control">
+              </div>
+              <div class="col-md-6">
+              <label for="nameSmall" class="form-label">To</label>
+              <input type="date" class="form-control">
+              </div>
+          </div>
+          </div>
+          </div>
+               
 <!-- Responsive Table -->
 <div class="card" >
     <div class="table-responsive text-nowrap">
@@ -273,7 +310,7 @@
             <td>IT</td>
             <td>Web Designer</td>
             <td>EMP Group 1</td>
-            <td>Daily Wage</td>
+            <td>Monthly</td>
           </tr>
           <tr>
             <th><input class="form-check-input" type="checkbox" value=""/></th>
@@ -283,7 +320,7 @@
             <td>IT</td>
             <td>Flutter Developer</td>
             <td>EMP Group 2</td>
-            <td>Daily Wage</td>
+            <td>Monthly</td>
           </tr>
           <tr>
             <th><input class="form-check-input" type="checkbox" value=""/></th>
@@ -293,7 +330,7 @@
             <td>Advertising</td>
             <td>Graphics Designing</td>
             <td>EMP Group 4</td>
-            <td>Daily Wage</td>
+            <td>Monthly</td>
           </tr>
           <tr>
             <th><input class="form-check-input" type="checkbox" value=""/></th>
@@ -303,7 +340,7 @@
             <td>Robofoxy</td>
             <td>CRM</td>
             <td>EMP Group 4</td>
-            <td>Daily Wage</td>
+            <td>Monthly</td>
           </tr>
         </tbody>
       </table>
