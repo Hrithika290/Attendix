@@ -219,7 +219,7 @@
     <div class="content-wrapper">             
         <div class="container-xxl flex-grow-1 container-p-y">
           <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Leave Allotment
-           <button class="btn btn-md btn-primary float-end" onclick="allotement(event)">Add Leave Details</button>
+           <button class="btn btn-md btn-primary float-end" onclick="addallotement(event)">Add Leave Details</button>
           </h4>
          <div class="row mb-3">
             <div class="d-inline-flex col-md-3">
@@ -496,7 +496,7 @@
           <!-- / Layout wrapper -->
   
       <script>
-        function allotement(event) {
+        function addallotement(event) {
         event.preventDefault(); 
         window.location.href = "add-leave-allotement.html";
         }
