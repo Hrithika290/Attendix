@@ -338,10 +338,6 @@
         <div class="card-body">
           <div class="row">
                 <div class="col-sm-4">
-                    <label class=" col-form-label" for="">Entry No</label>
-                    <input type="number" class="form-control" id="" />
-                </div>
-                <div class="col-sm-4">
                     <label class=" col-form-label" for="">Entry Date</label>
                     <input type="date" class="form-control" id="" />
                 </div>
@@ -349,12 +345,12 @@
                     <label class=" col-form-label" for="">EMP Id</label>
                     <input type="text" class="form-control" id="" />
                 </div>
+                <div class="col-sm-4">
+                  <label class=" col-form-label" for="">Employee Name</label>
+                  <input type="text" class="form-control" id="" />
+              </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
-                    <label class=" col-form-label" for="">Employee Name</label>
-                    <input type="text" class="form-control" id="" />
-                </div>
                 <div class="col-sm-4">
                     <label class=" col-form-label" for="">Leave Type</label>
                     <select name="shift" id="category" class="form-select">
@@ -504,6 +500,29 @@
         event.preventDefault(); 
         window.location.href = "add-leave-allotement.html";
         }
+       
+        function allotement(event) {
+          event.preventDefault(); 
+          window.location.href = "leave-allotment.html";
+        }
+
+        const categorySelect = document.getElementById("category");
+        const customItemContainer = document.getElementById("customItemContainer");
+        const customItemInput = document.getElementById("customItem");
+
+        categorySelect.addEventListener("change", function() {
+            const selectedCategory = categorySelect.value;
+
+            if (selectedCategory === "Paid") {
+                customItemContainer.classList.remove("hidden");
+            } else {
+                customItemContainer.classList.add("hidden");
+            }
+        });
+
+        customItemInput.addEventListener("input", function() {
+        });
+
       </script>
       <script src="assets/vendor/libs/jquery/jquery.js"></script>
       <script src="assets/vendor/libs/popper/popper.js"></script>
