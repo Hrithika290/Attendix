@@ -696,11 +696,29 @@ input[type="radio"] {
   padding: 3px 5px;
   border-radius: 5px;
 }
+.edit-icon{
+    margin-bottom: 3px;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 2px;
+    background: #5C011D;
+}
+
+#editableText {
+  padding: 5px;
+  display: inline-block;
+}
+
+/* #editButton {
+  margin-top: 10px;
+} */
 
 
-
-
-
-
-
+.slip-data h2{
+  text-align: right;
+}
+.slip-data p{
+  text-align: right;
+}
 

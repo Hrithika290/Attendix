@@ -3,8 +3,8 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-      <title>Leave Allotments</title>
-      <meta name="description" content="Leave Allotments - Payroll" />
+      <title>Employee Salary</title>
+      <meta name="description" content="Generate Salary - Payroll" />
       <meta name="keywords" content="Payroll">
       <!-- Favicon -->
       <link rel="icon" type="image/x-icon" href="assets/img/favicon.jpg" />
@@ -218,254 +218,95 @@
 <!-- Content wrapper -->
     <div class="content-wrapper">             
         <div class="container-xxl flex-grow-1 container-p-y">
-          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Leave Allotment
-           <button class="btn btn-md btn-primary float-end" onclick="addallotement(event)">Add Leave Details</button>
+          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard/</span> Employee Salary
           </h4>
-         <div class="row mb-3">
-            <div class="d-inline-flex col-md-3">
-                <span class="count p-2">Show </span>
-                  <select name="shift" class="form-select">
-                    <option value="Shift 1" class="selected">10</option>
-                    <option value="Shift 2">50</option>
-                    <option value="Shift 3">100</option>
-                  </select> 
-                  <span class="count p-2"> entries</span>
+          <div class="row mb-4">
+            <div class="col-md-3 mt-2">
+              <label for="" class="form-label">Employee Name</label>
+              <input type="text" class="form-control">
             </div>
-            <div class="col-md-5"></div>
-            <div class="float-end d-inline-flex col-md-4">
-                  <select name="shift" class="form-select">
-                    <option value="paid" class="selected">Paid</option>
-                    <option value="unapproved">Unapproved</option>
-                    <option value="unpaid">Unpaid</option>
-                  </select> 
-                  <button class="btn btn-dark ms-2">Search</button>
+            <div class="col-md-3 mt-2">
+              <label for="" class="form-label">Select Branch</label>
+              <select name="branch" id="" class="form-control form-select">
+                <option value="">Kakkanchery</option>
+                <option value="">Saudi</option>
+                <option value="">Qatar</option>
+              </select>
             </div>
-         </div>       
+            <div class="col-md-3 mt-2">
+              <label for="" class="form-label">Designation</label>
+              <select name="designation" id="" class="form-control form-select">
+                <option value="">Web Developer</option>
+                <option value="">Graphic Designer</option>
+                <option value="">CRM</option>
+              </select>
+            </div>
+            <div class="col-md-3 mt-2">
+              <button class="btn btn-primary btn-md" style="margin-top: 28px;">Search</button>
+            </div>
+          
+          </div>
+               
 <!-- Responsive Table -->
 <div class="card" >
     <div class="table-responsive text-nowrap">
-      <table class="table">
+      <table class="table table-hover">
         <thead>
           <tr class="text-nowrap">
-            <th>SI.No</th>
-            <th>Entry Date</th>
             <th>EMP ID</th>
+            <th>EMP Code</th>
             <th>Employee Name</th>
-            <th>Leave Type</th>
-            <th>Leave Category</th>
-            <th>From</th>
-            <th>To</th>
-            <th>Actions</th>
+            <th>Department</th>
+            <th>Designation</th>
+            <th>Salary</th>
+            <th> </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td>20/07/2023</td>
             <td>Fox3241</td>
+            <td>214we#21</td>
             <td><img src="assets/img/avatars/5.png" alt="Avatar" class="rounded-circle avatar avatar-xs me-2">Joseph</td>
-            <td><span class="badge bg-label-success me-1">Paid</span></td>
-            <td>Casual Leave</td>
-            <td>21/08/2023</td>
-            <td>25/08/2023</td>
-            <td>
-              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editallotement"><i class="bx bx-edit me-1"></i></a>
-            </td>
-            <td><button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#Details">Details</button></td>
-            
+            <td>IT</td>
+            <td>Web Designer</td>
+            <td>20000</td>
+            <td><button class="btn btn-outline-primary btn-sm">Generate Slip</button></td>
           </tr>
           <tr>
-            <th scope="row">2</th>
-            <td>25/07/2023</td>
             <td>Fox3242</td>
+            <td>314fg*45</td>
             <td><img src="assets/img/avatars/7.png" alt="Avatar" class="rounded-circle avatar avatar-xs me-2">John Mathayi</td>
-            <td><span class="badge bg-label-danger me-1">Unapproved</span></td>
-            <td></td>
-            <td>25/08/2023</td>
-            <td>28/08/2023</td>
-            <td>
-              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editallotement"><i class="bx bx-edit me-1"></i></a>
-            </td>
-            <td><button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#Details">Details</button></td>
+            <td>IT</td>
+            <td>Flutter Developer</td>
+            <td>30000</td>
+            <td><button class="btn btn-outline-primary btn-sm">Generate Slip</button></td>
           </tr>
           <tr>
-            <th scope="row">3</th>
-            <td>24/07/2023</td>
             <td>Fox3243</td>
+            <td>5148%34</td>
             <td><img src="assets/img/avatars/5.png" alt="Avatar" class="rounded-circle avatar avatar-xs me-2">Nolan</td>
-            <td><span class="badge bg-label-primary me-1">Unpaid</span></td>
-            <td></td>
-            <td>27/08/2023</td>
-            <td>30/08/2023</td>
-            <td>
-              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editallotement"><i class="bx bx-edit me-1"></i></a>
-               
-            </td>
-            <td><button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#Details">Details</button></td>
+            <td>Advertising</td>
+            <td>Graphics Designing</td>
+            <td>25000</td>
+            <td><button class="btn btn-outline-primary btn-sm">Generate Slip</button></td>
           </tr>
           <tr>
-            <th scope="row">4</th>
-            <td>30/07/2023</td>
             <td>Fox3244</td>
+            <td>623*/64</td>
             <td><img src="assets/img/avatars/6.png" alt="Avatar" class="rounded-circle avatar avatar-xs me-2">Vedhika</td>
-            <td><span class="badge bg-label-success me-1">Paid</span></td>
-            <td>Holiday Leave</td>
-            <td>02/09/2023</td>
-            <td></td>
-            <td>
-              <a href="javascript:void(0);"><i class="bx bx-trash me-1"></i></a>
-              <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editallotement"><i class="bx bx-edit me-1"></i></a>
-            </td>
-            <td><button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#Details">Details</button></td>
+            <td>Robofoxy</td>
+            <td>CRM</td>
+            <td>10000</td>
+            <td><button class="btn btn-outline-primary btn-sm">Generate Slip</button></td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
+
+
   <!--/ Responsive Table -->
-
-<!-- edit allotement -->
-<div class="modal fade" id="editallotement" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-md" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel2">Edit Allotement</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-        <div class="card-body">
-          <div class="row">
-                <div class="col-sm-4">
-                    <label class=" col-form-label" for="">Entry Date</label>
-                    <input type="date" class="form-control" id="" />
-                </div>
-                <div class="col-sm-4">
-                    <label class=" col-form-label" for="">EMP Id</label>
-                    <input type="text" class="form-control" id="" />
-                </div>
-                <div class="col-sm-4">
-                  <label class=" col-form-label" for="">Employee Name</label>
-                  <input type="text" class="form-control" id="" />
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <label class=" col-form-label" for="">Leave Type</label>
-                    <select name="shift" id="category" class="form-select">
-                        <option value="Unpaid" class="selected">Unpaid Leave</option>
-                        <option value="Unapproved">Unapproved Leave</option>
-                        <option value="Paid" >Paid Leave</option>
-                    </select>
-                </div>
-                <div class="col-sm-4 hidden" id="customItemContainer">
-                    <label class=" col-form-label" for="">Leave Category</label>
-                    <select name="shift" class="form-select">
-                        <option value="Casual Leave" class="selected">Casual Leave</option>
-                        <option value="Sick Leave">Sick Leave</option>
-                        <option value="Holiday Leave">Holiday Leave</option>
-                      </select>
-                </div>
-                <div class="col-sm-4">
-                    <label class=" col-form-label" for="">From</label>
-                    <input type="date" class="form-control" id="" />
-                </div>
-                <div class="col-sm-4">
-                    <label class=" col-form-label" for="">To</label>
-                    <input type="date" class="form-control" id="" />
-                </div>
-            </div>
-            
-              <button class="btn btn-primary btn-lg mt-5" style="float: right;">Submit</button> 
-    </div>
-    </div>
-  </div>
 </div>
-
-<!-- allotement details -->
-  <div class="modal fade" id="Details" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel2">Joseph</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-        <div class="modal-body">
-            <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th>EMP ID</th>
-                    <th>Leave Type</th>
-                    <th>Leave Category</th>
-                    <th>Date</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Fox3241</td>
-                    <td>Paid</td>
-                    <td>Holiday Leave</td>
-                    <td>21/08/2023</td>
-                  </tr>
-                  <tr>
-                    <td>Fox3241</td>
-                    <td>Paid</td>
-                    <td>Holiday Leave</td>
-                    <td>22/08/2023</td>
-                  </tr>
-                  <tr>
-                    <td>Fox3241</td>
-                    <td>Paid</td>
-                    <td>Holiday Leave</td>
-                    <td>23/08/2023</td>
-                  </tr>
-                  <tr>
-                    <td>Fox3241</td>
-                    <td>Paid</td>
-                    <td>Holiday Leave</td>
-                    <td>24/08/2023</td>
-                  </tr>
-                  <tr>
-                    <td>Fox3241</td>
-                    <td>Paid</td>
-                    <td>Holiday Leave</td>
-                    <td>25/08/2023</td>
-                  </tr>
-                </tbody>
-              </table>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="demo-inline-spacing float-end">
-    <!-- Basic Pagination -->
-    <nav aria-label="Page navigation">
-      <ul class="pagination">
-        <li class="page-item first">
-          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-left"></i></a>
-        </li>
-        <li class="page-item prev">
-          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevron-left"></i></a>
-        </li>
-        <li class="page-item active">
-          <a class="page-link" href="javascript:void(0);">1</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="javascript:void(0);">2</a>
-        </li>
-        <li class="page-item next">
-          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevron-right"></i></a>
-        </li>
-        <li class="page-item last">
-          <a class="page-link" href="javascript:void(0);"><i class="tf-icon bx bx-chevrons-right"></i></a>
-        </li>
-      </ul>
-    </nav>
-    <!--/ Basic Pagination -->
-  </div>
-    </div>
                 
               <!-- Footer -->
               <footer class="content-footer footer bg-footer-theme">
@@ -496,12 +337,45 @@
           <!-- / Layout wrapper -->
   
       <script>
-        function addallotement(event) {
-        event.preventDefault(); 
-        window.location.href = "add-leave-allotement.html";
+        function punching_Details(event) {
+          event.preventDefault(); 
+          window.location.href = "punching_details.html";
         }
-       
-        
+
+
+
+        $(document).ready(function() {
+  $(".checkAll").on("click", function() {
+    $(this)
+      .closest("table")
+      .find("tbody :checkbox")
+      .prop("checked", this.checked)
+      .closest("tr")
+      .toggleClass("selected", this.checked);
+  });
+
+  $("tbody :checkbox").on("click", function() {
+    // toggle selected class to the checkbox in a row
+    $(this)
+      .closest("tr")
+      .toggleClass("selected", this.checked);
+
+    // add selected class on check all
+    $(this).closest("table")
+      .find(".checkAll")
+      .prop("checked",
+        $(this)
+          .closest("table")
+          .find("tbody :checkbox:checked").length ==
+          $(this)
+            .closest("table")
+            .find("tbody :checkbox").length
+      );
+  });
+});
+
+
+
 
         const categorySelect = document.getElementById("category");
         const customItemContainer = document.getElementById("customItemContainer");

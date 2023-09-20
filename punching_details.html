@@ -640,7 +640,7 @@
         </div>
       <div class="modal-body">
         <div class="table-responsive text-nowrap">
-          <table class="table table-bordered">
+          <table class="table">
             <thead>
               <tr class="text-nowrap">
                 <th>Date</th>
@@ -658,8 +658,12 @@
               <tr>
                 <td>01/08/2023</td>
                 <td>Present</td>
-                <td>01/Aug/23 09:10:33</td>
-                <td>01/Aug/23 13:15:33</td>
+                <td>
+                  <i class="bx bx-edit me-1 edit-icon" id="editButton1"></i><span id="punch_in">01/Aug/23 09:10:33</span>  
+                </td>
+                <td>
+                  <i class="bx bx-edit me-1 edit-icon" id="editButton2"></i><span id="punch_out">01/Aug/23 13:15:33</span>
+                </td>
                 <td>250</td>
                 <td>10</td>
                 <td>15</td>
@@ -669,8 +673,8 @@
               <tr>
                 <td>01/08/2023</td>
                 <td>Present</td>
-                <td>01/Aug/23 13:45:33</td>
-                <td>01/Aug/23 17:15:33</td>
+                <td><i class="bx bx-edit me-1 edit-icon" id="editButton"></i><span id="editableText">01/Aug/23 13:45:33</span></td>
+                <td><i class="bx bx-edit me-1 edit-icon" id="editButton"></i><span id="editableText">01/Aug/23 17:15:33</span></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -680,8 +684,8 @@
               <tr>
                 <td>02/08/2023</td>
                 <td>Present</td>
-                <td>02/Aug/23 13:45:33</td>
-                <td>02/Aug/23 17:15:33</td>
+                <td><i class="bx bx-edit me-1 edit-icon" id="editButton"></i><span id="editableText">02/Aug/23 13:45:33</span></td>
+                <td><i class="bx bx-edit me-1 edit-icon" id="editButton"></i><span id="editableText">02/Aug/23 17:15:33</span></td>
                 <td>300</td>
                 <td>15</td>
                 <td>20</td>
@@ -691,8 +695,8 @@
               <tr>
                 <td>02/08/2023</td>
                 <td>Present</td>
-                <td>02/Aug/23 13:45:33</td>
-                <td>02/Aug/23 17:15:33</td>
+                <td><i class="bx bx-edit me-1 edit-icon" id="editButton"></i><span id="editableText">02/Aug/23 13:45:33</span></td>
+                <td><i class="bx bx-edit me-1 edit-icon" id="editButton"></i><span id="editableText">02/Aug/23 17:15:33</span></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -702,8 +706,8 @@
               <tr>
                 <td>03/08/2023</td>
                 <td>Present</td>
-                <td>03/Aug/23 13:45:33</td>
-                <td>03/Aug/23 17:15:33</td>
+                <td><i class="bx bx-edit me-1 edit-icon" id="editButton"></i><span id="editableText">03/Aug/23 13:45:33</span></td>
+                <td><i class="bx bx-edit me-1 edit-icon" id="editButton"></i><span id="editableText">03/Aug/23 17:15:33</span></td>
                 <td>200</td>
                 <td>30</td>
                 <td>10</td>
@@ -713,8 +717,8 @@
               <tr>
                 <td>03/08/2023</td>
                 <td>Present</td>
-                <td>03/Aug/23 13:45:33</td>
-                <td>03/Aug/23 17:15:33</td>
+                <td><i class="bx bx-edit me-1 edit-icon" id="editButton"></i><span id="editableText">03/Aug/23 13:45:33</span></td>
+                <td><i class="bx bx-edit me-1 edit-icon" id="editButton"></i><span id="editableText">03/Aug/23 17:15:33</span></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -772,6 +776,35 @@
           event.preventDefault(); 
           window.location.href = "generate-salary.html";
         }
+
+
+// Get references to the HTML elements
+const punch_in = document.getElementById("punch_in");
+const punch_out = document.getElementById("punch_out");
+const editButton1 = document.getElementById("editButton1");
+const editButton2 = document.getElementById("editButton2");
+
+// Function to make the text editable
+function makeTextEditable() {
+  punch_in.contentEditable = true;
+  punch_out.contentEditable = true;
+    editableText.focus();
+    // editButton.innerText = "Save"; // Change the button text
+    editButton.removeEventListener("click", makeTextEditable); 
+    editButton.addEventListener("click", saveText); 
+}
+
+// Function to save the edited text
+function saveText() {
+    editableText.contentEditable = false;
+    // editButton.innerText = "Edit"; // Change the button text
+    editButton.removeEventListener("click", saveText); // Remove the click event listener
+    editButton.addEventListener("click", makeTextEditable); // Add a new event listener
+}
+
+// Add a click event listener to the Edit button
+editButton.addEventListener("click", makeTextEditable);
+        
       </script>
       <script src="assets/vendor/libs/jquery/jquery.js"></script>
       <script src="assets/vendor/libs/popper/popper.js"></script>
