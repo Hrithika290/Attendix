@@ -735,8 +735,8 @@
 
 
   <!--/ Responsive Table -->
-  <button class="btn btn-primary btn-md mt-5" onclick="salary_report(event)" style="float: right;">Next</button> 
-  <button class="btn btn-primary btn-md mt-5 me-2" onclick="generate(event)" style="float: right;">Back</button> 
+  <button class="btn btn-primary btn-md mt-5" onclick="generate(event)" style="float: right;">Next</button> 
+  <button class="btn btn-primary btn-md mt-5 me-2" onclick="salary_generate(event)" style="float: right;">Back</button> 
 </div>
                 
               <!-- Footer -->
@@ -768,15 +768,15 @@
           <!-- / Layout wrapper -->
   
       <script>
-        function salary_report(event) {
-          event.preventDefault(); 
-          window.location.href = "salary_report.html";
-        }
-        function generate(event) {
+        function salary_generate(event) {
           event.preventDefault(); 
           window.location.href = "generate-salary.html";
         }
-
+        function generate(event) {
+          event.preventDefault(); 
+          window.location.href = "employee_salary.html";
+        }
+        
 
 // Get references to the HTML elements
 const punch_in = document.getElementById("punch_in");
